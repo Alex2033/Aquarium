@@ -1,0 +1,56 @@
+$xxs: "(min-width: 320px)"
+$_xxs: "(max-width: 320px)"
+$xs: "(min-width: 480px)"
+$_xs: "(max-width: 480px)"
+$sm: "(min-width: 767.99px)"
+$_sm: "(max-width: 767.99px)"
+$md: "(min-width: 991.99px)"
+$_md: "(max-width: 991.99px)"
+$lg: "(min-width: 1200px)"
+$xlg: "(min-width: 1500px)"
+
+$cols: 12
+$gutter: 10px
+// $col: calc(100% / $cols)
+// $col: 5.2%
+
+=container()
+  margin: 0 auto
+  box-sizing: border-box
+  @media #{$xxs}
+    width: 100%
+    padding: 0 15px
+  @media #{$sm}
+    width: 750px
+  @media #{$md}
+    width: 970px
+  @media #{$lg}
+    width: 1170px
+
+
+=row($align:space-between, $wrap:wrap)
+  display: flex
+  justify-content: $align
+  flex-wrap: $wrap
+  margin-right: -$gutter/2
+  margin-left: -$gutter/2
+
+=col($num)
+  margin-right: $gutter/2
+  margin-left: $gutter/2
+  width: calc( (100% / #{$cols}) * #{$num} - #{$gutter} )
+
+.wrapper
+  margin: 20px
+  
+  &__container
+    +container()
+    
+  &__row
+    +row(flex-start)
+  
+  &__item 
+    background-color: #222
+    height: 170px
+    margin-bottom: $gutter
+    +col(4)
