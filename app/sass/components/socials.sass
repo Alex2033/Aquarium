@@ -1,0 +1,14 @@
+.socials
+    display: flex
+    flex-wrap: wrap
+
+.socials__item
+    &:not(:last-child)
+        margin-right: 10px
+
+.socials__link
+    display: block
+    transition: opacity .15s ease
+
+    &:hover
+        opacity: 0.8

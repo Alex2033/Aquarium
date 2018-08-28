@@ -1,0 +1,69 @@
+.expositions
+    padding-bottom: 60px
+
+.expositions__title
+    margin-bottom: 35px
+    
+.expositions__wrapper 
+    display: grid
+    margin-bottom: 20px
+    display: -ms-grid
+    -ms-grid-columns: 1fr 30px 1fr 30px 1fr
+    -ms-grid-rows: auto 30px auto 30px auto
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 30px
+
+.expositions__item 
+    display: block
+    position: relative
+    background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 0%, rgba(0, 105, 161, 0.64) 0%, rgba(29, 35, 48, 0) 50%)
+    transition: bakcground-image .15s ease
+
+    &:hover
+        background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 0%, rgba(0, 105, 161, 0.64) 0%, rgba(29, 35, 48, 0) 150%)
+
+.expositions__img
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    min-height: 170px
+    height: 100%
+    position: relative
+    z-index: -1
+
+.expositions__item.item-1
+    -ms-grid-row: 1
+    -ms-grid-column: 1
+    grid-row: span 2
+    -ms-grid-row-span: 3
+.expositions__item.item-2
+    -ms-grid-row: 1
+    -ms-grid-column: 3
+.expositions__item.item-3
+    -ms-grid-row: 1
+    -ms-grid-column: 5  
+.expositions__item.item-4
+    -ms-grid-row: 3
+    -ms-grid-column: 3
+    grid-column: span 2
+    -ms-grid-column-span: 4  
+.expositions__item.item-5
+    -ms-grid-row: 5
+    -ms-grid-column: 1  
+.expositions__item.item-6
+    -ms-grid-row: 5
+    -ms-grid-column: 3  
+.expositions__item.item-7
+    -ms-grid-row: 5
+    -ms-grid-column: 5  
+
+.expositions__bottom-title
+    position: absolute
+    bottom: 15px
+    left: 0
+    width: 100%
+    padding: 0 15px
+    color: #ffffff
+    +font(700)
+    z-index: 1
+    font-weight: 700

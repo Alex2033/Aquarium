@@ -1,23 +1,8 @@
 doctype html
 html(lang='ru')
-  head
-    meta(charset='UTF-8')
-    title Template
-    meta(name='description', content='')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    meta(property='og:image', content='path/to/image.jpg')
-    link(rel='shortcut icon', href='img/favicon/favicon.ico', type='image/x-icon')
-    link(rel='apple-touch-icon', href='img/favicon/apple-touch-icon.png')
-    link(rel='apple-touch-icon', sizes='72x72', href='img/favicon/apple-touch-icon-72x72.png')
-    link(rel='apple-touch-icon', sizes='114x114', href='img/favicon/apple-touch-icon-114x114.png')
-    // Chrome, Firefox OS and Opera
-    meta(name='theme-color', content='#000')
-    // Windows Phone
-    meta(name='msapplication-navbutton-color', content='#000')
-    // iOS Safari
-    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
-    link(rel='stylesheet', href='css/main.min.css')
+
+  include ../modules/head
+  
   body
 
     // begin wrapper
@@ -27,6 +12,40 @@ html(lang='ru')
 
       // begin main-content
       main.main-content
+
+        // begin shares 
+        section.shares
+          .container.shares__container
+            a.shares__link(href="#" style="background-image: url(img/sections/shares/share.jpg);")
+        // end shares 
+
+        // begin expositions 
+        section.expositions
+          .container
+            h2.h2.h2--dark.expositions__title Экспозиции
+            .expositions__wrapper
+              a(href="#").expositions__item.item-1
+                .expositions__img(style="background-image: url(img/sections/expositions/1.jpg)")
+                h5.expositions__bottom-title Рыбы умеренных и тропических широт
+              a(href="#").expositions__item.item-2
+                .expositions__img(style="background-image: url(img/sections/expositions/2.jpg)")
+                h5.expositions__bottom-title  Дорога к океану
+              a(href="#").expositions__item.item-3
+                .expositions__img(style="background-image: url(img/sections/expositions/3.jpg)")
+                h5.expositions__bottom-title Мир медуз
+              a(href="#").expositions__item.item-4
+                .expositions__img(style="background-image: url(img/sections/expositions/4.jpg)")
+                h5.expositions__bottom-title Скалистое побережье
+              a(href="#").expositions__item.item-5
+                .expositions__img(style="background-image: url(img/sections/expositions/5.jpg)")
+                h5.expositions__bottom-title Главный аквариум
+              a(href="#").expositions__item.item-6
+                .expositions__img(style="background-image: url(img/sections/expositions/6.jpg)")
+                h5.expositions__bottom-title Коралловый риф
+              a(href="#").expositions__item.item-7
+                .expositions__img(style="background-image: url(img/sections/expositions/7.jpg)")
+                h5.expositions__bottom-title Рыбы и млекопитающие С-3 России
+        // end expositions 
 
       // end main-content
 

@@ -1,0 +1,117 @@
+.header
+    background-image: linear-gradient(to top, rgba(29, 35, 48, 0) 0%, rgba(0, 105, 161, 0.64) 79%, rgba(0, 105, 161, 0.7) 86%)
+    height: 100vh
+    min-height: 800px
+    margin-bottom: 30px
+
+.header__video
+    position: absolute
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -9999
+
+.header__bg
+    position: absolute
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+    z-index: -9999
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+
+.header__top
+    padding-top: 30px
+    +row()
+    margin-bottom: 30px
+
+.contacts
+    +col(4)
+    +row(space-between, 15px)
+
+.contacts__left,
+.contacts__right
+    +col(6, 15px)
+
+.header__logo
+    +col(4)
+
+.logo
+    display: block
+
+.logo__img
+    max-height: 73px
+    margin-left: auto 
+    margin-right: auto
+    
+.header__top-right
+    +col(4)
+
+.header__actions
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 20px
+
+.header-actions__link
+    display: block
+
+.languages
+    display: flex
+    flex-wrap: wrap
+
+.languages__item
+    padding: 0 8px
+    position: relative
+
+    &:not(:last-child)
+        &::after
+            content: '|'
+            position: absolute
+            top: 60%
+            right: -3px
+            transform: translateY(-50%)
+            font-size: 11px
+            color: #ffffff
+
+
+.languages__link
+    font-size: 11px
+    text-transform: uppercase
+    transition: color .15s ease
+    color: #ffffff
+
+    &:hover
+        color: $light-blue
+
+.header__btn
+    width: 100%
+
+.header__btn-img
+    margin-right: 10px
+
+.header-content
+    height: 100%
+
+.header__wave
+    position: absolute
+    bottom: -1px // чтобы убрать линию между секциями
+    left: 0
+    width: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    z-index: -10
+    overflow: hidden
+
+    img
+        width: 100.2%
+        max-width: initial

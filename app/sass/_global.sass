@@ -10,9 +10,11 @@ html, body
 body
 	min-width: 320px
 	font-size: 16px
-	line-height: 1.4
+	line-height: 1.375
+	color: $main-color
 	-webkit-font-smoothing: antialiased
 	background-color: white
+	+font(400)
 
 header, section
 	background-repeat: no-repeat
@@ -32,7 +34,6 @@ p
 
 .wrapper 
 	min-height: 100%
-	overflow: hidden
 	position: relative
 	width: 100%
 
@@ -54,15 +55,45 @@ h1, h2, h3, h4, h5, h6
 	border: none
 	color: #fff
 	text-decoration: none
-	background-color: $accent
-	padding-left: 32px
-	padding-right: 32px
-	line-height: 55px
-	font-size: 13px
-	text-transform: uppercase
-	font-weight: 600
+	background-image: linear-gradient(to top, $accent 0%, lighten($accent, 5%) 100%)
+	font-size: 16px
+	+font(700)
 	text-align: center
 	position: relative
 	outline: none
-	transition: background-color .1s ease
+	transition: transform .1s ease
 	cursor: pointer
+	padding: 12px 20px
+	display: flex
+	justify-content: center
+
+	&:hover
+		background-image: linear-gradient(to bottom, $accent 0%, lighten($accent, 5%) 100%)
+
+	&:active
+		transform: translateY(2px)
+
+.title
+	font-size: 60px
+	text-transform: uppercase
+	+font(700)
+	color: #ffffff
+	text-align: center
+	line-height: 1.1
+
+.title--small
+	font-size: 42px
+
+.h2
+	+font(300)
+	font-weight: 300
+	font-size: 48px
+	text-align: center
+	text-transform: uppercase
+
+.h2--dark
+	color: $main-color
+
+.main-content
+	display: flex
+	flex-direction: column

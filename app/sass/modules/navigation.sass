@@ -1,0 +1,26 @@
+.menu
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    border-top: 1px solid rgba(#fff, .25)
+    border-bottom: 1px solid rgba(#fff, .25)
+    margin-bottom: 10%
+
+.menu__item
+    flex-grow: 1
+    text-align: center
+    margin: 0 5px
+
+.menu__link
+    padding: 15px 0
+    font-size: 13px
+    display: block
+    color: #ffffff 
+    text-transform: uppercase
+    +font(700)
+    transition: color .1s ease
+
+    &:hover
+        color: $light-blue

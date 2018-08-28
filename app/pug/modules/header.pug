@@ -1,1 +1,89 @@
+// begin header 
 header.header
+
+    .header__bg(style="background-image: url(img/header/bg.jpg);")
+
+    video(autoplay muted loop).header__video
+        source(src="img/Animals.mp4" type="video/mp4")
+
+    .header__container.container
+        .header__top
+
+            // begin contacts 
+            .contacts
+                .contacts__left
+                    .contacts__hours Время работы 10-22
+                    .contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                    a.contacts__link(href="site-plan.html") План океанариума      
+                .contacts__right
+                    address.contacts__address Спб, ул. Марата, 86
+                    a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
+
+                    // begin socials 
+                    ul.socials
+                        li.socials__item
+                            a.socials__link(href="#")
+                                img(src="img/general/vk.svg", alt="Social image").socials__img
+                        li.socials__item
+                            a.socials__link(href="#")
+                                img(src="img/general/fb.svg", alt="Social image").socials__img
+                        li.socials__item
+                            a.socials__link(href="#")
+                                img(src="img/general/inst.svg", alt="Social image").socials__img
+                    // end socials 
+
+            .header__logo
+
+                // begin logo 
+                a(href="index.html").logo
+                    img(src="img/general/logo.png", alt="Logotype").logo__img
+                // end logo 
+
+            .header__top-right
+
+                .header__actions
+
+                    a(href="index.html").header-actions__link
+                        img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
+
+                    // begin languages 
+                    ul.languages
+                        li.languages__item
+                            a(href="#").languages__link RU
+                        li.languages__item
+                            a(href="#").languages__link ENG
+                    // end languages 
+
+                    // begin search 
+                    form.search
+                        button(type="button").search__button 
+                            img(src="img/general/search.svg", alt="Search icon")
+                    // end search 
+
+                .header__btns
+                    button.button.header__btn 
+                        img(src="img/header/btn-img.svg", alt="Button image").header__btn-img
+                        |  Электронный билет в Океанариум
+
+                    // begin toggle-menu 
+                    button.toggle-menu
+                        span.sandwich
+                            span.sandwich__line
+                            span.sandwich__line
+                            span.sandwich__line
+                        span.toggle-menu__text Меню
+                    // end toggle-menu 
+
+            // end contacts 
+
+        include navigation 
+
+        // begin header-content 
+        .header-content
+            h1.title Санкт-Петербургский океанариум
+
+    .header__wave
+        img(src="img/header/wave.svg", alt="Wave")
+
+        // end header-content 
+// end header 
