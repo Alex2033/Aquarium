@@ -32,6 +32,8 @@ header.header
                                 img(src="img/general/inst.svg", alt="Social image").socials__img
                     // end socials 
 
+            // end contacts 
+
             .header__logo
 
                 // begin logo 
@@ -46,41 +48,83 @@ header.header
                     a(href="index.html").header-actions__link
                         img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
 
-                    // begin languages 
-                    ul.languages
-                        li.languages__item
-                            a(href="#").languages__link RU
-                        li.languages__item
-                            a(href="#").languages__link ENG
-                    // end languages 
+                    .header__actions-bottom
 
-                    // begin search 
-                    form.search
-                        button(type="button").search__button 
-                            img(src="img/general/search.svg", alt="Search icon")
-                    // end search 
+                        // begin languages 
+                        ul.languages
+                            li.languages__item
+                                a(href="#").languages__link RU
+                            li.languages__item
+                                a(href="#").languages__link ENG
+                        // end languages 
+
+                        // begin search 
+                        form.search.header__search
+                            button(type="button").search__button 
+                                img(src="img/general/search.svg", alt="Search icon")
+                        // end search 
 
                 .header__btns
-                    button.button.header__btn 
-                        img(src="img/header/btn-img.svg", alt="Button image").header__btn-img
+                    button.button.header__btn.header__btns-item 
+                        img(src="img/header/btn-img.svg", alt="Button image").button__img
                         |  Электронный билет в Океанариум
 
                     // begin toggle-menu 
-                    button.toggle-menu
+                    button.toggle-menu.header__btns-item
                         span.sandwich
-                            span.sandwich__line
-                            span.sandwich__line
-                            span.sandwich__line
+                            span.sandwich__line.sandwich__line-top
+                            span.sandwich__line.sandwich__line-mid
+                            span.sandwich__line.sandwich__line-bot
                         span.toggle-menu__text Меню
                     // end toggle-menu 
 
-            // end contacts 
-
-        include navigation 
+        // begin navigation 
+        nav.navigation
+            ul.navigation__list.menu.menu--hidden
+                li.menu__item
+                    a.menu__link(href="#") Главная
+                li.menu__item
+                    a.menu__link(href="#") О нас
+                li.menu__item
+                    a.menu__link(href="#") 
+                        |  Информация
+                        br.header__br 
+                        |  для посетителей
+                li.menu__item
+                    a.menu__link(href="#")
+                        |  Показательные кормления
+                        br.header__br
+                        |  и шоу-программы
+                li.menu__item
+                    a.menu__link(href="#") 
+                        |  Океанариум
+                        br.header__br 
+                        |  детям
+                li.menu__item
+                    a.menu__link(href="#") Дайвинг-центр
+                    // begin menu-dropdown 
+                    ul.menu-dropdown
+                        li.menu-dropdown__item
+                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
+                        li.menu-dropdown__item
+                            a.menu-dropdown__link(href="#") Обучение дайвингу
+                        li.menu-dropdown__item
+                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
+                        li.menu-dropdown__item
+                            a.menu-dropdown__link(href="#") Подарочный сертификат    
+                    // end menu-dropdown 
+                li.menu__item
+                    a.menu__link(href="#") 
+                        |  Магазин
+                        br.header__br 
+                        |  сувениров
+                li.menu__item
+                    a.menu__link(href="#") Контакты
+        // end navigation 
 
         // begin header-content 
         .header-content
-            h1.title Санкт-Петербургский океанариум
+            h1.title.title--md-hidden Санкт-Петербургский океанариум
 
     .header__wave
         img(src="img/header/wave.svg", alt="Wave")

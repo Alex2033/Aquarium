@@ -1,10 +1,47 @@
 .contacts
     color: #ffffff
-    margin-left: 0
+    margin-left: 10px
+    +col(4)
+    +row(space-between, 15px)
 
+    @media #{$md} and #{$_lg} 
+        +col(5) 
+
+    @media #{$_md}
+        flex-direction: column
+        margin-left: 0
+        +col(3.5)
+
+    @media #{$_sm}
+        +col(6)
+        justify-content: flex-start
+
+    @media #{$_xs}
+        +col(12)
+        margin-bottom: 20px
+
+.contacts__left,
+.contacts__right
+    +col(6, 15px)
+
+    @media #{$_md}
+        width: 100%
+
+    @media #{$_xs}
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+.contacts__left
+    margin-bottom: 20px
+    
 .contacts__hours
     font-weight: 700
     margin-bottom: 5px
+
+    @media #{$_xs}
+        font-size: 14px
 
 .contacts__schedule
     font-size: 12px
@@ -23,7 +60,7 @@
 .contacts__address
     font-style: normal
     font-size: 14px
-    +font(300)
+    font-weight: 300
     margin-bottom: 5px
 
 .contacts__phone
@@ -31,7 +68,10 @@
     font-size: 20px
     margin-bottom: 10px
     display: inline-block
-    +font(300)
+    font-weight: 300
+
+    @media #{$_xs}
+        font-size: 19px
 
     &:hover
         text-decoration: underline

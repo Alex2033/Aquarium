@@ -1,0 +1,82 @@
+.footer
+    position: relative
+    background-color: darken($accent, 12%)
+    padding-top: 30px
+    padding-bottom: 45px
+
+.footer__navigation
+    .menu
+        display: flex
+        margin-bottom: 40px
+
+    @media #{$_md}
+        .menu__link
+            padding: 5px 15px
+
+.footer__bottom
+    +row()
+
+.footer__logo
+    +col(3.5)
+
+    @media #{$md} and #{$_lg}
+        +col(3)
+
+    @media #{$_md}
+        +col(5)
+
+    @media #{$_sm}
+        +col(12)
+        margin-bottom: 40px
+
+.footer__contacts
+    +col(4.5)
+
+    @media #{$md} and #{$_lg}
+        +col(5)
+
+    @media #{$_md}
+        +col(7)
+        flex-direction: row
+        margin-bottom: 20px
+
+        .contacts__left,
+        .contacts__right
+            +col(6)
+
+    @media #{$_sm}
+        +col(12)
+        max-width: 430px
+        margin-left: auto
+        margin-right: auto
+
+        .contacts__left,
+        .contacts__right
+            justify-content: center
+
+    @media #{$_xs}
+        flex-direction: column
+        align-items: center
+
+        .contacts__left,
+        .contacts__right
+            width: 100%
+
+.copyright
+    +col(4)
+    opacity: 0.7
+    font-size: 12px
+
+    @media #{$_md}
+        +col(12)
+        text-align: center
+
+.copyright__text
+    color: #ffffff
+
+    p
+        margin-bottom: 10px
+
+.copyright__link
+    color: #ffffff
+    text-decoration: underline

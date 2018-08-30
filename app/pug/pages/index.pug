@@ -16,7 +16,8 @@ html(lang='ru')
         // begin shares 
         section.shares
           .container.shares__container
-            a.shares__link(href="#" style="background-image: url(img/sections/shares/share.jpg);")
+            a.shares__link.shares__link--visible(href="#" style="background-image: url(img/sections/shares/share.jpg);")
+            a.shares__link.shares__link--hidden(href="#" style="background-image: url(img/sections/shares/share-mobile.jpg);")
         // end shares 
 
         // begin expositions 
@@ -46,6 +47,66 @@ html(lang='ru')
                 .expositions__img(style="background-image: url(img/sections/expositions/7.jpg)")
                 h5.expositions__bottom-title Рыбы и млекопитающие С-3 России
         // end expositions 
+
+        // begin performances 
+        section.performances
+
+          .wave.wave--top(style="background-image: url(img/general/wave.svg);")
+
+          .section-background(style="background-image: url(img/sections/performances/bg.jpg);")
+
+          .container.performances__container
+            h2.h2.performances__title Показательные выступления и шоу программы
+            ul.performances__list
+              li.performances__item
+                a(href="#").performances__link
+                  .performances__img(style="background-image: url(img/sections/performances/1.jpg);")
+                  h4.performances__item-title
+                    |  Шоу 
+                    br
+                    |  с Акулами
+              li.performances__item
+                a(href="#").performances__link
+                  .performances__img(style="background-image: url(img/sections/performances/2.jpg);")
+                  h4.performances__item-title
+                    |  Шоу 
+                    br
+                    |  с тюленями
+              li.performances__item
+                a(href="#").performances__link
+                  .performances__img(style="background-image: url(img/sections/performances/3.jpg);")
+                  h4.performances__item-title Кормление обитателей
+
+          .wave.wave--bottom.performances__wave(style="background-image: url(img/general/wave.svg);")
+
+        // end performances 
+
+        // begin rates 
+        section.rates
+        
+          .wave.wave--top(style="background-image: url(img/general/wave.svg);")
+
+          .container
+            h2.h2.rates__title Тарифы
+
+            .rates__wrapper
+
+              ul.rates__list
+                li.rates__item
+                  a.rates__link(href="#") Цены
+                li.rates__item
+                  a.rates__link(href="#") Льготы
+                li.rates__item
+                  a.rates__link(href="#") Акции и скидки
+                li.rates__item
+                  a.rates__link(href="#") Семейный абонемент выходного дня
+
+              .rates__btns
+                button.button 
+                  img(src="img/header/btn-img.svg", alt="Button image").button__img
+                  |  Электронный билет в Океанариум
+
+        // end rates 
 
       // end main-content
 

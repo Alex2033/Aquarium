@@ -7,3 +7,23 @@
     background-repeat: no-repeat
     background-position: 50% 50%
     min-height: 160px
+
+    @media #{$_lg}
+        min-height: 130px
+
+    @media #{$_md}
+        min-height: 100px
+
+    @media #{$_sm}
+        min-height: 340px
+        background-position: 19% 50%
+
+.shares__link--visible
+    display: none
+    @media #{$sm}
+        display: block
+
+.shares__link--hidden
+    display: none
+    @media #{$_sm}
+        display: block

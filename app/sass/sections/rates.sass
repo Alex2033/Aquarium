@@ -1,0 +1,44 @@
+.rates
+    padding: 60px 0
+    background-color: darken($accent, 12%)
+
+.rates__title
+    margin-bottom: 40px
+
+.rates__wrapper
+    +row()
+    align-items: center
+
+.rates__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    +col(8)
+
+    @media #{$md} and #{$_lg}
+        +col(12)
+
+    @media #{$_lg}
+        margin-bottom: 25px
+
+.rates__link
+    font-size: 18px
+    display: block
+    text-decoration: underline
+    color: #ffffff
+    transition: color .2s ease, background-color .2s ease
+    padding: 13px 21px
+    border-radius: 20px
+
+    &:hover
+        color: $main-color
+        background-color: $light-blue 
+
+.rates__btns
+    +col(4)
+    display: flex
+    flex-wrap: wrap
+
+    @media #{$md} and #{$_lg}
+        +col(12)
+        justify-content: center
