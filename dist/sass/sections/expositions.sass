@@ -1,5 +1,6 @@
 .expositions
-    padding-bottom: 60px
+    padding: 30px 30px
+    order: 2
 
 .expositions__title
     margin-bottom: 35px
@@ -13,11 +14,20 @@
     grid-template-columns: repeat(3, 1fr)
     grid-gap: 30px
 
+    @media #{$_md}
+        -ms-grid-columns: 1fr 30px 1fr
+        grid-template-columns: repeat(2, 1fr)
+
+    @media #{$_sm}
+        -ms-grid-columns: 1fr
+        grid-template-columns: 1fr
+        grid-gap: 10px
+        -ms-grid-rows: auto 10px auto 10px auto 10px auto 10px auto 10px auto 10px auto
+
 .expositions__item 
     display: block
     position: relative
     background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 0%, rgba(0, 105, 161, 0.64) 0%, rgba(29, 35, 48, 0) 50%)
-    transition: bakcground-image .15s ease
 
     &:hover
         background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 0%, rgba(0, 105, 161, 0.64) 0%, rgba(29, 35, 48, 0) 150%)
@@ -36,26 +46,78 @@
     -ms-grid-column: 1
     grid-row: span 2
     -ms-grid-row-span: 3
+    order: 1
+
+    @media #{$_md}
+        -ms-grid-row: 1
+        -ms-grid-column: 1
+        grid-row: span 1
+        -ms-grid-row-span: 1
+
+    @media #{$_sm}
+        -ms-grid-row: 1
+        -ms-grid-column: 1
+
 .expositions__item.item-2
     -ms-grid-row: 1
     -ms-grid-column: 3
+    order: 2
+
+    @media #{$_sm}
+        -ms-grid-row: 3
+        -ms-grid-column: 1
+
 .expositions__item.item-3
     -ms-grid-row: 1
     -ms-grid-column: 5  
+    order: 3
+
+    @media #{$_sm}
+        -ms-grid-row: 5
+        -ms-grid-column: 1
+
 .expositions__item.item-4
     -ms-grid-row: 3
     -ms-grid-column: 3
     grid-column: span 2
     -ms-grid-column-span: 4  
+    order: 4
+
+    @media #{$_sm}
+        -ms-grid-row: 7
+        -ms-grid-column: 1
+        grid-column: span 1
+        -ms-grid-column-span: 1
+
 .expositions__item.item-5
     -ms-grid-row: 5
     -ms-grid-column: 1  
+    order: 5
+
+    @media #{$_md}
+        order: 1
+
+    @media #{$_sm}
+        -ms-grid-row: 9
+        -ms-grid-column: 1
+
 .expositions__item.item-6
     -ms-grid-row: 5
     -ms-grid-column: 3  
+    order: 6
+
+    @media #{$_sm}
+        -ms-grid-row: 11
+        -ms-grid-column: 1
+
 .expositions__item.item-7
     -ms-grid-row: 5
     -ms-grid-column: 5  
+    order: 7
+
+    @media #{$_sm}
+        -ms-grid-row: 13
+        -ms-grid-column: 1
 
 .expositions__bottom-title
     position: absolute
@@ -64,6 +126,6 @@
     width: 100%
     padding: 0 15px
     color: #ffffff
-    +font(700)
+    font-weight: 700
     z-index: 1
     font-weight: 700

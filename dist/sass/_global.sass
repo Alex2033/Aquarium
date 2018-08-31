@@ -14,7 +14,7 @@ body
 	color: $main-color
 	-webkit-font-smoothing: antialiased
 	background-color: white
-	+font(400)
+	font-family: $main-font
 
 header, section
 	background-repeat: no-repeat
@@ -55,9 +55,10 @@ h1, h2, h3, h4, h5, h6
 	border: none
 	color: #fff
 	text-decoration: none
-	background-image: linear-gradient(to top, $accent 0%, lighten($accent, 5%) 100%)
+	border-radius: 3px
+	background-image: linear-gradient(to top, #0084ca 0%, #00a1f6 100%)
 	font-size: 16px
-	+font(700)
+	font-weight: 700
 	text-align: center
 	position: relative
 	outline: none
@@ -73,23 +74,33 @@ h1, h2, h3, h4, h5, h6
 	&:active
 		transform: translateY(2px)
 
+.button__img
+    margin-right: 10px
+
 .title
 	font-size: 60px
 	text-transform: uppercase
-	+font(700)
+	font-weight: 700
 	color: #ffffff
 	text-align: center
 	line-height: 1.1
+
+.title--md-hidden
+	@media #{$_md}
+		display: none
 
 .title--small
 	font-size: 42px
 
 .h2
-	+font(300)
 	font-weight: 300
 	font-size: 48px
 	text-align: center
 	text-transform: uppercase
+	color: #ffffff
+
+	@media #{$_sm}
+		font-size: 36px
 
 .h2--dark
 	color: $main-color
@@ -97,3 +108,19 @@ h1, h2, h3, h4, h5, h6
 .main-content
 	display: flex
 	flex-direction: column
+
+.wave
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	height: 42px
+	width: 100%
+	position: absolute
+	left: 0
+	
+.wave--top
+	bottom: calc(100% - 1px)
+
+.wave--bottom
+	top: calc(100% - 42px) // высота изображения
+

@@ -64,14 +64,22 @@
     margin-bottom: 5px
 
 .contacts__phone
-    color: $light
     font-size: 20px
     margin-bottom: 10px
+    color: $light
     display: inline-block
     font-weight: 300
 
     @media #{$_xs}
         font-size: 19px
+
+    &:hover
+        text-decoration: underline
+        
+.contacts__address-link
+    display: inline-block
+    font-weight: 300
+    color: $light
 
     &:hover
         text-decoration: underline
