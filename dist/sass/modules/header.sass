@@ -169,6 +169,14 @@
         margin-bottom: 0
 
 
+.header__btn--visible
+    @media #{$_sm}
+        display: none
+
+.header__btn--hidden
+    @media #{$sm}
+        display: none
+
 .header-content
     height: 100%
 
@@ -218,5 +226,3 @@
             min-width: initial
             padding-left: 5px
             padding-right: 5px
-            display: flex
-            justify-content: center

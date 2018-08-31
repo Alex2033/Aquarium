@@ -10,12 +10,3 @@ $(function() {
 $('.toggle-menu').click(function() {
 	$('.menu--hidden').slideToggle();
 });
-
-$(document).ready(function() {
-	updateFunction();
-});
-
-
-$(window).resize(function() {
-	updateFunction();
-});

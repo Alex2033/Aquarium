@@ -60,14 +60,18 @@ header.header
 
                         // begin search 
                         form.search.header__search
-                            button(type="button").search__button 
+                            button(type="submit").search__button 
                                 img(src="img/general/search.svg", alt="Search icon")
                         // end search 
 
                 .header__btns
-                    button.button.header__btn.header__btns-item 
+                    button.button.header__btn.header__btns-item.header__btn--visible
                         img(src="img/header/btn-img.svg", alt="Button image").button__img
                         |  Электронный билет в Океанариум
+
+                    button.button.header__btn.header__btns-item.header__btn--hidden
+                        img(src="img/header/btn-img.svg", alt="Button image").button__img
+                        |  Эл. билет
 
                     // begin toggle-menu 
                     button.toggle-menu.header__btns-item
