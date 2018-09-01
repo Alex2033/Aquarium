@@ -1,9 +1,199 @@
 .children
     order: 5
     padding: 90px 0 75px 0
+    background-size: contain
+    overflow: hidden
+
+    @media #{$_lg}
+        padding-bottom: 175px
+
+    @media #{$_md}
+        padding-bottom: 60px
+
+.children__title
+    margin-bottom: 25px
+
+.children__container
+    position: relative
 
 .children__row
     +row()
+    align-items: flex-start
+    
+.children__left
+    +col(7.5)
+    position: relative
+    padding-top: 65px
 
-.children__slider
-    +col(8)
+    @media #{$_md}
+        +col(6)
+        padding-top: 30px
+
+    @media #{$_sm}
+        +col(12)
+        padding-top: 0
+
+        
+
+.children__slider-item
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    min-height: 514px
+
+    @media #{$_md}
+        min-height: 214px
+
+    @media #{$_sm}
+        min-height: 266px
+
+.children__right
+    +col(4.5)
+
+    @media #{$_md}
+        +col(6)
+
+    @media #{$_sm}
+        +col(12)
+
+.children__nav-item
+    text-align: center
+
+.children__nav-link
+    color: $main-color
+    
+.children-arrow
+    width: 40px
+    height: 33px
+    position: absolute
+    bottom: 20px
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: transparent
+    border: 0
+    cursor: pointer
+    z-index: 1
+
+    @media #{$_md}
+        bottom: 20px
+
+.children-arrow--left
+    left: 30%
+
+    @media #{$_md}
+        left: 17%
+
+    @media #{$_sm}
+        left: 30%
+
+    @media (max-width: 576px)
+        left: 20%
+
+    @media #{$_xs}
+        left: 17%
+
+.children-arrow--right
+    right: 30%
+
+    @media #{$_md}
+        right: 17%
+
+    @media #{$_sm}
+        right: 30%
+
+    @media (max-width: 576px)
+        right: 20%
+
+    @media #{$_xs}
+        right: 17%
+
+.children-buttons
+    margin-top: 20px
+    z-index: 1
+    position: relative
+    display: flex
+    justify-content: center
+
+    li
+        margin-right: 5px
+
+        &.slick-active
+            .children-button
+                background-color: $accent
+
+.children-button
+    cursor: pointer
+    width: 15px
+    height: 15px
+    background-color: #e2e3e6
+    border-radius: 50%
+    border: 0
+
+    &:hover
+        background-color: rgba($accent, .5)
+
+.children__right-img
+    margin: 0 auto 30px
+
+    @media #{$_md}
+        margin-bottom: 5px
+
+    @media #{$_sm}
+        display: none
+
+.sea-horse
+    position: absolute
+    top: 172px
+    right: -2px
+
+    @media #{$_lg}
+        bottom: -120px
+        left: 285px
+        right: initial
+        top: initial
+        max-width: 95px
+
+    @media #{$_md}
+        max-width: 80px
+        left: 162px
+        bottom: 5px
+
+    @media #{$_sm}
+        display: none
+
+.sink
+    position: absolute
+    top: 453px
+    right: -4px
+
+    @media #{$_lg}
+        bottom: -120px
+        left: 480px
+        right: initial
+        top: initial
+
+    @media #{$_md}
+        max-width: 90px
+        bottom: 5px
+        left: 279px
+
+    @media #{$_sm}
+        display: none
+
+.crab
+    margin: 45px auto 0
+
+    @media #{$_lg}
+        position: absolute
+        margin: 0
+        bottom: -120px
+        left: 10px
+
+    @media #{$_md}
+        max-width: 115px
+        bottom: 5px
+
+    @media #{$_sm}
+        display: none
+        

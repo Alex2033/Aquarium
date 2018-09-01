@@ -1,0 +1,116 @@
+.diving
+    padding-top: 75px
+    padding-bottom: 60px
+    order: 6
+    background-color: #000000
+
+.diving__background
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    opacity: 0.7
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+
+.diving__wrapper
+    position: relative
+
+.diving__row
+    +row()
+
+.diving__content
+    +col(6)
+
+    @media #{$_lg}
+        +col(7.5)
+
+    @media #{$_md}
+        +col(9.5)
+
+    @media #{$_sm}
+        +col(12)
+
+.diving__images
+    +row()
+    margin-bottom: 20px
+
+.diving__img
+    display: block
+    min-height: 259px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background-color: $accent
+        opacity: 0
+        transition: opacity .1s ease
+
+    &:hover
+        &::before
+            opacity: 0.2
+
+    @media #{$_sm}
+        min-height: 167px
+
+
+.diving__img--big
+    +col(8)
+
+    @media #{$_sm}
+        +col(7.5)
+
+    @media #{$_xs}
+        +col(7)
+
+.diving__img--small
+    +col(4)
+
+    @media #{$_sm}
+        +col(4.5)
+
+    @media #{$_xs}
+        +col(5)
+
+
+.diving__info
+    background-color: rgba($accent, .8)
+    padding: 35px
+    display: block
+    transition: background-color .1s ease
+
+    &:hover
+        background-color: rgba($accent, .95)
+
+    @media #{$_sm}
+        padding: 17px
+
+.diving__title
+    margin-bottom: 10px
+
+.diving__body
+    display: flex
+    justify-content: space-between
+
+.diving__text
+    display: block
+    font-size: 24px
+    color: #ffffff
+    font-weight: 300
+
+    @media #{$_sm}
+        font-size: 18px
+
+.diving__arrow
+    align-self: flex-end
+    padding-bottom: 7px

@@ -124,3 +124,42 @@ h1, h2, h3, h4, h5, h6
 .wave--bottom
 	top: calc(100% - 42px) // высота изображения
 
+.link
+	font-size: 18px
+	display: inline-block
+	text-decoration: underline
+	color: #ffffff
+	transition: color .2s ease, background-color .2s ease
+	padding: 13px 21px
+	border-radius: 30px
+
+	&:hover
+		color: $main-color
+		background-color: $light-blue 
+
+	@media #{$_lg}
+		padding: 13px 18px
+
+#scrollUp
+	bottom: 20px
+	right: 20px
+	width: 59px
+	height: 59px
+	position: fixed
+	z-index: 50
+	border-radius: 100%
+	background-color: rgba(#000, .4)
+	display: none
+	justify-content: center
+	align-items: center
+	transition: .2s
+	cursor: pointer
+
+	&:hover
+		background-color: rgba(#000, .8)
+
+.scrollUp__img
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)

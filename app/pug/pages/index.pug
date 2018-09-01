@@ -94,13 +94,13 @@ html(lang='ru')
 
               ul.rates__list
                 li.rates__item
-                  a.rates__link(href="#") Цены
+                  a.link(href="#") Цены
                 li.rates__item
-                  a.rates__link(href="#") Льготы
+                  a.link(href="#") Льготы
                 li.rates__item
-                  a.rates__link(href="#") Акции и скидки
+                  a.link(href="#") Акции и скидки
                 li.rates__item
-                  a.rates__link(href="#") Семейный абонемент выходного дня
+                  a.link(href="#") Семейный абонемент выходного дня
 
               .rates__btns
                 button.button 
@@ -110,38 +110,86 @@ html(lang='ru')
         // end rates 
 
         // begin children 
-        section.children
-          .container
-            h2.h2.h2--dark Океанариум детям
+        section.children(style="background-image: url(img/sections/children/bg.png);")
+          .container.children__container
+
+
+            img.sea-horse(src="img/sections/children/horse.png", alt="Horse")
+            img.sink(src="img/sections/children/sink.png", alt="Sink")
+
+            h2.h2.h2--dark.children__title Океанариум детям
 
             .children__row 
 
-              ul.children__slider
-                li.children__slider-item(style="background-image: url(img/sections/children/1.jpg);")
-                li.children__slider-item(style="background-image: url(img/sections/children/2.jpg);")
-                li.children__slider-item(style="background-image: url(img/sections/children/3.jpg);")
+              .children__left
+                ul.children__slider
+                  li.children__slider-item(style="background-image: url(img/sections/children/1.jpg);")
+                  li.children__slider-item(style="background-image: url(img/sections/children/1.jpg);")
+                  li.children__slider-item(style="background-image: url(img/sections/children/1.jpg);")
 
-              ul.children__nav
-                li.children__nav-item
-                  a.children__nav-link(href="#") Для дошкольников
-                li.children__nav-item
-                  a.children__nav-link(href="#") Для школьников
-                li.children__nav-item
-                  a.children__nav-link(href="#") Конкурс “Большая Регата”
-                li.children__nav-item
-                  a.children__nav-link(href="#") Развлекательные программы для детей
-                li.children__nav-item
-                  a.children__nav-link(href="#") Буклет-путеводитель для детей
-                li.children__nav-item
-                  a.children__nav-link(href="#") Контакты Учебного центра
+                button.children-arrow.children-arrow--left.slick-arrow
+                  img(src="img/sections/children/arrow-left.svg", alt="Arrow image")
+                button.children-arrow.children-arrow--right.slick-arrow
+                  img(src="img/sections/children/arrow-right.svg", alt="Arrow image")
+
+
+              .children__right
+
+                img(src="img/sections/children/plant.png", alt="Plant").children__right-img
+
+                ul.children__nav
+                  li.children__nav-item
+                    a.children__nav-link.link(href="#") Для дошкольников
+                  li.children__nav-item
+                    a.children__nav-link.link(href="#") Для школьников
+                  li.children__nav-item
+                    a.children__nav-link.link(href="#") Конкурс “Большая Регата”
+                  li.children__nav-item
+                    a.children__nav-link.link(href="#") Развлекательные программы для детей
+                  li.children__nav-item
+                    a.children__nav-link.link(href="#") Буклет-путеводитель для детей
+                  li.children__nav-item
+                    a.children__nav-link.link(href="#") Контакты Учебного центра
+
+                img.crab(src="img/sections/children/crab.png", alt="Crab")
 
         // end children 
+
+        // begin diving 
+        section.diving
+
+          .diving__background(style="background-image: url(img/sections/diving/bg.jpg);")
+
+          .diving__wrapper
+
+            .container
+              .diving__row
+                .diving__content
+
+                  .diving__images
+                    a(href="#").diving__img.diving__img--big(style="background-image: url(img/sections/diving/1.jpg);")
+                    a(href="#").diving__img.diving__img--small(style="background-image: url(img/sections/diving/2.jpg);")
+
+                  a(href="#").diving__info
+                    h2.h2.diving__title Дайвинг
+                    .diving__body
+                      .diving__text 
+                        |  Обучение дайвингу
+                        br
+                        |  и экскурсии в главный аквариум
+                      img.diving__arrow(src="img/sections/diving/arrow.svg", alt="Arrow")
+
+
+        // end diving 
 
       // end main-content
 
     // end wrapper
 
     include ../modules/footer
+
+    #scrollUp
+      img(src="img/general/angle-top.svg", alt="Angle Top").scrollUp__img
 
 
     // scripts 

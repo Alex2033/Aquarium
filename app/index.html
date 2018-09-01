@@ -170,10 +170,10 @@
             <h2 class="h2 rates__title">Тарифы</h2>
             <div class="rates__wrapper">
               <ul class="rates__list">
-                <li class="rates__item"><a class="rates__link" href="#">Цены</a></li>
-                <li class="rates__item"><a class="rates__link" href="#">Льготы</a></li>
-                <li class="rates__item"><a class="rates__link" href="#">Акции и скидки</a></li>
-                <li class="rates__item"><a class="rates__link" href="#">Семейный абонемент выходного дня</a></li>
+                <li class="rates__item"><a class="link" href="#">Цены</a></li>
+                <li class="rates__item"><a class="link" href="#">Льготы</a></li>
+                <li class="rates__item"><a class="link" href="#">Акции и скидки</a></li>
+                <li class="rates__item"><a class="link" href="#">Семейный абонемент выходного дня</a></li>
               </ul>
               <div class="rates__btns">
                 <button class="button"> <img class="button__img" src="img/header/btn-img.svg" alt="Button image"> Электронный билет в Океанариум</button>
@@ -183,27 +183,52 @@
         </section>
         <!-- end rates -->
         <!-- begin children -->
-        <section class="children">
-          <div class="container">
-            <h2 class="h2 h2--dark">Океанариум детям</h2>
+        <section class="children" style="background-image: url(img/sections/children/bg.png);">
+          <div class="container children__container"><img class="sea-horse" src="img/sections/children/horse.png" alt="Horse"><img class="sink" src="img/sections/children/sink.png" alt="Sink">
+            <h2 class="h2 h2--dark children__title">Океанариум детям</h2>
             <div class="children__row"> 
-              <ul class="children__slider">
-                <li class="children__slider-item" style="background-image: url(img/sections/children/1.jpg);"></li>
-                <li class="children__slider-item" style="background-image: url(img/sections/children/2.jpg);"></li>
-                <li class="children__slider-item" style="background-image: url(img/sections/children/3.jpg);"></li>
-              </ul>
-              <ul class="children__nav">
-                <li class="children__nav-item"><a class="children__nav-link" href="#">Для дошкольников</a></li>
-                <li class="children__nav-item"><a class="children__nav-link" href="#">Для школьников</a></li>
-                <li class="children__nav-item"><a class="children__nav-link" href="#">Конкурс “Большая Регата”</a></li>
-                <li class="children__nav-item"><a class="children__nav-link" href="#">Развлекательные программы для детей</a></li>
-                <li class="children__nav-item"><a class="children__nav-link" href="#">Буклет-путеводитель для детей</a></li>
-                <li class="children__nav-item"><a class="children__nav-link" href="#">Контакты Учебного центра</a></li>
-              </ul>
+              <div class="children__left">
+                <ul class="children__slider">
+                  <li class="children__slider-item" style="background-image: url(img/sections/children/1.jpg);"></li>
+                  <li class="children__slider-item" style="background-image: url(img/sections/children/1.jpg);"></li>
+                  <li class="children__slider-item" style="background-image: url(img/sections/children/1.jpg);"></li>
+                </ul>
+                <button class="children-arrow children-arrow--left slick-arrow"><img src="img/sections/children/arrow-left.svg" alt="Arrow image"></button>
+                <button class="children-arrow children-arrow--right slick-arrow"><img src="img/sections/children/arrow-right.svg" alt="Arrow image"></button>
+              </div>
+              <div class="children__right"><img class="children__right-img" src="img/sections/children/plant.png" alt="Plant">
+                <ul class="children__nav">
+                  <li class="children__nav-item"><a class="children__nav-link link" href="#">Для дошкольников</a></li>
+                  <li class="children__nav-item"><a class="children__nav-link link" href="#">Для школьников</a></li>
+                  <li class="children__nav-item"><a class="children__nav-link link" href="#">Конкурс “Большая Регата”</a></li>
+                  <li class="children__nav-item"><a class="children__nav-link link" href="#">Развлекательные программы для детей</a></li>
+                  <li class="children__nav-item"><a class="children__nav-link link" href="#">Буклет-путеводитель для детей</a></li>
+                  <li class="children__nav-item"><a class="children__nav-link link" href="#">Контакты Учебного центра</a></li>
+                </ul><img class="crab" src="img/sections/children/crab.png" alt="Crab">
+              </div>
             </div>
           </div>
         </section>
         <!-- end children -->
+        <!-- begin diving -->
+        <section class="diving">
+          <div class="diving__background" style="background-image: url(img/sections/diving/bg.jpg);"></div>
+          <div class="diving__wrapper">
+            <div class="container">
+              <div class="diving__row">
+                <div class="diving__content">
+                  <div class="diving__images"><a class="diving__img diving__img--big" href="#" style="background-image: url(img/sections/diving/1.jpg);"></a><a class="diving__img diving__img--small" href="#" style="background-image: url(img/sections/diving/2.jpg);"></a></div><a class="diving__info" href="#">
+                    <h2 class="h2 diving__title">Дайвинг</h2>
+                    <div class="diving__body">
+                      <div class="diving__text">
+                          Обучение дайвингу<br> и экскурсии в главный аквариум</div><img class="diving__arrow" src="img/sections/diving/arrow.svg" alt="Arrow">
+                    </div></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- end diving -->
       </main>
       <!-- end main-content-->
     </div>
@@ -263,6 +288,7 @@
       </div>
     </footer>
     <!-- end footer -->
+    <div id="scrollUp"><img class="scrollUp__img" src="img/general/angle-top.svg" alt="Angle Top"></div>
     <!-- scripts -->
     <script src="js/scripts.min.js"></script>
   </body>
