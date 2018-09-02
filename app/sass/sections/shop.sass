@@ -1,0 +1,112 @@
+.shop
+    order: 7
+    padding-top: 75px
+    padding-bottom: 100px
+    background-color: #efefef
+
+    @media #{$_md}
+        padding-top: 50px
+        padding-bottom: 80px
+
+.shop__row
+    +row()
+
+.shop__left, .shop__right
+    +col(6)
+
+    @media #{$_lg}
+        +col(12)
+
+.shop__left
+    @media #{$_lg}
+        margin-bottom: 50px
+
+    @media #{$_sm}
+        margin-bottom: 40px
+
+.shop__header
+    display: flex
+    width: 100%
+    justify-content: center
+    margin-bottom: 40px
+    align-items: center
+
+.shop__heading
+    text-transform: uppercase
+    font-weight: 300
+    flex-grow: 1
+    font-size: 30px
+    text-align: center
+
+.shop__images
+    +row()
+
+.shop__title
+    font-size: 18px
+    font-weight: 700
+    margin-bottom: 10px
+
+.shop__img
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    min-height: 200px
+    margin-bottom: 20px
+    display: block
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        bottom: 0
+        right: 0
+        background-color: $accent
+        opacity: 0
+        transition: opacity .1s ease
+
+    &:hover
+        &::before
+            opacity: 0.2
+
+.shop__left-img
+    +col(6)
+
+    @media #{$_xsm}
+        min-height: 130px
+
+.shop__news
+    +row()
+    margin-bottom: -35px
+
+.shop__news-item
+    +col(6)
+    margin-bottom: 35px
+
+    @media #{$_xsm}
+        +col(12)
+
+.shop__text
+    p
+        font-size: 14px
+        margin-bottom: 12px
+
+.shop__title-link
+    display: block
+    color: lighten($accent, 8%)
+    transition: color .15s ease
+
+    &:hover
+        color: $accent
+
+.shop__time
+    font-size: 12px
+    color: #777775
+
+.shop__all-news
+    font-size: 18px
+    text-decoration: underline
+    color: $main-color
+    flex-grow: 0
+    
