@@ -1587,6 +1587,14 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 5px;
         padding-right: 5px; } }
 
+.search__button {
+  width: 23px;
+  height: 23px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
 .header-inner {
   margin-bottom: 45px;
   height: initial;

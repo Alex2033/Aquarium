@@ -7,8 +7,9 @@ header.header.header-inner
             // begin contacts 
             .contacts
                 .contacts__left
-                    a(href="#").contacts__hours Время работы 10-22
-                    a(href="#").contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                    a(href="#").contacts__left-link
+                        span.contacts__hours Время работы 10-22
+                        span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
                     a.contacts__link(href="site-plan.html") План океанариума      
                 .contacts__right
                     address.contacts__address
@@ -56,8 +57,7 @@ header.header.header-inner
 
                         // begin search 
                         form.search.header__search
-                            button(type="submit").search__button 
-                                img(src="img/general/search.svg", alt="Search icon")
+                            input(type="button" style="background-image: url(img/general/search.svg);").search__button
                             input.search__input(type="text" required placeholder="Поиск")
                         // end search 
 
