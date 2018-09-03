@@ -6,14 +6,25 @@ html(lang='ru')
   body
 
     // begin wrapper
-    .wrapper
+    .wrapper.is-inner(style="background-image: url(img/general/body-bg.jpg);")
 
-      include ../modules/header
+      include ../modules/inner-header
 
-      // begin main-content
-      main.main-content 
+      // begin page
+      main.page
 
-      // end main-content
+        .container.page__container
+          header.page__header
+            h1.title.page__title Поиск
+
+            // begin breadcrumbs 
+            .breadcrumbs
+              ul.breadcrumbs__list
+                li.breadcrumbs__item
+                  a(href="#").breadcrumbs__link Главная
+            // end breadcrumbs 
+
+      // end page
 
     // end wrapper
 

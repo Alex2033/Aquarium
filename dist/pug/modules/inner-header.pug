@@ -1,10 +1,5 @@
 // begin header 
-header.header
-
-    .header__bg(style="background-image: url(img/header/bg.jpg);")
-
-    video(autoplay muted loop).header__video
-        source(src="img/Animals.mp4" type="video/mp4")
+header.header.header-inner
 
     .header__container.container
         .header__top
@@ -63,7 +58,7 @@ header.header
                         form.search.header__search
                             button(type="submit").search__button 
                                 img(src="img/general/search.svg", alt="Search icon")
-                            input.search__input(type="text" name="search" required placeholder="Поиск")
+                            input.search__input(type="text" required placeholder="Поиск")
                         // end search 
 
                 .header__btns
@@ -86,78 +81,23 @@ header.header
             ul.navigation__list.menu.menu--hidden
                 li.menu__item
                     a.menu__link(href="#") Главная
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
                 li.menu__item
                     a.menu__link(href="#") О нас
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
                 li.menu__item
                     a.menu__link(href="#") 
                         |  Информация
                         br.header__br 
                         |  для посетителей
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
                 li.menu__item
                     a.menu__link(href="#")
                         |  Показательные кормления
                         br.header__br
                         |  и шоу-программы
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
                 li.menu__item
                     a.menu__link(href="#") 
                         |  Океанариум
                         br.header__br 
                         |  детям
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
                 li.menu__item
                     a.menu__link(href="#") Дайвинг-центр
                     // begin menu-dropdown 
@@ -176,38 +116,7 @@ header.header
                         |  Магазин
                         br.header__br 
                         |  сувениров
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
                 li.menu__item
                     a.menu__link(href="#") Контакты
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
-        // end navigation 
-
-        // begin header-content 
-        .header-content
-            h1.title.title--md-hidden Санкт-Петербургский океанариум
-
-    .header__wave
-        img(src="img/header/wave.svg", alt="Wave")
-
-        // end header-content 
+        // end navigation  
 // end header 
