@@ -1051,6 +1051,13 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__left {
   margin-bottom: 20px; }
 
+.contacts__left-link {
+  -webkit-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+  .contacts__left-link:hover {
+    opacity: 0.9; }
+
 .contacts__hours {
   font-weight: 700;
   margin-bottom: 5px; }
@@ -1065,13 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
 .contacts__hours,
 .contacts__schedule {
   color: #ffffff;
-  display: block;
-  -webkit-transition: color .15s ease;
-  -o-transition: color .15s ease;
-  transition: color .15s ease; }
-  .contacts__hours:hover,
-  .contacts__schedule:hover {
-    opacity: 0.9; }
+  display: block; }
 
 .contacts__link {
   display: inline-block;
