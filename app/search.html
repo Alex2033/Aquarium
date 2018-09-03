@@ -21,13 +21,9 @@
   </head>
   <body>
     <!-- begin wrapper-->
-    <div class="wrapper">
+    <div class="wrapper is-inner" style="background-image: url(img/general/body-bg.jpg);">
       <!-- begin header -->
-      <header class="header">
-        <div class="header__bg" style="background-image: url(img/header/bg.jpg);"></div>
-        <video class="header__video" autoplay muted loop>
-          <source src="img/Animals.mp4" type="video/mp4">
-        </video>
+      <header class="header header-inner">
         <div class="header__container container">
           <div class="header__top">
             <!-- begin contacts -->
@@ -61,6 +57,7 @@
                   <!-- begin search -->
                   <form class="search header__search">
                     <button class="search__button" type="submit"> <img src="img/general/search.svg" alt="Search icon"></button>
+                    <input class="search__input" type="text" required placeholder="Поиск">
                   </form>
                   <!-- end search -->
                 </div>
@@ -98,20 +95,26 @@
               <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <!-- end navigation -->
-          <!-- begin header-content -->
-          <div class="header-content">
-            <h1 class="title title--md-hidden">Санкт-Петербургский океанариум</h1>
-          </div>
-        </div>
-        <div class="header__wave"><img src="img/header/wave.svg" alt="Wave">
-          <!-- end header-content -->
+          <!-- end navigation  -->
         </div>
       </header>
       <!-- end header -->
-      <!-- begin main-content-->
-      <main class="main-content"> </main>
-      <!-- end main-content-->
+      <!-- begin page-->
+      <main class="page">
+        <div class="container page__container">
+          <header class="page__header">
+            <h1 class="title">Поиск</h1>
+            <!-- begin breadcrumbs -->
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Главная</a></li>
+              </ul>
+            </div>
+            <!-- end breadcrumbs -->
+          </header>
+        </div>
+      </main>
+      <!-- end page-->
     </div>
     <!-- end wrapper-->
     <!-- begin footer -->
@@ -161,8 +164,8 @@
           <!-- begin copyright -->
           <div class="copyright">
             <div class="copyright__text">
-              <p><a class="copyright__text-link" href="#">ТРК "Планета Нептун" — торговый развлекательный комплекс Санкт-Петербурга </a> ©2018 СПб</p>
-            </div><a class="copyright__link" href="http://volex.su/web_studiya">Создание сайта - веб студия интернет-агентства “Волекс” </a>
+              <p><a class="copyright__text-link" href="#" target="_blank">ТРК "Планета Нептун" — торговый развлекательный комплекс Санкт-Петербурга </a> ©2018 СПб</p>
+            </div><a class="copyright__link" href="http://volex.su/web_studiya" target="_blank">Создание сайта - веб студия интернет-агентства “Волекс” </a>
           </div>
           <!-- end copyright -->
         </div>

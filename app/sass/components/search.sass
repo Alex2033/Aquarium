@@ -1,6 +1,7 @@
 .search
     display: flex
     flex-direction: column
+    position: relative
     
 .search__button
     margin-top: auto
@@ -8,9 +9,29 @@
     border: 0
     cursor: pointer
     transition: transform .1s ease
+    position: relative
+    z-index: 1
 
     &:focus
         outline: 0
 
     &:active
         transform: translateY(2px)
+
+.search__input
+    position: absolute
+    top: -95%
+    width: 0
+    opacity: 0
+    visibility: hidden
+    transform: translateY(50%)
+    right: 35px
+    padding: 5px 20px
+    border-radius: 17px
+    border: 0
+    transition: opacity .3s ease, width .3s ease
+    border: 1px solid transparent
+
+    &:focus
+        outline: 0
+        border-color: $accent
