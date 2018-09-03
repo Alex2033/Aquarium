@@ -1,0 +1,27 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+  
+  body
+
+    // begin wrapper
+    .wrapper
+
+      include ../modules/header
+
+      // begin main-content
+      main.main-content 
+
+      // end main-content
+
+    // end wrapper
+
+    include ../modules/footer
+
+    #scrollUp
+      img(src="img/general/angle-top.svg", alt="Angle Top").scrollUp__img
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

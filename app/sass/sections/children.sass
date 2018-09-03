@@ -9,6 +9,7 @@
 
     @media #{$_md}
         padding-bottom: 60px
+        padding-top: 30px
 
 .children__title
     margin-bottom: 25px
@@ -33,7 +34,6 @@
         +col(12)
         padding-top: 0
 
-        
 
 .children__slider-item
     background-size: cover
@@ -66,7 +66,7 @@
     width: 40px
     height: 33px
     position: absolute
-    bottom: 20px
+    bottom: 25px
     display: flex
     align-items: center
     justify-content: center
@@ -75,8 +75,11 @@
     cursor: pointer
     z-index: 1
 
+    &:focus
+        outline: 0
+
     @media #{$_md}
-        bottom: 20px
+        bottom: 25px
 
 .children-arrow--left
     left: 30%
