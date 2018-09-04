@@ -1,0 +1,56 @@
+.sidebar__list
+    margin-top: 10px
+    @media #{$_md}
+        display: none
+
+.sidebar__item
+    padding-left: 15px
+
+.inner-menu
+	padding-top: 17px
+	padding-bottom: 17px
+	border-bottom: 1px solid #e2e2e2
+	background-color: #fafafa
+	cursor: pointer
+
+	@media #{$_sm}
+		padding: 11px 0
+
+.inner-menu__container
+	display: flex
+	align-items: center
+
+.inner-menu__sandwich
+	width: 19px
+	height: 21px
+	position: relative
+	margin-right: 14px
+	
+.inner-menu__line
+	width: 19px
+	left: 50%
+	transform: translateX(-50%)
+	background-color: lighten($accent, 5%)
+	position: absolute
+	height: 2px
+
+.inner-menu__line--top
+	top: 2px
+
+.inner-menu__line--middle
+	top: 10px
+
+.inner-menu__line--bottom
+	top: 18px
+
+.inner-menu__text
+	font-weight: 700
+	text-transform: uppercase
+	color: lighten($accent, 5%)
+
+.inner-menu__container
+	+col(12)
+
+	@media #{$_sm}
+		margin-left: 0
+		margin-right: 0

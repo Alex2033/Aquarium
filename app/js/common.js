@@ -65,3 +65,7 @@ $(function() {
 		})
 	});
 });
+
+$('.inner-menu__wrapper').click(function() {
+	$('.sidebar__list').slideToggle();
+});

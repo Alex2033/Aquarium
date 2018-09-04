@@ -6,87 +6,244 @@ html(lang='ru')
   body
 
     // begin wrapper
-    .wrapper.is-inner(style="background-image: url(img/general/body-bg.jpg);")
+    .wrapper.is-inner
 
-      include ../modules/inner-header
+      .is-inner__background(style="background-image: url(img/general/body-bg.jpg);")
+
+      // begin header 
+      header.header.header-inner
+
+          .header-inner__background(style="background-image: url(img/general/body-bg--small.jpg);")
+
+          .header__container.container
+              .header__top
+
+                  // begin contacts 
+                  .contacts
+                      .contacts__left
+                          a(href="#").contacts__left-link
+                              span.contacts__hours Время работы 10-22
+                              span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                          a.contacts__link(href="site-plan.html") План океанариума      
+                      .contacts__right
+                          address.contacts__address
+                              a.contacts__address-link(href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0,+86,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191119/@59.9189478,30.3367602,17z/data=!3m1!4b1!4m5!3m4!1s0x46963052d4a092f1:0x1cc3e8c780acd480!8m2!3d59.9189451!4d30.3389542" target="_blank") Спб, ул. Марата, 86
+                          a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
+
+                          // begin socials 
+                          ul.socials
+                              li.socials__item
+                                  a.socials__link(href="#" target="_blank")
+                                      img(src="img/general/vk.svg", alt="Social image").socials__img
+                              li.socials__item
+                                  a.socials__link(href="#" target="_blank")
+                                      img(src="img/general/fb.svg", alt="Social image").socials__img
+                              li.socials__item
+                                  a.socials__link(href="#" target="_blank")
+                                      img(src="img/general/inst.svg", alt="Social image").socials__img
+                          // end socials 
+                  // end contacts 
+
+                  .header__logo
+
+                      // begin logo 
+                      a(href="index.html").logo
+                          img(src="img/general/logo.png", alt="Logotype").logo__img
+                      // end logo 
+
+                  .header__top-right
+
+                      .header__actions
+
+                          a(href="http://neptun-trk.volex.beget.tech").header-actions__link
+                              img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
+
+                          .header__actions-bottom
+
+                              // begin languages 
+                              ul.languages
+                                  li.languages__item
+                                      a(href="#").languages__link RU
+                                  li.languages__item
+                                      a(href="#").languages__link ENG
+                              // end languages 
+
+                              // begin search 
+                              form.search.header__search
+                                  input(type="submit" value="" style="background-image: url(img/general/search.svg);").search__button
+                                  input.search__input(type="text" required="required" placeholder="Поиск")
+                              // end search 
+
+                      .header__btns
+                          button.button.header__btn.header__btns-item.header__btn--visible
+                              img(src="img/header/btn-img.svg", alt="Button image").button__img
+                              span.header__btn-text.header__btn-text--visible  Электронный билет в Океанариум
+                              span.header__btn-text.header__btn-text--hidden  Эл. билет
+
+                          // begin toggle-menu 
+                          button.toggle-menu.header__btns-item
+                              span.sandwich
+                                  span.sandwich__line.sandwich__line-top
+                                  span.sandwich__line.sandwich__line-mid
+                                  span.sandwich__line.sandwich__line-bot
+                              span.toggle-menu__text Меню
+                          // end toggle-menu 
+
+              // begin navigation 
+              nav.navigation
+                ul.navigation__list.menu.menu--hidden
+                    li.menu__item
+                        a.menu__link(href="#") Главная
+                    li.menu__item
+                        a.menu__link(href="#") О нас
+                    li.menu__item
+                        a.menu__link(href="#") 
+                            |  Информация
+                            br.header__br 
+                            |  для посетителей
+                    li.menu__item
+                        a.menu__link(href="#")
+                            |  Показательные кормления
+                            br.header__br
+                            |  и шоу-программы
+                    li.menu__item
+                        a.menu__link(href="#") 
+                            |  Океанариум
+                            br.header__br 
+                            |  детям
+                    li.menu__item
+                        a.menu__link(href="#") Дайвинг-центр
+                        // begin menu-dropdown 
+                        ul.menu-dropdown
+                            li.menu-dropdown__item
+                                a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
+                            li.menu-dropdown__item
+                                a.menu-dropdown__link(href="#") Обучение дайвингу
+                            li.menu-dropdown__item
+                                a.menu-dropdown__link(href="#") Экскурсии в главный танк
+                            li.menu-dropdown__item
+                                a.menu-dropdown__link(href="#") Подарочный сертификат    
+                        // end menu-dropdown 
+                    li.menu__item
+                        a.menu__link(href="#") 
+                            |  Магазин
+                            br.header__br 
+                            |  сувениров
+                    li.menu__item
+                        a.menu__link(href="#") Контакты
+              // end navigation  
+
+              .container
+                .page-heading
+                  h1.title.page-heading__title Поиск
+
+                  // begin breadcrumbs 
+                  .breadcrumbs
+                    ul.breadcrumbs__list
+                      li.breadcrumbs__item
+                        a(href="#").breadcrumbs__link Главная
+                  // end breadcrumbs 
+
+      // end header 
 
       // begin page
       main.page
 
-        .container
-
-          header.page__header
-            h1.title.page__title Поиск
-
-            // begin breadcrumbs 
-            .breadcrumbs
-              ul.breadcrumbs__list
-                li.breadcrumbs__item
-                  a(href="#").breadcrumbs__link Главная
-            // end breadcrumbs 
-
         // begin search-s 
         section.search-s
-          .container.search-s__container
-            .search-s__wrapper
+          .search-s__wrapper
+  
+            // begin inner-menu 
+            .inner-menu.search-s__inner-menu
+              .inner-menu__wrapper
+                .container.inner-menu__container
+                  .inner-menu__sandwich
+                    span.inner-menu__line.inner-menu__line--top
+                    span.inner-menu__line.inner-menu__line--middle
+                    span.inner-menu__line.inner-menu__line--bottom
+                  h3.inner-menu__text О нас
+              .container.inner-menu__container
+                ul.sidebar__list
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Новости
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link План Океанариума
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Экспозиция
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Конференция и публикации
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link СМИ о нас
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Отзывы
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Часто задаваемые вопросы
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Вакансии
+                  li.sidebar__item
+                    a(href="#").sidebar__link.link Обратная связь
+            // end inner-menu 
 
-              form.search-s__form.search-form
-                input(type="text" placeholder="Поиск" required).search-s__form-input
-                input(type="submit" value="" style="background-image: url(img/pages/search-p/search.svg);").search-s__form-button
+            
+            .container.search-s__container
+              .search-s__wrapper-bottom
+                form.search-s__form.search-form
+                  input(type="text" placeholder="Поиск" required).search-s__form-input
+                  input(type="submit" value="" style="background-image: url(img/pages/search-p/search.svg);").search-s__form-button
 
-              .search-s__results Результатов поиска: 10
+                .search-s__results Результатов поиска: 10
 
-              ul.search-s__list
-                li.search-s__item
-                  a(href="#").search-s__link 1. Серый тюлень (длинномордый)
-                  p.search-s__text.
-                    ...Серый тюлень (длинномордый) (Halychoeerus grypus)...
-                li.search-s__item
-                  a(href="#").search-s__link 2. Морские млекопитающие 
-                  p.search-s__text.
-                    ...История появления морских млекопитающих в океанариуме очень необычна. 8 апреля 2007 года (в Пасху!) 
-                    в океанариуме раздался телефонный звонок – «Я нашел маленького тюленя. Что делать – не знаю. Помогите, 
-                    пожалуйста!» Звонил житель города Ломоносов Грошев Алексей Геннадьевич,...
-                li.search-s__item
-                  a(href="#").search-s__link 3. Серый тюлень (длинномордый)
-                  p.search-s__text.
-                    ...Семейство : Настоящие тюлени Отряд : Ластоногие Класс : Млекопитающие Международное название : Grey seal Максимальный размер : 
-                    165—260 см, вес – 300 кг; Распространение : Северо-Западная Атлантика — у американского побережья,...
-                li.search-s__item
-                  a(href="#").search-s__link 4. Конкурсы: Победитель конкурса от 15 марта!
-                  p.search-s__text.
-                    ...Победителем конкурса "Поздравь тюленя" стала девочка Настя (7 лет)! Она написала: "Привет мой милый друг тюлень!  
-                    тебе желаю целый день Веселой радости, друзей, И много рыбы каждый день!" Поздравляю! Я хочу вас защищать! Настя, спасибо за пожелания!..
-                li.search-s__item
-                  a(href="#").search-s__link 5. Новый Год в Океанариуме
-                  p.search-s__text.
-                    ...Новый Год в Океанариуме - это всегда все самое, самое...сказочное, необычное и волшебное! 
-                    Как и сам Океанариум! Гостей пригласят на «Подводный карнавал», с Новым Годом   поздравят не простые, а самые,  что ни на есть, «подводные»...
-                li.search-s__item
-                  a(href="#").search-s__link 6. Серый тюлень
-                  p.search-s__text.
-                    ...Семейство : Настоящие тюлени Отряд : Ластоногие Класс : Млекопитающие Международное название : 
-                    Grey seal Максимальный размер : 165—260 см, вес – 300 кг; Распространение : Северо-Западная Атлантика — у американского побережья,...
-                li.search-s__item
-                  a(href="#").search-s__link 7. Конкурсы: Победитель конкурса от 15 марта!
-                  p.search-s__text.
-                    ...Победителем конкурса "Поздравь тюленя" стала девочка Настя (7 лет)! Она написала: "Привет мой милый друг тюлень!  
-                    тебе желаю целый день Веселой радости, друзей, И много рыбы каждый день!" Поздравляю! Я хочу вас защищать! Настя, спасибо за пожелания!..
-                li.search-s__item
-                  a(href="#").search-s__link 8. Новый Год в Океанариуме
-                  p.search-s__text.
-                    ...Новый Год в Океанариуме - это всегда все самое, самое...сказочное, необычное и волшебное! Как и сам Океанариум! Гостей пригласят на «Подводный карнавал», с Новым Годом   поздравят не простые, а самые,  что ни на есть, «подводные»...
+                ul.search-s__list
+                  li.search-s__item
+                    a(href="#").search-s__link 1. Серый тюлень (длинномордый)
+                    p.search-s__text.
+                      ...Серый тюлень (длинномордый) (Halychoeerus grypus)...
+                  li.search-s__item
+                    a(href="#").search-s__link 2. Морские млекопитающие 
+                    p.search-s__text.
+                      ...История появления морских млекопитающих в океанариуме очень необычна. 8 апреля 2007 года (в Пасху!) 
+                      в океанариуме раздался телефонный звонок – «Я нашел маленького тюленя. Что делать – не знаю. Помогите, 
+                      пожалуйста!» Звонил житель города Ломоносов Грошев Алексей Геннадьевич,...
+                  li.search-s__item
+                    a(href="#").search-s__link 3. Серый тюлень (длинномордый)
+                    p.search-s__text.
+                      ...Семейство : Настоящие тюлени Отряд : Ластоногие Класс : Млекопитающие Международное название : Grey seal Максимальный размер : 
+                      165—260 см, вес – 300 кг; Распространение : Северо-Западная Атлантика — у американского побережья,...
+                  li.search-s__item
+                    a(href="#").search-s__link 4. Конкурсы: Победитель конкурса от 15 марта!
+                    p.search-s__text.
+                      ...Победителем конкурса "Поздравь тюленя" стала девочка Настя (7 лет)! Она написала: "Привет мой милый друг тюлень!  
+                      тебе желаю целый день Веселой радости, друзей, И много рыбы каждый день!" Поздравляю! Я хочу вас защищать! Настя, спасибо за пожелания!..
+                  li.search-s__item
+                    a(href="#").search-s__link 5. Новый Год в Океанариуме
+                    p.search-s__text.
+                      ...Новый Год в Океанариуме - это всегда все самое, самое...сказочное, необычное и волшебное! 
+                      Как и сам Океанариум! Гостей пригласят на «Подводный карнавал», с Новым Годом   поздравят не простые, а самые,  что ни на есть, «подводные»...
+                  li.search-s__item
+                    a(href="#").search-s__link 6. Серый тюлень
+                    p.search-s__text.
+                      ...Семейство : Настоящие тюлени Отряд : Ластоногие Класс : Млекопитающие Международное название : 
+                      Grey seal Максимальный размер : 165—260 см, вес – 300 кг; Распространение : Северо-Западная Атлантика — у американского побережья,...
+                  li.search-s__item
+                    a(href="#").search-s__link 7. Конкурсы: Победитель конкурса от 15 марта!
+                    p.search-s__text.
+                      ...Победителем конкурса "Поздравь тюленя" стала девочка Настя (7 лет)! Она написала: "Привет мой милый друг тюлень!  
+                      тебе желаю целый день Веселой радости, друзей, И много рыбы каждый день!" Поздравляю! Я хочу вас защищать! Настя, спасибо за пожелания!..
+                  li.search-s__item
+                    a(href="#").search-s__link 8. Новый Год в Океанариуме
+                    p.search-s__text.
+                      ...Новый Год в Океанариуме - это всегда все самое, самое...сказочное, необычное и волшебное! Как и сам Океанариум! Гостей пригласят на «Подводный карнавал», с Новым Годом   поздравят не простые, а самые,  что ни на есть, «подводные»...
 
-              // begin pagination 
-              .pagination
-                ul.pagination__list
-                  li.pagination__item.active
-                    a(href="#").pagination__link 1
-                  li.pagination__item
-                    a(href="#").pagination__link 2
-                  li.pagination__item
-                    a(href="#").pagination__link 3
-              // end pagination 
+                // begin pagination 
+                .pagination
+                  ul.pagination__list
+                    li.pagination__item.active
+                      a(href="#").pagination__link 1
+                    li.pagination__item
+                      a(href="#").pagination__link 2
+                    li.pagination__item
+                      a(href="#").pagination__link 3
+                // end pagination 
 
           .inner-background.inner-background--small
 
