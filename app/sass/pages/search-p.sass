@@ -1,0 +1,54 @@
+.search-s
+    background-color: #ffffff
+    
+.search-s
+    padding: 55px 0 45px
+    
+.search-s__wrapper
+    +col(10)
+    margin: 0 auto
+
+.search-s__form
+    position: relative
+    margin-bottom: 40px
+
+.search-s__form-input
+    display: block
+    width: 100%
+    position: relative
+    border: 1px solid #c1c1c1
+    padding: 8px 15px
+    
+.search-s__form-button
+    display: block
+    width: 23px
+    height: 23px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    background-color: transparent
+    border: 0
+    position: absolute
+    z-index: 1
+    top: 10px
+    right: 15px
+    cursor: pointer
+
+.search-s__results
+    margin-bottom: 50px
+
+.search-s__list
+    margin-bottom: 10px
+
+.search-s__item
+    margin-bottom: 40px
+
+.search-s__link
+    color: lighten($accent, 5%)
+    display: block
+    font-weight: 700
+    margin-bottom: 10px
+    transition: color .15s ease
+
+    &:hover
+        color: $accent

@@ -799,8 +799,10 @@ h1, h2, h3, h4, h5, h6 {
 .is-inner {
   -webkit-background-size: cover;
           background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%; }
+  background-repeat: no-repeat; }
+
+.page__header {
+  margin-bottom: 32px; }
 
 .page__title {
   margin-bottom: 30px; }
@@ -1262,6 +1264,33 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline; }
   .breadcrumbs__link:hover {
     text-decoration: none; }
+
+.pagination__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.pagination__item.active .pagination__link {
+  color: #0084ca; }
+
+.pagination__link {
+  display: block;
+  padding: 3px 12px;
+  color: #777777;
+  -webkit-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease;
+  font-weight: 700; }
+  .pagination__link:hover {
+    color: #0095e4; }
 
 .header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(29, 35, 48, 0)), color-stop(79%, rgba(0, 105, 161, 0.64)), color-stop(86%, rgba(0, 105, 161, 0.7)));
@@ -2811,3 +2840,63 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-flex-grow: 0;
       -ms-flex-positive: 0;
           flex-grow: 0; }
+
+.search-s {
+  background-color: #ffffff; }
+
+.search-s {
+  padding: 55px 0 45px; }
+
+.search-s__wrapper {
+  margin-right: 15px;
+  margin-left: 15px;
+  width: -webkit-calc( (100% / 12) * 10 - 30px);
+  width: calc( (100% / 12) * 10 - 30px);
+  margin: 0 auto; }
+
+.search-s__form {
+  position: relative;
+  margin-bottom: 40px; }
+
+.search-s__form-input {
+  display: block;
+  width: 100%;
+  position: relative;
+  border: 1px solid #c1c1c1;
+  padding: 8px 15px; }
+
+.search-s__form-button {
+  display: block;
+  width: 23px;
+  height: 23px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 15px;
+  cursor: pointer; }
+
+.search-s__results {
+  margin-bottom: 50px; }
+
+.search-s__list {
+  margin-bottom: 10px; }
+
+.search-s__item {
+  margin-bottom: 40px; }
+
+.search-s__link {
+  color: #0095e4;
+  display: block;
+  font-weight: 700;
+  margin-bottom: 10px;
+  -webkit-transition: color .15s ease;
+  -o-transition: color .15s ease;
+  transition: color .15s ease; }
+  .search-s__link:hover {
+    color: #0084ca; }
