@@ -13,7 +13,7 @@ html(lang='ru')
       // begin page
       main.page
 
-        .container.page__container
+        .container
 
           header.page__header
             h1.title.page__title Поиск
@@ -25,8 +25,9 @@ html(lang='ru')
                   a(href="#").breadcrumbs__link Главная
             // end breadcrumbs 
 
-          // begin search-s 
-          section.search-s
+        // begin search-s 
+        section.search-s
+          .container.search-s__container
             .search-s__wrapper
 
               form.search-s__form.search-form
@@ -86,7 +87,10 @@ html(lang='ru')
                   li.pagination__item
                     a(href="#").pagination__link 3
               // end pagination 
-          // end search-s 
+
+          .inner-background.inner-background--small
+
+        // end search-s 
 
       // end page
 

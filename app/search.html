@@ -101,7 +101,7 @@
       <!-- end header -->
       <!-- begin page-->
       <main class="page">
-        <div class="container page__container">
+        <div class="container">
           <header class="page__header">
             <h1 class="title page__title">Поиск</h1>
             <!-- begin breadcrumbs -->
@@ -112,8 +112,10 @@
             </div>
             <!-- end breadcrumbs -->
           </header>
-          <!-- begin search-s -->
-          <section class="search-s">
+        </div>
+        <!-- begin search-s -->
+        <section class="search-s">
+          <div class="container search-s__container">
             <div class="search-s__wrapper">
               <form class="search-s__form search-form">
                 <input class="search-s__form-input" type="text" placeholder="Поиск" required>
@@ -178,9 +180,10 @@
               </div>
               <!-- end pagination -->
             </div>
-          </section>
-          <!-- end search-s -->
-        </div>
+          </div>
+          <div class="inner-background inner-background--small"></div>
+        </section>
+        <!-- end search-s -->
       </main>
       <!-- end page-->
     </div>
