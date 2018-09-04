@@ -16,8 +16,9 @@ html(lang='ru')
         // begin shares 
         section.shares
           .container.shares__container
-            a.shares__link.shares__link--visible(href="#" style="background-image: url(img/sections/shares/share.jpg);")
-            a.shares__link.shares__link--hidden(href="#" style="background-image: url(img/sections/shares/share-mobile.jpg);")
+            a.shares__link(href="#")
+              .shares__item.shares__item--visible(style="background-image: url(img/sections/shares/share.jpg);")
+              .shares__item.shares__item--hidden(style="background-image: url(img/sections/shares/share-mobile.jpg);")
         // end shares 
 
         // begin expositions 

@@ -1916,37 +1916,39 @@ h1, h2, h3, h4, h5, h6 {
     .shares {
       padding: 0 0 60px 0; } }
 
-.shares__link {
-  display: block;
+.shares__item {
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   min-height: 160px; }
   @media (max-width: 1200px) {
-    .shares__link {
+    .shares__item {
       min-height: 130px; } }
   @media (max-width: 991.99px) {
-    .shares__link {
+    .shares__item {
       min-height: 100px; } }
   @media (max-width: 767px) {
-    .shares__link {
+    .shares__item {
       min-height: 340px;
       -webkit-background-size: contain;
               background-size: contain;
       background-position: center 50%; } }
 
-.shares__link--visible {
+.shares__item--visible {
   display: none; }
   @media (min-width: 767px) {
-    .shares__link--visible {
+    .shares__item--visible {
       display: block; } }
 
-.shares__link--hidden {
+.shares__item--hidden {
   display: none; }
   @media (max-width: 767px) {
-    .shares__link--hidden {
+    .shares__item--hidden {
       display: block; } }
+
+.shares__link {
+  display: block; }
 
 .expositions {
   padding: 30px 30px;

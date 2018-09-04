@@ -5,8 +5,7 @@
     @media #{$_sm}
         padding: 0 0 60px 0
 
-.shares__link
-    display: block
+.shares__item
     background-size: cover
     background-repeat: no-repeat
     background-position: 50% 50%
@@ -23,12 +22,15 @@
         background-size: contain
         background-position: center 50%
 
-.shares__link--visible
+.shares__item--visible
     display: none
     @media #{$sm}
         display: block
 
-.shares__link--hidden
+.shares__item--hidden
     display: none
     @media #{$_sm}
         display: block
+
+.shares__link
+    display: block
