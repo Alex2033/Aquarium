@@ -10,105 +10,145 @@ html(lang='ru')
 
         .is-inner__background(style="background-image: url(img/general/body-bg.jpg);")
 
-        // begin header 
+              // begin header 
         header.header.header-inner
 
-                .header-inner__background(style="background-image: url(img/general/body-bg--small.jpg);")
+            .header__container.container
+                .header__top
 
-                .header__container.container
-                    .header__top
+                    // begin contacts 
+                    .contacts
+                        .contacts__left
+                            a(href="#").contacts__left-link
+                                span.contacts__hours Время работы 10-22
+                                span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                            a.contacts__link(href="site-plan.html") План океанариума      
+                        .contacts__right
+                            address.contacts__address
+                                a.contacts__address-link(href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0,+86,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191119/@59.9189478,30.3367602,17z/data=!3m1!4b1!4m5!3m4!1s0x46963052d4a092f1:0x1cc3e8c780acd480!8m2!3d59.9189451!4d30.3389542" target="_blank") Спб, ул. Марата, 86
+                            a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
 
-                        // begin contacts 
-                        .contacts
-                            .contacts__left
-                                a(href="#").contacts__left-link
-                                    span.contacts__hours Время работы 10-22
-                                    span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
-                                a.contacts__link(href="site-plan.html") План океанариума      
-                            .contacts__right
-                                address.contacts__address
-                                    a.contacts__address-link(href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0,+86,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191119/@59.9189478,30.3367602,17z/data=!3m1!4b1!4m5!3m4!1s0x46963052d4a092f1:0x1cc3e8c780acd480!8m2!3d59.9189451!4d30.3389542" target="_blank") Спб, ул. Марата, 86
-                                a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
+                            // begin socials 
+                            ul.socials
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/vk.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/fb.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/inst.svg", alt="Social image").socials__img
+                            // end socials 
+                    // end contacts 
 
-                                // begin socials 
-                                ul.socials
-                                    li.socials__item
-                                        a.socials__link(href="#" target="_blank")
-                                            img(src="img/general/vk.svg", alt="Social image").socials__img
-                                    li.socials__item
-                                        a.socials__link(href="#" target="_blank")
-                                            img(src="img/general/fb.svg", alt="Social image").socials__img
-                                    li.socials__item
-                                        a.socials__link(href="#" target="_blank")
-                                            img(src="img/general/inst.svg", alt="Social image").socials__img
-                                // end socials 
-                        // end contacts 
+                    .header__logo
 
-                        .header__logo
+                        // begin logo 
+                        a(href="index.html").logo
+                            img(src="img/general/logo.png", alt="Logotype").logo__img
+                        // end logo 
 
-                            // begin logo 
-                            a(href="index.html").logo
-                                img(src="img/general/logo.png", alt="Logotype").logo__img
-                            // end logo 
+                    .header__top-right
 
-                        .header__top-right
+                        .header__actions
 
-                            .header__actions
+                            a(href="http://neptun-trk.volex.beget.tech").header-actions__link
+                                img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
 
-                                a(href="http://neptun-trk.volex.beget.tech").header-actions__link
-                                    img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
+                            .header__actions-bottom
 
-                                .header__actions-bottom
+                                // begin languages 
+                                ul.languages
+                                    li.languages__item
+                                        a(href="#").languages__link RU
+                                    li.languages__item
+                                        a(href="#").languages__link ENG
+                                // end languages 
 
-                                    // begin languages 
-                                    ul.languages
-                                        li.languages__item
-                                            a(href="#").languages__link RU
-                                        li.languages__item
-                                            a(href="#").languages__link ENG
-                                    // end languages 
+                                // begin search 
+                                form.search.header__search
+                                    input(type="submit" value="" style="background-image: url(img/general/search.svg);").search__button
+                                    input.search__input(type="text" required="required" placeholder="Поиск")
+                                // end search 
 
-                                    // begin search 
-                                    form.search.header__search
-                                        input(type="submit" value="" style="background-image: url(img/general/search.svg);").search__button
-                                        input.search__input(type="text" required="required" placeholder="Поиск")
-                                    // end search 
+                        .header__btns
+                            button.button.header__btn.header__btns-item.header__btn--visible
+                                img(src="img/header/btn-img.svg", alt="Button image").button__img
+                                span.header__btn-text.header__btn-text--visible  Электронный билет в Океанариум
+                                span.header__btn-text.header__btn-text--hidden  Эл. билет
 
-                            .header__btns
-                                button.button.header__btn.header__btns-item.header__btn--visible
-                                    img(src="img/header/btn-img.svg", alt="Button image").button__img
-                                    span.header__btn-text.header__btn-text--visible  Электронный билет в Океанариум
-                                    span.header__btn-text.header__btn-text--hidden  Эл. билет
+                            // begin toggle-menu 
+                            button.toggle-menu.header__btns-item
+                                span.sandwich
+                                    span.sandwich__line.sandwich__line-top
+                                    span.sandwich__line.sandwich__line-mid
+                                    span.sandwich__line.sandwich__line-bot
+                                span.toggle-menu__text Меню
+                            // end toggle-menu 
 
-                                // begin toggle-menu 
-                                button.toggle-menu.header__btns-item
-                                    span.sandwich
-                                        span.sandwich__line.sandwich__line-top
-                                        span.sandwich__line.sandwich__line-mid
-                                        span.sandwich__line.sandwich__line-bot
-                                    span.toggle-menu__text Меню
-                                // end toggle-menu 
-
-                    include ../modules/navigation   
+                // begin navigation 
+                nav.navigation
+                    ul.navigation__list.menu.menu--hidden
+                        li.menu__item
+                            a.menu__link(href="index.html") Главная
+                        li.menu__item
+                            a.menu__link(href="#") О нас
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Информация
+                                br.header__br 
+                                |  для посетителей
+                        li.menu__item
+                            a.menu__link(href="#")
+                                |  Показательные кормления
+                                br.header__br
+                                |  и шоу-программы
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Океанариум
+                                br.header__br 
+                                |  детям
+                        li.menu__item
+                            a.menu__link(href="#") Дайвинг-центр
+                            // begin menu-dropdown 
+                            ul.menu-dropdown
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Обучение дайвингу
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Экскурсии в главный танк
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Подарочный сертификат    
+                            // end menu-dropdown 
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Магазин
+                                br.header__br 
+                                |  сувениров
+                        li.menu__item
+                            a.menu__link(href="#") Контакты
+                // end navigation  
 
                 .container
                     .page-heading
-                    h1.title.page-heading__title Экспозиции
+                        h1.title.page-heading__title Поиск
 
                     // begin breadcrumbs 
                     .breadcrumbs
                         ul.breadcrumbs__list
                             li.breadcrumbs__item
                                 a(href="index.html").breadcrumbs__link Главная
-                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs item").breadcrumbs__img
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="#").breadcrumbs__link О нас
-                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs item").breadcrumbs__img
+                                a(href="about.html").breadcrumbs__link О нас
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
                                 a(href="expositions.html").breadcrumbs__link Экспозиции
                     // end breadcrumbs 
 
-        // end header 
+        // end header
 
         // begin page
         main.page 

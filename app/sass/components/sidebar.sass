@@ -1,6 +1,11 @@
 .sidebar
 	+col(4)
 	position: relative
+	margin: 0
+	
+	@media #{$md}
+		padding-left: 15px
+		padding-right: 15px
 
 	@media #{$_md}
 		+col(12)
@@ -78,6 +83,13 @@
 
 	@media #{$_md}
 		padding-left: 0
+
+		br
+			display: none
+
+	@media #{$_sm}
+		line-height: 1
+		
 
 .sidebar__sublist-item
 	margin-left: 17px

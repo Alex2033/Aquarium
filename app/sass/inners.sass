@@ -1,0 +1,113 @@
+.is-inner
+	position: relative
+	background-image: linear-gradient(to top, rgba(29, 35, 48, 0) 0%, rgba(0, 105, 161, 0.64) 79%, rgba(0, 105, 161, 0.7) 86%)
+
+	@media #{$_md}
+		background-image: none
+
+.is-inner__background
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-size: cover
+	background-repeat: no-repeat
+	z-index: -10
+
+	@media #{$sm} and #{$_md}
+		background-size: contain
+
+	@media #{$_sm}
+		background-size: 200%
+
+	@media #{$_xs}
+		background-size: 300%
+
+.page-heading
+	margin-top: 50px
+
+.page-heading__title
+	margin-bottom: 30px
+
+	@media #{$_md}
+		font-size: 36px
+
+	@media #{$_sm}
+		font-size: 24px
+
+.inner-background
+	background-color: $accent
+	position: absolute
+	bottom: -5px // убирать нежлательные зазоры на переходных разрешениях
+	left: 0
+	width: 100%
+	height: 30%
+	z-index: -1
+
+.page-wrapper
+	background-color: #ffffff
+	+container()
+	position: relative
+
+	@media #{$_md}
+		width: 100%
+
+.page-wrapper__row
+	+row()
+
+.page-wrapper__right
+	+col(8)
+	padding-bottom: 100px
+	padding-top: 25px
+	position: relative
+	z-index: 1
+
+	@media #{$_md}
+		+col(12)
+
+.inner-heading
+    font-weight: 700
+    text-transform: uppercase
+    color: lighten($accent, 5%)
+
+.inner-h3
+    font-size: 18px
+    font-weight: 700
+
+.inner-h4
+    font-weight: 700
+
+.text
+    p
+        &:not(:last-child)
+            margin-bottom: 20px
+
+.inner-images
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    margin-right: -18px
+    margin-bottom: 10px
+
+    &.double
+        .inner-images__img--small
+            width: calc(50% - 18px)
+            padding-bottom: 22%
+
+    &.triple
+        .inner-images__img--small
+            width: calc(33.3333% - 18px)
+            padding-bottom: 17%        
+    
+.inner-images__img
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    height: 0
+    margin-right: 18px
+    margin-bottom: 30px
+ 
+.inner-images__img--big
+    padding-bottom: 34%
+    width: 100%
