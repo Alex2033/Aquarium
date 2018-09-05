@@ -81,49 +81,7 @@ header.header
                         span.toggle-menu__text Меню
                     // end toggle-menu 
 
-        // begin navigation 
-        nav.navigation
-            ul.navigation__list.menu.menu--hidden
-                li.menu__item
-                    a.menu__link(href="#") Главная
-                li.menu__item
-                    a.menu__link(href="#") О нас
-                li.menu__item
-                    a.menu__link(href="#") 
-                        |  Информация
-                        br.header__br 
-                        |  для посетителей
-                li.menu__item
-                    a.menu__link(href="#")
-                        |  Показательные кормления
-                        br.header__br
-                        |  и шоу-программы
-                li.menu__item
-                    a.menu__link(href="#") 
-                        |  Океанариум
-                        br.header__br 
-                        |  детям
-                li.menu__item
-                    a.menu__link(href="#") Дайвинг-центр
-                    // begin menu-dropdown 
-                    ul.menu-dropdown
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Обучение дайвингу
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Экскурсии в главный танк
-                        li.menu-dropdown__item
-                            a.menu-dropdown__link(href="#") Подарочный сертификат    
-                    // end menu-dropdown 
-                li.menu__item
-                    a.menu__link(href="#") 
-                        |  Магазин
-                        br.header__br 
-                        |  сувениров
-                li.menu__item
-                    a.menu__link(href="#") Контакты
-        // end navigation 
+        include ../modules/navigation
 
         // begin header-content 
         .header-content

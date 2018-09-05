@@ -188,8 +188,14 @@ h1, h2, h3, h4, h5, h6
 	background-repeat: no-repeat
 	z-index: -10
 
-	@media #{$_md}
-		display: none
+	@media #{$sm} and #{$_md}
+		background-size: contain
+
+	@media #{$_sm}
+		background-size: 200%
+
+	@media #{$_xs}
+		background-size: 300%
 
 .page-heading
 	margin-top: 50px
