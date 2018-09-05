@@ -26,6 +26,9 @@
     position: relative
     padding-top: 65px
 
+    .grey-arrow
+        bottom: 22px
+
     @media #{$_md}
         +col(6)
         padding-top: 30px
@@ -62,79 +65,6 @@
 .children__nav-link
     color: $main-color
     
-.children-arrow
-    width: 40px
-    height: 33px
-    position: absolute
-    bottom: 25px
-    display: flex
-    align-items: center
-    justify-content: center
-    background-color: transparent
-    border: 0
-    cursor: pointer
-    z-index: 1
-
-    &:focus
-        outline: 0
-
-    @media #{$_md}
-        bottom: 25px
-
-.children-arrow--left
-    left: 30%
-
-    @media #{$_md}
-        left: 17%
-
-    @media #{$_sm}
-        left: 30%
-
-    @media (max-width: 576px)
-        left: 20%
-
-    @media #{$_xs}
-        left: 17%
-
-.children-arrow--right
-    right: 30%
-
-    @media #{$_md}
-        right: 17%
-
-    @media #{$_sm}
-        right: 30%
-
-    @media (max-width: 576px)
-        right: 20%
-
-    @media #{$_xs}
-        right: 17%
-
-.children-buttons
-    margin-top: 20px
-    z-index: 1
-    position: relative
-    display: flex
-    justify-content: center
-
-    li
-        margin-right: 5px
-
-        &.slick-active
-            .children-button
-                background-color: $accent
-
-.children-button
-    cursor: pointer
-    width: 15px
-    height: 15px
-    background-color: #e2e3e6
-    border-radius: 50%
-    border: 0
-
-    &:hover
-        background-color: rgba($accent, .5)
 
 .children__right-img
     margin: 0 auto 30px

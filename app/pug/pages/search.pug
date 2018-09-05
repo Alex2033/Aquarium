@@ -91,7 +91,7 @@ html(lang='ru')
               nav.navigation
                 ul.navigation__list.menu.menu--hidden
                     li.menu__item
-                        a.menu__link(href="#") Главная
+                        a.menu__link(href="index.html") Главная
                     li.menu__item
                         a.menu__link(href="#") О нас
                     li.menu__item
@@ -139,7 +139,7 @@ html(lang='ru')
                   .breadcrumbs
                     ul.breadcrumbs__list
                       li.breadcrumbs__item
-                        a(href="#").breadcrumbs__link Главная
+                        a(href="index.html").breadcrumbs__link Главная
                   // end breadcrumbs 
 
       // end header 
@@ -150,38 +150,6 @@ html(lang='ru')
         // begin search-s 
         section.search-s
           .search-s__wrapper
-  
-            // begin inner-menu
-                .inner-menu.search-s__inner-menu
-                .inner-menu__wrapper
-                    .container.inner-menu__container
-                    .inner-menu__sandwich
-                        span.inner-menu__line.inner-menu__line--top
-                        span.inner-menu__line.inner-menu__line--middle
-                        span.inner-menu__line.inner-menu__line--bottom
-                    h3.inner-menu__text О нас
-                .container.inner-menu__container
-                    ul.sidebar__list
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Новости
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link План Океанариума
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Экспозиция
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Конференция и публикации
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link СМИ о нас
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Отзывы
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Часто задаваемые вопросы
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Вакансии
-                    li.sidebar__item
-                        a(href="#").sidebar__link.link Обратная связь
-            // end inner-menu 
-
             
             .container.search-s__container
               .search-s__wrapper-bottom
@@ -235,8 +203,8 @@ html(lang='ru')
                 // begin pagination 
                 .pagination
                   ul.pagination__list
-                    li.pagination__item.active
-                      a(href="#").pagination__link 1
+                    li.pagination__item
+                      a(href="#").pagination__link.active 1
                     li.pagination__item
                       a(href="#").pagination__link 2
                     li.pagination__item
