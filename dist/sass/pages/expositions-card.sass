@@ -1,0 +1,73 @@
+.expositions-card__text
+    margin-bottom: 45px
+
+.inhabitants__title
+    text-align: center
+    margin-bottom: 45px
+
+.inhabitants__list
+    margin-right: -10px
+    display: flex
+    flex-wrap: wrap
+
+.inhabitants__item
+    margin-right: 10px
+    width: calc(20% - 10px)
+    margin-bottom: 20px
+    cursor: pointer
+
+    &:hover
+        .inhabitants__text
+            color: $accent
+
+.inhabitants__img
+    display: block
+    background-size: cover
+    background-repeat: no-repeat
+    min-height: 103px
+    background-position: 50% 50%
+    margin-bottom: 5px
+
+.inhabitants__text
+    display: block
+    text-align: center
+    color: $main-color
+    transition: color .15s ease
+
+.modal
+    position: absolute
+    right: 0
+    bottom: 0
+    width: 100%
+    display: none
+
+.modal__body-img
+    width: calc(100% + 60px)
+    
+.modal__exit
+    position: absolute
+    top: 0
+    right: -30px
+    width: 24px
+    height: 24px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    z-index: 200
+    background-color: transparent
+    border: 0
+    cursor: pointer
+
+    &:active
+        transform: translateY(2px)
+
+.modal__body
+    position: relative
+    z-index: 200
+    background-color: #ffffff
+    padding: 0 30px
+
+.modal__images
+    background-color: #ffffff
+    position: relative
+    z-index: 200

@@ -24,11 +24,15 @@
 	@media #{$_xs}
 		background-size: 300%
 
+	@media (max-width: 320px)
+		background-size: 340%
+
 .page-heading
 	margin-top: 50px
 
 .page-heading__title
 	margin-bottom: 30px
+	font-size: 42px
 
 	@media #{$_md}
 		font-size: 36px
@@ -79,35 +83,38 @@
     font-weight: 700
 
 .text
-    p
-        &:not(:last-child)
-            margin-bottom: 20px
+	padding-right: 17px
+	p
+		&:not(:last-child)
+			margin-bottom: 20px
+
+	@media #{$_md}
+		padding-right: 0
 
 .inner-images
-    display: flex
-    flex-wrap: wrap
-    width: 100%
-    margin-right: -18px
-    margin-bottom: 10px
-
-    &.double
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+	margin-bottom: 10px
+	
+	&.double
         .inner-images__img--small
             width: calc(50% - 18px)
             padding-bottom: 22%
 
-    &.triple
-        .inner-images__img--small
-            width: calc(33.3333% - 18px)
-            padding-bottom: 17%        
-    
+	&.triple
+		.inner-images__img--small
+			width: calc(33.3333% - 18px)
+			padding-bottom: 17%        
+
 .inner-images__img
     background-size: cover
     background-repeat: no-repeat
     background-position: 50% 50%
     height: 0
-    margin-right: 18px
     margin-bottom: 30px
  
 .inner-images__img--big
-    padding-bottom: 34%
-    width: 100%
+	padding-bottom: 34%
+	width: 100%
