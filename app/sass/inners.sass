@@ -59,6 +59,7 @@
 
 .page-wrapper__row
 	+row()
+	position: relative
 
 .page-wrapper__right
 	+col(8)
@@ -80,7 +81,8 @@
     font-weight: 700
 
 .inner-h4
-    font-weight: 700
+	font-weight: 700
+	margin-bottom: 12px
 
 .text
 	padding-right: 17px
@@ -99,21 +101,37 @@
 	margin-bottom: 10px
 	
 	&.double
-        .inner-images__img--small
-            width: calc(50% - 18px)
-            padding-bottom: 22%
+		.inner-images__img--small
+			width: calc(50% - 18px)
+			padding-bottom: 22%
+
 
 	&.triple
 		.inner-images__img--small
 			width: calc(33.3333% - 18px)
-			padding-bottom: 17%        
+			padding-bottom: 17%    
+			
+	@media #{$_sm}
+		display: block
+
+		&.double, &.triple
+
+			.inner-images__img
+				padding-bottom: 0
+				height: 175px
+				width: 100%
+				margin-bottom: 10px
 
 .inner-images__img
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: 50% 50%
-    height: 0
-    margin-bottom: 30px
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	height: 0
+	margin-bottom: 30px
+	display: block
+
+	&:focus
+		outline: 0
  
 .inner-images__img--big
 	padding-bottom: 34%

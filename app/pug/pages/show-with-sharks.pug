@@ -160,7 +160,7 @@ html(lang='ru')
                     // begin sidebar 
                     aside.sidebar
 
-                        .sidebar__background(style="background-image: url(img/pages/page-image.png);")
+                        .sidebar__background.sidebar__background--cover(style="background-image: url(img/pages/page-image.png);")
 
                         // begin inner-menu 
                         .inner-menu
@@ -193,10 +193,10 @@ html(lang='ru')
 
                             .sharks__body
                                 .inner-images.triple
-                                    .inner-images__img.inner-images__img--big(style="background-image: url(img/pages/show-with-sharks/big-shark.jpg);")
-                                    .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/show-with-sharks/shark-1.jpg);")
-                                    .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/show-with-sharks/shark-2.jpg);")
-                                    .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/show-with-sharks/shark-3.jpg);")
+                                    a(href="img/pages/show-with-sharks/big-shark.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--big(style="background-image: url(img/pages/show-with-sharks/big-shark.jpg);")
+                                    a(href="img/pages/show-with-sharks/shark-1.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/show-with-sharks/shark-1.jpg);")
+                                    a(href="img/pages/show-with-sharks/shark-2.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/show-with-sharks/shark-2.jpg);")
+                                    a(href="img/pages/show-with-sharks/shark-3.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/show-with-sharks/shark-3.jpg);")
 
                                 .text
                                     p.

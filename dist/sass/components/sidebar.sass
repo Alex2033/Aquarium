@@ -2,6 +2,7 @@
 	+col(4.15)
 	position: relative
 	margin-left: 0
+	padding-bottom: 20px
 	
 	@media #{$md}
 		padding-left: 15px
@@ -9,6 +10,7 @@
 	@media #{$_md}
 		+col(12)
 
+	
 .sidebar__background
 	position: absolute
 	top: 0
@@ -22,11 +24,19 @@
 
 	@media #{$_md}
 		display: none
+
+.sidebar__background--cover
+	background-size: cover
 	
 .sidebar__list
-    margin-top: 10px
-    @media #{$_md}
-        display: none
+	margin-top: 10px
+
+	@media #{$_md}
+		display: none
+
+	@media #{$md}
+		display: block !important
+
 
 .inner-menu
 	padding-top: 17px

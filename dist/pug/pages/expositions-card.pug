@@ -216,9 +216,9 @@ html(lang='ru')
                             section.expositions-card
 
                                 .inner-images.double
-                                    .inner-images__img.inner-images__img--big(style="background-image: url(img/pages/expositions-card/expositions-big.jpg);")
-                                    .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/expositions-1.jpg);")
-                                    .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/expositions-2.jpg);")
+                                    a(href="img/pages/expositions-card/expositions-big.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--big(style="background-image: url(img/pages/expositions-card/expositions-big.jpg);")
+                                    a(href="img/pages/expositions-card/expositions-1.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/expositions-1.jpg);")
+                                    a(href="img/pages/expositions-card/expositions-2.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/expositions-2.jpg);")
 
                                 .text.expositions-card__text
                                     p.
@@ -240,20 +240,64 @@ html(lang='ru')
                                         северо-запада России. 
 
                                 // begin modal 
-                                .modal
+                                .modal#modal(style="display: none;")
 
                                     #mask
                                     
                                     button.modal__exit(style="background-image: url(img/general/exit.png);")
 
-                                    .modal__images.inner-images.triple
-                                        .inner-images__img.inner-images__img--big.modal__body-img(style="background-image: url(img/pages/expositions-card/pike-1.jpg);")
-                                        .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/pike-2.jpg);")
-                                        .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/pike-3.jpg);")
-                                        .inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/pike-4.jpg);")
+                                    .modal__wrapper
+                                        .modal__images.inner-images.triple
+                                            a(href="img/pages/expositions-card/pike-1.jpg" data-fancybox="modal-gallery").inner-images__img.inner-images__img--big.modal__image--big(style="background-image: url(img/pages/expositions-card/pike-1.jpg);")
+                                            a(href="img/pages/expositions-card/pike-2.jpg" data-fancybox="modal-gallery").inner-images__img.inner-images__img--small.modal__img(style="background-image: url(img/pages/expositions-card/pike-2.jpg);")
+                                            a(href="img/pages/expositions-card/pike-3.jpg" data-fancybox="modal-gallery").inner-images__img.inner-images__img--small.modal__img(style="background-image: url(img/pages/expositions-card/pike-3.jpg);")
+                                            a(href="img/pages/expositions-card/pike-1.jpg" data-fancybox="modal-gallery").inner-images__img.inner-images__img--small.modal__img(style="background-image: url(img/pages/expositions-card/pike-1.jpg);")
 
-                                    .modal__body
+                                        .modal__body
 
+                                            ul.modal__characteristic
+                                                li.modal__characteristic-item
+                                                    b Семейство: 
+                                                    span Esocidae (щуковые)
+                                                li.modal__characteristic-item
+                                                    b Отряд: 
+                                                    span Salmoniformes (лососеобразные)
+                                                li.modal__characteristic-item
+                                                    b Подкласс: 
+                                                    span Лучеперые рыбы
+                                                li.modal__characteristic-item
+                                                    b Класс: 
+                                                    span Костные рыбы
+                                                li.modal__characteristic-item
+                                                    b Международное название: 
+                                                    span Pik
+                                                li.modal__characteristic-item
+                                                    b Максимальные размеры и возраст: 
+                                                    span длина – более 1,5 м, вес – до 35 кг., возраст –35 лет.
+
+                                            h4.inner-h4 Распространение
+
+                                            .text.modal__text
+                                                p.
+                                                    Пресные воды на севере Европы, Азии и Америки. Предпочитает озера и реки с замедленным течением. 
+                                                    Держится там, где удобно подкарауливать добычу и оставаться незаметной благодаря пестроте окраски: 
+                                                    у излома дна, около валуна, топляка, коряжины,   у подмытого берега, среди зарослей водных растений. 
+                                                    Очень прожорлива, питается практически любыми рыбешками, включая свою молодь. Добыча заглатывается только 
+                                                    с головы. Крупные щуки способны напасть на плавающую утку. Нерестится сразу после схода льда при температуре 
+                                                    воды 3-6 °С, у берегов на глубине 0,5—1 м.
+
+                                            h4.inner-h4 История
+
+                                            .text.modal__text
+                                                p.
+                                                    Особенной популярностью пользуется история «гейльбронской щуки», которая якобы была императором 
+                                                    Фридрихом II лично поймана, помечена золотым кольцом и выпущена в 1230 г. в озеро Бёккинген, 
+                                                    близ Гейльбронна (бассейн Неккара), а затем была поймана через 267 лет, достигнув длины 570 см 
+                                                    и веса 140 кг. Позвоночник щуки был передан на хранение в собор в Мангейме. Этот рассказ 
+                                                    вызвал интерес и недоверие у многих исследователей. Немецкий натурфилософ Окен подробно изучил 
+                                                    историческую хронику тех времен и выяснил, что Фридрих II в это время жил в Италии и не мог произвести 
+                                                    мечение. Удалось исследовать позвоночник гигантской щуки, выставленной в соборе Мангейма, и оказалось, 
+                                                    что он является фальсификацией, будучи составленным из позвонков нескольких щук.
                                         
 
                                 // end modal 
@@ -262,41 +306,41 @@ html(lang='ru')
                                 .inhabitants
                                     h2.inner-heading.inhabitants__title Обитатели
                                     ul.inhabitants__list
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/1.jpg);")
                                             span.inhabitants__text Карась серебряный
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/2.jpg);")
                                             span.inhabitants__text Красноперка
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/3.jpg);")
                                             span.inhabitants__text Окунь
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/4.jpg);")
                                             span.inhabitants__text Осётр русский
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/5.jpg);")
                                             span.inhabitants__text Осётр сибирский
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/6.jpg);")
                                             span.inhabitants__text Сазан
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/7.jpg);")
                                             span.inhabitants__text Солнечный окунь
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/8.jpg);")
                                             span.inhabitants__text Стерлядь
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/9.jpg);")
                                             span.inhabitants__text Угорь
-                                        li.inhabitants__item
+                                        li.inhabitants__item(data-modal="click")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/pike-1.jpg);")
                                             span.inhabitants__text Щука
                                 // end inhabitants 
 
 
                             // end expositions-card 
-
+                .inner-background.inner-background--small
                 // end page-wrapper 
 
 

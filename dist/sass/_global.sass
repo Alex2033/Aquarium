@@ -36,6 +36,7 @@ p
 	position: relative
 	width: 100%
 	min-height: 100%
+	overflow: hidden
 
 .container 
 	+container
@@ -189,6 +190,10 @@ h1, h2, h3, h4, h5, h6
 		&.slick-active
 			.slick-button
 				background-color: $accent
+
+		.slick-button
+			&:focus
+				outline: 0
 
 	@media #{$_sm}
 		margin-top: 7px
