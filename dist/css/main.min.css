@@ -1504,6 +1504,9 @@ h1, h2, h3, h4, h5, h6 {
     outline: 0;
     border-color: #0084ca; }
 
+.breadcrumbs {
+  width: 100%; }
+
 .breadcrumbs__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1532,7 +1535,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   text-align: center;
   padding: 0 10px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
   .breadcrumbs__link:hover {
     text-decoration: none; }
   @media (max-width: 767px) {
