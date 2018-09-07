@@ -691,7 +691,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.1; }
 
 @media (max-width: 991.99px) {
-  .title--md-hidden {
+  .title--sm-hidden {
+    margin-top: 100px;
+    font-size: 42px; } }
+
+@media (max-width: 767px) {
+  .title--sm-hidden {
     display: none; } }
 
 .title--small {
@@ -916,26 +921,17 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-background-size: cover;
-          background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -10; }
-  @media (min-width: 767px) and (max-width: 991.99px) {
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media (max-width: 991.99px) {
     .is-inner__background {
-      -webkit-background-size: contain;
-              background-size: contain; } }
+      height: initial; } }
   @media (max-width: 767px) {
     .is-inner__background {
-      -webkit-background-size: 200% 200%;
-              background-size: 200%; } }
-  @media (max-width: 375px) {
-    .is-inner__background {
-      -webkit-background-size: 300% 300%;
-              background-size: 300%; } }
-  @media (max-width: 320px) {
-    .is-inner__background {
-      -webkit-background-size: 340% 340%;
-              background-size: 340%; } }
+      height: 35%; } }
 
 .page-heading {
   margin-top: 50px; }
@@ -1738,6 +1734,8 @@ h1, h2, h3, h4, h5, h6 {
   width: auto;
   height: auto;
   z-index: -9999;
+  -o-object-fit: cover;
+     object-fit: cover;
   -webkit-background-size: cover;
           background-size: cover;
   background-repeat: no-repeat;
@@ -1983,7 +1981,7 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%;
       padding: 0 15px;
       position: absolute;
-      top: 76%;
+      top: 170px;
       left: 0;
       -webkit-box-pack: end;
       -webkit-justify-content: flex-end;

@@ -11,21 +11,16 @@
 	left: 0
 	bottom: 0
 	right: 0
-	background-size: cover
-	background-repeat: no-repeat
 	z-index: -10
+	width: 100%
+	height: 100%
+	object-fit: cover
 
-	@media #{$sm} and #{$_md}
-		background-size: contain
+	@media #{$_md}
+		height: initial
 
 	@media #{$_sm}
-		background-size: 200%
-
-	@media #{$_xs}
-		background-size: 300%
-
-	@media (max-width: 320px)
-		background-size: 340%
+		height: 35%
 
 .page-heading
 	margin-top: 50px
