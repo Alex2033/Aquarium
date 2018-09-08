@@ -639,7 +639,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal; }
 
 .button {
-  display: inline-block;
   border: none;
   color: #fff;
   text-decoration: none;
@@ -681,6 +680,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .button__img {
   margin-right: 10px; }
+
+.button__text {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0; }
 
 .title {
   font-size: 60px;
