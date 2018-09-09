@@ -5,7 +5,7 @@
 	@media #{$_md}
 		background-image: none
 
-.is-inner__background
+.is-internal .background-img
 	position: absolute
 	top: 0
 	left: 0
@@ -20,7 +20,11 @@
 		height: initial
 
 	@media #{$_sm}
-		height: 35%
+		min-height: 600px
+		
+	@media #{$_xs}
+		min-height: 900px
+
 
 .page-heading
 	margin-top: 50px
