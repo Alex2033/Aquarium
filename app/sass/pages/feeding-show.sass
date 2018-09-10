@@ -18,6 +18,9 @@
     &:hover
         opacity: 0.9
 
+    @media #{$_sm}
+        width: 100%
+
 .feeding-show__img-link
     display: block
     position: absolute
@@ -66,6 +69,7 @@
     flex-wrap: wrap
 
 .week-list__link
+    display: block
     color: #ffffff
     font-weight: 700
 
@@ -75,3 +79,12 @@
 .feeding-show__text
     @media #{$_md}
         margin-bottom: 30px
+
+.week-list__text
+    display: none
+    @media #{$sm}
+        display: block
+
+.week-list__text--hidden
+    @media #{$sm}
+        display: none

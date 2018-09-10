@@ -1,0 +1,51 @@
+.timetable
+    border: 1px solid lighten($accent, 5%)
+    margin-bottom: 20px
+
+.timetable__header
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    background-color: lighten($accent, 5%)
+
+.timetable__row
+    display: flex
+    width: 100%
+
+    &.active
+        color: lighten($accent, 5%)
+
+    &:first-child
+        .timetable__col
+            padding-top: 15px
+
+    &:last-child
+        .timetable__col
+            padding-bottom: 25px
+
+.timetable__col
+    width: 33.3333%
+    padding: 5px 17px
+    line-height: 1.1
+    &:not(:last-child)
+        border-right: 1px solid lighten($accent, 5%)
+
+    @media #{$_sm}
+        padding: 2px 5px
+        font-size: 14px
+
+.timetable__heading
+    width: 33.3333%
+    color: #ffffff
+    padding: 12px 17px
+    line-height: 1.1
+
+    @media #{$_sm}
+        padding: 12px 6px
+
+    @media #{$_xs}
+        font-size: 14px
+
+.feeding-schedule__img
+    width: 100%

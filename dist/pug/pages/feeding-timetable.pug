@@ -133,7 +133,7 @@ html(lang='ru')
 
                 .container
                     .page-heading
-                        h1.title.page-heading__title Показательные кормления и шоу-программы
+                        h1.title.page-heading__title Кормление обитателей
 
                     // begin breadcrumbs 
                     .breadcrumbs
@@ -142,7 +142,13 @@ html(lang='ru')
                                 a(href="index.html").breadcrumbs__link Главная
                                 img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="feeding-show.html").breadcrumbs__link Показательные кормления и шоу-программы
+                                a(href="textual.html").breadcrumbs__link Информация для посетителей
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="feeding.html").breadcrumbs__link Кормление обитателей
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="feeding-timetable.html").breadcrumbs__link Вторник
                     // end breadcrumbs 
 
         // end header
@@ -166,7 +172,7 @@ html(lang='ru')
                                     span.inner-menu__line.inner-menu__line--top
                                     span.inner-menu__line.inner-menu__line--middle
                                     span.inner-menu__line.inner-menu__line--bottom
-                                a(href="feeding-show.html").inner-menu__text.inner-heading Показательные кормления и шоу-программы
+                                a(href="feeding-show.html").inner-menu__text.inner-heading Информация для посетителей
                             ul.sidebar__list
                                 li.sidebar__item
                                     a(href="#").sidebar__link.link Шоу с акулами
@@ -174,76 +180,96 @@ html(lang='ru')
                                     a(href="#").sidebar__link.link Шоу с тюленями
                                 li.sidebar__item
                                     a(href="#").sidebar__link.link Кормление обитателей
+                                    ul.sidebar__sublist
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link Понедельник
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link.active Вторник
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link Среда
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link Четверг
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link Пятница
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link Суббота
+                                        li.sidebar__sublist-item
+                                            a(href="feeding-timetable.html").sidebar__sublist-link.link Воскресенье
                         // end inner-menu 
                     // end sidebar 
 
                     .page-wrapper__right
                         
-                        // begin feeding-show 
-                        section.feeding-show
+                        // begin feeding-schedule 
+                        section.feeding-schedule
+                            h2.inner-heading Вторник
 
-                            // begin slider 
-                            ul.slider
-                                li.slider__item(style="background-image: url(img/pages/show-with-sharks/big-shark.jpg);")
-                                li.slider__item(style="background-image: url(img/pages/show-with-sharks/big-shark.jpg);")
-                                li.slider__item(style="background-image: url(img/pages/show-with-sharks/big-shark.jpg);")
-                            // end slider 
+                            // begin timetable 
+                            .timetable
+                                header.timetable__header
+                                    .timetable__heading Время
+                                    .timetable__heading Название
+                                    .timetable__heading Место проведения
+                                .timetable__content
+                                    .timetable__row
+                                        .timetable__col 10:00 - 11:30
+                                        .timetable__col Погружение водолазов
+                                        .timetable__col Главный аквариум №35
+                                    .timetable__row
+                                        .timetable__col 11:00
+                                        .timetable__col Кормление цезио
+                                        .timetable__col Аквариум №28
+                                    .timetable__row.active
+                                        .timetable__col 11:30 - 11:50
+                                        .timetable__col Шоу с тюленями
+                                        .timetable__col Тюленариум №49
+                                    .timetable__row
+                                        .timetable__col 12:00 - 12:30
+                                        .timetable__col Погружение водолазов
+                                        .timetable__col Тюленариум №49
+                                    .timetable__row.active
+                                        .timetable__col 13:00
+                                        .timetable__col Шоу со скатами
+                                        .timetable__col Аквариум №34
+                                    .timetable__row
+                                        .timetable__col 13:30
+                                        .timetable__col Кормление омаров
+                                        .timetable__col Аквариум №46
+                                    .timetable__row
+                                        .timetable__col 14:00
+                                        .timetable__col Кормление мурен
+                                        .timetable__col Аквариум №41
+                                    .timetable__row
+                                        .timetable__col 14:15
+                                        .timetable__col Кормление цезио
+                                        .timetable__col Аквариум №28
+                                    .timetable__row
+                                        .timetable__col 15:00
+                                        .timetable__col Кормление выдр
+                                        .timetable__col Аквариум №12
+                                    .timetable__row
+                                        .timetable__col 15:00 - 16:30
+                                        .timetable__col Погружение водолазов
+                                        .timetable__col Аквариум №35
+                                    .timetable__row.active
+                                        .timetable__col 16:00
+                                        .timetable__col Шоу с тюленями
+                                        .timetable__col Тюленариум №49
+                                    .timetable__row
+                                        .timetable__col 17:00 - 18:00
+                                        .timetable__col Погружение водолазов
+                                        .timetable__col Главный аквариум №35
+                                    .timetable__row.active
+                                        .timetable__col 19:00
+                                        .timetable__col Шоу с акулами
+                                        .timetable__col Главный аквариум №35
 
-                            .text.feeding-show__text
-                                p.
-                                    В Океанариуме каждый посетитель может стать свидетелем эксклюзивных шоу с водными обитателями – «Шоу с акулами» и «Шоу с тюленями».
+                            // end timetable 
 
-                            .feeding-show__images
-                                .feeding-show__img(style="background-image: url(img/pages/feeding-show/1.jpg);")
-                                    a(href="show-with-sharks.html").feeding-show__img-link
-                                        span.feeding-show__img-text Шоу с акулами
-                                .feeding-show__img(style="background-image: url(img/pages/feeding-show/2.jpg);")
-                                    a(href="#").feeding-show__img-link
-                                        span.feeding-show__img-text Шоу с тюленями
-                                .feeding-show__img.feeding-show__img--big(style="background-image: url(img/pages/feeding-show/big.jpg);")
-                                    a(href="feeding.html").feeding-show__img-link
-                                        span.feeding-show__img-text Кормление обитателей
-                                    // begin week 
-                                    .week
-                                        ul.week-list
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Пн
-                                                    span.week-list__text Понедельник
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Вт
-                                                    span.week-list__text Вторник
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Ср
-                                                    span.week-list__text Среда
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Чт
-                                                    span.week-list__text Четверг
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Пт
-                                                    span.week-list__text Пятница
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Сб
-                                                    span.week-list__text Суббота
-                                            li.week-list__item
-                                                a.week-list__link(href="#") 
-                                                    span.week-list__text--hidden Вс
-                                                    span.week-list__text Воскресенье
-                                    // end week 
+                            img.feeding-schedule__img(src="img/pages/feeding-timetable/shark.jpg", alt="Shark image")
 
-                            .text.feeding-show__text
-                                p
-                                    |  В программе дня возможны изменения. По интересующим вас вопросам: 
-                                    a(href="tel:+79219322184") +7 921 932 21 84.
-                                    |  Для просмотра программ дополнительная оплата не требуется.
-                                    |  Места для зрителей на шоу-программах не бронируются. 
-
-                        // end feeding-show 
+                        // end feeding-schedule 
+                        
 
             // end page-wrapper 
 

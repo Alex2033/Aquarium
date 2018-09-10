@@ -3722,6 +3722,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity .15s ease; }
   .feeding-show__img:hover {
     opacity: 0.9; }
+  @media (max-width: 767px) {
+    .feeding-show__img {
+      width: 100%; } }
 
 .feeding-show__img-link {
   display: block;
@@ -3781,6 +3784,7 @@ h1, h2, h3, h4, h5, h6 {
           flex-wrap: wrap; }
 
 .week-list__link {
+  display: block;
   color: #ffffff;
   font-weight: 700; }
   .week-list__link:hover {
@@ -3789,3 +3793,74 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 991.99px) {
   .feeding-show__text {
     margin-bottom: 30px; } }
+
+.week-list__text {
+  display: none; }
+  @media (min-width: 767px) {
+    .week-list__text {
+      display: block; } }
+
+@media (min-width: 767px) {
+  .week-list__text--hidden {
+    display: none; } }
+
+.timetable {
+  border: 1px solid #0095e4;
+  margin-bottom: 20px; }
+
+.timetable__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #0095e4; }
+
+.timetable__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .timetable__row.active {
+    color: #0095e4; }
+  .timetable__row:first-child .timetable__col {
+    padding-top: 15px; }
+  .timetable__row:last-child .timetable__col {
+    padding-bottom: 25px; }
+
+.timetable__col {
+  width: 33.3333%;
+  padding: 5px 17px;
+  line-height: 1.1; }
+  .timetable__col:not(:last-child) {
+    border-right: 1px solid #0095e4; }
+  @media (max-width: 767px) {
+    .timetable__col {
+      padding: 2px 5px;
+      font-size: 14px; } }
+
+.timetable__heading {
+  width: 33.3333%;
+  color: #ffffff;
+  padding: 12px 17px;
+  line-height: 1.1; }
+  @media (max-width: 767px) {
+    .timetable__heading {
+      padding: 12px 6px; } }
+  @media (max-width: 375px) {
+    .timetable__heading {
+      font-size: 14px; } }
+
+.feeding-schedule__img {
+  width: 100%; }
