@@ -1,0 +1,77 @@
+.feeding-show__images
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    justify-content: space-between
+
+.feeding-show__img
+    width: calc(50% - 15px)
+    min-height: 170px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-bottom: 30px
+    display: block
+    position: relative
+    transition: opacity .15s ease
+
+    &:hover
+        opacity: 0.9
+
+.feeding-show__img-link
+    display: block
+    position: absolute
+    width: 100%
+    height: 100%
+
+    &::before
+        content: ''
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 14%, rgba(0, 105, 161, 0.64) 20%, rgba(29, 35, 48, 0) 50%)
+
+.feeding-show__img--big
+    width: 100%
+    margin-right: 0
+
+    .feeding-show__img-text
+        top: 17px
+        bottom: initial
+
+.feeding-show__img-text
+    position: absolute
+    bottom: 17px
+    left: 25px
+    display: block
+    font-weight: 700
+    color: #ffffff
+
+.feeding-show__text
+    margin-bottom: 55px
+
+.week
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 15px
+    width: 100%
+
+.week-list
+    display: flex
+    width: 100%
+    justify-content: space-around
+    flex-wrap: wrap
+
+.week-list__link
+    color: #ffffff
+    font-weight: 700
+
+    &:hover
+        text-decoration: underline
+
+.feeding-show__text
+    @media #{$_md}
+        margin-bottom: 30px

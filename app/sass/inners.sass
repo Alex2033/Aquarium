@@ -25,7 +25,6 @@
 	@media #{$_xs}
 		min-height: 900px
 
-
 .page-heading
 	margin-top: 50px
 
@@ -63,7 +62,7 @@
 .page-wrapper__right
 	+col(8)
 	padding-bottom: 100px
-	padding-top: 25px
+	padding-top: 18px
 	position: relative
 	z-index: 1
 
@@ -71,17 +70,24 @@
 		+col(12)
 
 .inner-heading
-    font-weight: 700
-    text-transform: uppercase
-    color: lighten($accent, 5%)
+	font-size: 24px
+	font-weight: 700
+	text-transform: uppercase
+	color: lighten($accent, 5%)
+	margin-bottom: 25px
+	line-height: 1.2
+
+	@media #{$_sm}
+		font-size: 16px
 
 .inner-h3
-    font-size: 18px
-    font-weight: 700
+	font-size: 18px
+	font-weight: 700
+	margin-bottom: 20px
 
 .inner-h4
 	font-weight: 700
-	margin-bottom: 12px
+	margin-bottom: 20px
 
 .text
 	padding-right: 17px
@@ -133,5 +139,146 @@
 		outline: 0
  
 .inner-images__img--big
-	padding-bottom: 34%
+	padding-bottom: 42%
 	width: 100%
+
+.slider
+	
+	.slick-arrow
+		width: 40px
+		height: 40px
+		background-color: rgba($accent, .3)
+		border-radius: 50%
+		z-index: 5
+		transition: background-color .15s ease
+
+		&::before
+			content: ''
+			position: absolute
+			width: 11px
+			height: 16px
+			top: 50%
+			left: 50%
+			margin-top: -8px
+			transform: translate(-50%)
+			opacity: 1
+
+		&:hover
+			background-color: rgba($accent, .8)
+	
+	.slick-next
+		right: 10px
+		&::before
+			background-image: url(../img/pages/slider-arrow-right.svg)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+
+	.slick-prev
+		left: 10px
+		&::before
+			background-image: url(../img/pages/slider-arrow-left.svg)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+
+.slider__item
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	min-height: 300px
+
+.numbered-list
+	padding: 0
+	margin: 0 0 40px
+
+.numbered-list__item
+	list-style: decimal
+	
+.bulled-list__item
+	list-style: disc
+
+.list-item
+	margin: 5px 0 5px 18px
+
+.bulled-list
+	margin-bottom: 40px
+
+.hypertext
+	margin-bottom: 12px
+
+.hyperlink
+	text-decoration: underline
+
+	&:hover
+		text-decoration: underline
+		color: #651a75
+
+	&.hover
+		color: #651a75
+
+.table
+	width: 100%
+	margin-bottom: 60px
+
+.table__heading-row
+	background-color: #f3f3f3
+
+.table__title
+	color: #898988
+	width: 100%
+	display: block
+	text-align: center
+	font-size: 14px
+	padding: 6px 0
+	font-weight: 400
+	
+.table__row
+	display: flex
+	width: 100%
+
+.table__col
+	width: 50%
+	border: 1px solid #ececec
+	display: block
+	padding: 14px 8px 14px 30px
+	line-height: 1
+
+	&:first-child
+		width: 100%
+		max-width: 174px
+		padding-left: 15px
+		
+		@media #{$_sm}
+			width: 33.3333%
+			max-width: 100%
+			padding-left: 2px
+	@media #{$_sm}
+		width: 33.3333%
+		padding: 5px
+		font-size: 14px
+
+.table__heading
+	font-weight: 400
+	color: $accent
+	text-align: left
+
+.table.double
+	.table__col
+		padding-left: 15px
+		&:first-child
+			width: 50%
+			max-width: 100%
+
+		@media #{$_sm}
+			width: 50%
+			padding: 5px
+			font-size: 14px
+
+.table__price
+	margin-bottom: 15px
+
+.text
+	a
+		color: $main-color
+
+		&:hover
+			text-decoration: underline

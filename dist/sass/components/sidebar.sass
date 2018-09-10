@@ -37,6 +37,9 @@
 	@media #{$md}
 		display: block !important
 
+.sidebar__link
+	@media #{$_sm}
+		font-size: 15px
 
 .inner-menu
 	padding-top: 17px
@@ -63,6 +66,7 @@
 	height: 21px
 	position: relative
 	margin-right: 14px
+	cursor: pointer
 
 	@media #{$md}
 		display: none
@@ -89,6 +93,7 @@
 	text-transform: uppercase
 	color: lighten($accent, 5%)
 	padding-left: 20px
+	margin-bottom: 0
 
 	@media #{$_md}
 		padding-left: 0
@@ -101,9 +106,11 @@
 		
 
 .sidebar__sublist-item
-	margin-left: 17px
+	margin-left: 27px
 
 .sidebar__sublist-link
+	padding: 7px 17px
 	font-size: 15px
-	padding: 7px 12px
-	font-size: 15px
+
+	@media #{$_sm}
+		font-size: 14px

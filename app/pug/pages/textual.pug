@@ -133,7 +133,7 @@ html(lang='ru')
 
                 .container
                     .page-heading
-                        h1.title.page-heading__title Поиск
+                        h1.title.page-heading__title Заголовок H1
 
                     // begin breadcrumbs 
                     .breadcrumbs
@@ -142,10 +142,7 @@ html(lang='ru')
                                 a(href="index.html").breadcrumbs__link Главная
                                 img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="about.html").breadcrumbs__link О нас
-                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
-                            li.breadcrumbs__item
-                                a(href="expositions.html").breadcrumbs__link Экспозиции
+                                a(href="textual.html").breadcrumbs__link Хлебные крошки
                     // end breadcrumbs 
 
         // end header
@@ -169,82 +166,137 @@ html(lang='ru')
                                     span.inner-menu__line.inner-menu__line--top
                                     span.inner-menu__line.inner-menu__line--middle
                                     span.inner-menu__line.inner-menu__line--bottom
-                                h3.inner-menu__text О нас
+                                a(href="textual.html").inner-menu__text.inner-heading Информация для посетителей
                             ul.sidebar__list
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Новости
+                                    a(href="textual.html").sidebar__link.link Режим работы
                                 li.sidebar__item
-                                    a(href="site-map.html").sidebar__link.link План Океанариума
+                                    a(href="site-map.html").sidebar__link.link Цены
                                 li.sidebar__item
-                                    a(href="expositions.html").sidebar__link.link Экспозиция
+                                    a(href="expositions.html").sidebar__link.link Льготы
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Акции и Скидки
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Семейный абонемент выходного дня
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Купить электронные билеты
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Правила посещения
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Программа «Забота о друге»
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Корпоративные программы
                                     ul.sidebar__sublist
                                         li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Рыбы умеренных и тропических широт
+                                            a(href="#").sidebar__sublist-link.link.active Аренда учебного класса
                                         li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Дорога к океану
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Мир медуз
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Скалистое побережье
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Главный аквариум
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Коралловый риф
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Рыбы и млекопитающие С-З России
+                                            a(href="#").sidebar__sublist-link.link Развлекательные программы для взрослых
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Конференция и публикации
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link СМИ о нас
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Отзывы
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Часто задаваемые вопросы
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Вакансии
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Обратная связь
+                                    a(href="#").sidebar__link.link Морские сувениры
                         // end inner-menu 
                     // end sidebar 
 
                     .page-wrapper__right
-                        // begin expositions-s 
-                        section.expositions-s
+                        // begin textual-s 
+                        section.textual-s
 
-                            .expositions-s__slider
-                                ul.expositions-s__list
-                                    li.expositions-s__item(style="background-image: url(img/pages/expositions-p/slide.jpg);")
-                                    li.expositions-s__item(style="background-image: url(img/pages/expositions-p/slide.jpg);")
-                                    li.expositions-s__item(style="background-image: url(img/pages/expositions-p/slide.jpg);")
+                            .textual-s__text
+                                h2.inner-heading Заголовок второго уровня H2
+                                .text.textual-s__text
+                                    p.
+                                        Тайны подводного мира влекут к себе людей. Поэтому каждый год в разных странах появляются новые 
+                                        океанариумы (аквариумы), где за толстыми стеклами можно увидеть настоящие чудеса. Что такое Океанариум? 
+                                        Прежде всего, это «подводный музей» с живыми экспонатами – обитателями водной среды. 
+                                h3.inner-h3 Заголовок H3
+                                .text.textual-s__text
+                                    p.
+                                        Тайны подводного мира влекут к себе людей. Поэтому каждый год в разных странах появляются новые океанариумы 
+                                        (аквариумы), где за толстыми стеклами можно увидеть настоящие чудеса. Что такое Океанариум? Прежде всего, это 
+                                        «подводный музей» с живыми экспонатами – обитателями водной среды.
+                                h4.inner-h4 Заголовок H4
+                                .text.textual-s__text
+                                    p.
+                                        Тайны подводного мира влекут к себе людей. Поэтому каждый год в разных странах появляются новые океанариумы (аквариумы), 
+                                        где за толстыми стеклами можно увидеть настоящие чудеса. Что такое Океанариум? Прежде всего, это «подводный музей» 
+                                        с живыми экспонатами – обитателями водной среды. 
 
-                                button.grey-arrow.grey-arrow--left.slick-arrow
-                                    img(src="img/sections/children/arrow-left.svg", alt="Arrow image")
-                                button.grey-arrow.grey-arrow--right.slick-arrow
-                                    img(src="img/sections/children/arrow-right.svg", alt="Arrow image")
+                                h4.inner-h4.inner-h4--no-margin Нумерованный список
+                                ol.numbered-list
+                                    li.numbered-list__item.list-item Пресноводные рыбы Северо-Запада;
+                                    li.numbered-list__item.list-item Тропический дождевой лес;
+                                    li.numbered-list__item.list-item Скалистое побережье;
+                                    li.numbered-list__item.list-item Рыбы главного аквариума;
+                                    li.numbered-list__item.list-item Экзотические рыбы - коралловый риф.
 
-                            .expositions__wrapper.expositions-s__wrap
-                                a(href="#").expositions__item.item-1
-                                    .expositions__img(style="background-image: url(img/sections/expositions/1.jpg)")
-                                    h5.expositions__bottom-title Рыбы умеренных и тропических широт
-                                a(href="#").expositions__item.item-2
-                                    .expositions__img(style="background-image: url(img/sections/expositions/2.jpg)")
-                                    h5.expositions__bottom-title  Дорога к океану
-                                a(href="#").expositions__item.item-3
-                                    .expositions__img(style="background-image: url(img/sections/expositions/3.jpg)")
-                                    h5.expositions__bottom-title Мир медуз
-                                a(href="#").expositions__item.item-4
-                                    .expositions__img(style="background-image: url(img/sections/expositions/4.jpg)")
-                                    h5.expositions__bottom-title Скалистое побережье
-                                a(href="#").expositions__item.item-5
-                                    .expositions__img(style="background-image: url(img/sections/expositions/5.jpg)")
-                                    h5.expositions__bottom-title Главный аквариум
-                                a(href="#").expositions__item.item-6
-                                    .expositions__img(style="background-image: url(img/sections/expositions/6.jpg)")
-                                    h5.expositions__bottom-title Коралловый риф
-                                a(href="#").expositions__item.item-7
-                                    .expositions__img(style="background-image: url(img/sections/expositions/7.jpg)")
-                                    h5.expositions__bottom-title Рыбы и млекопитающие С-3 России
-                        // end expositions-s 
+                                h4.inner-h4.inner-h4--no-margin Маркированный список
+                                ul.bulled-list
+                                    li.bulled-list__item.list-item Пресноводные рыбы Северо-Запада;
+                                    li.bulled-list__item.list-item Тропический дождевой лес;
+                                    li.bulled-list__item.list-item Скалистое побережье;
+                                    li.bulled-list__item.list-item Рыбы главного аквариума;
+                                    li.bulled-list__item.list-item Экзотические рыбы - коралловый риф.
+
+                                .hypertext
+                                    a(href="#").hyperlink Гиперссылка
+                                    |  в тексте
+
+                                .hypertext
+                                    a(href="#").hyperlink.hover Гиперссылка
+                                    |  ховер
+
+                            .textual-s__tables
+                                h2.inner-heading Таблица
+
+                                table.table
+                                    tr.table__heading-row.table__row
+                                        th.table__title С 1 сентября по 31 мая
+                                    tr.table__row
+                                        th.table__heading.table__col Тарифы
+                                        th.table__heading.table__col Взрослый
+                                        th.table__heading.table__col Дети от 7 лет, школьники и студенты дневных отделений
+                                    tr.table__row
+                                        th.table__heading.table__col Будние дни
+                                        td.table__col 600
+                                        td.table__col 400
+                                    tr.table__row
+                                        th.table__heading.table__col Выходные, праздничные дни
+                                        td.table__col 700
+                                        td.table__col 500
+
+                                table.table.double
+                                    tr.table__row
+                                        th.table__heading.table__col Детский(5-6 лет)
+                                        th.table__heading.table__col Льготный
+                                    tr.table__row
+                                        td.table__col
+                                            .table__price 150р
+                                            |  *обязательно предъявлять свидетельство о рождении и паспорт родителя
+                                        td.table__col
+                                            .table__price 250р
+                                            |  *Для категории «Пенсионеры РФ» льготный тариф действителен только в будние дни
+
+                            .textual-s__images
+
+                                h2.inner-heading Изображения
+
+                                ul.slider.textual-s__slider
+                                    li.slider__item(style="background-image: url(img/pages/textual/1.jpg);")
+                                    li.slider__item(style="background-image: url(img/pages/textual/1.jpg);")
+                                    li.slider__item(style="background-image: url(img/pages/textual/1.jpg);")
+
+                                .inner-images.triple
+                                    a(href="img/pages/kids/1.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--big(style="background-image: url(img/pages/kids/1.jpg);")
+                                    a(href="img/pages/kids/2.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/kids/2.jpg);")
+                                    a(href="img/pages/kids/3.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/kids/3.jpg);")
+                                    a(href="img/pages/kids/4.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/kids/4.jpg);")
+
+                                .inner-images.double
+                                    a(href="img/pages/expositions-card/expositions-big.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--big(style="background-image: url(img/pages/expositions-card/expositions-big.jpg);")
+                                    a(href="img/pages/expositions-card/expositions-1.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/expositions-1.jpg);")
+                                    a(href="img/pages/expositions-card/expositions-2.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/expositions-card/expositions-2.jpg);") 
+
+
+                        // end textual-s 
 
             // end page-wrapper 
 
