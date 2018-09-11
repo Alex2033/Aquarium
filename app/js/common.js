@@ -134,7 +134,9 @@ $(function() {
 	var listLength = $('.inhabitants__list').children().length;
 
 	for (var i = 1; i <= listLength; i++) {
-
+		
+		console.log($('[data-modal="click-' + i + '"]'));
+		
 		$('[data-modal="click-' + i + '"]').click(function() {
 
 			$('#modal-' + i).fadeIn(300);
