@@ -1,0 +1,50 @@
+.promotions__item
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-bottom: 30px
+
+    @media #{$_xs}
+        flex-direction: column
+        align-items: center
+
+.promotions__link
+    display: flex
+    flex-shrink: 0
+    max-width: 196px
+    align-items: flex-start
+    justify-content: center
+    margin-right: 35px
+    transition: opacity .15s ease
+
+    &:hover
+        opacity: 0.9
+    
+    img
+        border: 1px solid #F5F5F5
+
+    @media #{$_sm}
+        max-width: 112px
+        margin-right: 15px
+
+    @media #{$_xs}
+        margin-bottom: 10px
+        max-width: 196px
+
+.promotions__text
+    p
+        line-height: 1.2
+        &:not(:last-child)
+            margin-bottom: 1em
+
+    a
+        color: $main-color
+
+        &:hover
+            color: $accent
+
+    @media #{$_sm}
+        font-size: 14px
+
+    @media #{$_xs}
+        text-align: center

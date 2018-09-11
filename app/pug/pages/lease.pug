@@ -1,0 +1,248 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+  
+  body.is-internal
+
+    // begin wrapper
+    .wrapper.is-inner
+
+        img.background-img(src="img/general/body-bg.jpg", alt="Page body image")
+
+        // begin header 
+        header.header.header-inner
+
+            .header__container.container
+                .header__top
+
+                    // begin contacts 
+                    .contacts
+                        .contacts__left
+                            a(href="#").contacts__left-link
+                                span.contacts__hours Время работы 10-22
+                                span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                            a.contacts__link(href="site-plan.html") План океанариума      
+                        .contacts__right
+                            address.contacts__address
+                                a.contacts__address-link(href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0,+86,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191119/@59.9189478,30.3367602,17z/data=!3m1!4b1!4m5!3m4!1s0x46963052d4a092f1:0x1cc3e8c780acd480!8m2!3d59.9189451!4d30.3389542" target="_blank") Спб, ул. Марата, 86
+                            a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
+
+                            // begin socials 
+                            ul.socials
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/vk.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/fb.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/inst.svg", alt="Social image").socials__img
+                            // end socials 
+                    // end contacts 
+
+                    .header__logo
+
+                        // begin logo 
+                        a(href="index.html").logo
+                            img(src="img/general/logo.png", alt="Logotype").logo__img
+                        // end logo 
+
+                    .header__top-right
+
+                        .header__actions
+
+                            a(href="http://neptun-trk.volex.beget.tech").header-actions__link
+                                img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
+
+                            .header__actions-bottom
+
+                                // begin languages 
+                                ul.languages
+                                    li.languages__item
+                                        a(href="#").languages__link RU
+                                    li.languages__item
+                                        a(href="#").languages__link ENG
+                                // end languages 
+
+                                // begin search 
+                                form.search.header__search
+                                    input(type="submit" value="" style="background-image: url(img/general/search.svg);").search__button
+                                    input.search__input(type="text" required="required" placeholder="Поиск")
+                                // end search 
+
+                        .header__btns
+                            button.button.header__btn.header__btns-item.header__btn--visible
+                                img(src="img/header/btn-img.svg", alt="Button image").button__img
+                                span.header__btn-text.header__btn-text--visible  Электронный билет в Океанариум
+                                span.header__btn-text.header__btn-text--hidden  Эл. билет
+
+                            // begin toggle-menu 
+                            button.toggle-menu.header__btns-item
+                                span.sandwich
+                                    span.sandwich__line.sandwich__line-top
+                                    span.sandwich__line.sandwich__line-mid
+                                    span.sandwich__line.sandwich__line-bot
+                                span.toggle-menu__text Меню
+                            // end toggle-menu 
+
+                // begin navigation 
+                nav.navigation
+                    ul.navigation__list.menu.menu--hidden
+                        li.menu__item
+                            a.menu__link(href="index.html") Главная
+                        li.menu__item
+                            a.menu__link(href="#") О нас
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Информация
+                                br.header__br 
+                                |  для посетителей
+                        li.menu__item
+                            a.menu__link(href="#")
+                                |  Показательные кормления
+                                br.header__br
+                                |  и шоу-программы
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Океанариум
+                                br.header__br 
+                                |  детям
+                        li.menu__item
+                            a.menu__link(href="#") Дайвинг-центр
+                            // begin menu-dropdown 
+                            ul.menu-dropdown
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Обучение дайвингу
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Экскурсии в главный танк
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Подарочный сертификат    
+                            // end menu-dropdown 
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Магазин
+                                br.header__br 
+                                |  сувениров
+                        li.menu__item
+                            a.menu__link(href="#") Контакты
+                // end navigation  
+
+                .container
+                    .page-heading
+                        h1.title.page-heading__title Аренда учебного класса
+
+                    // begin breadcrumbs 
+                    .breadcrumbs
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                a(href="index.html").breadcrumbs__link Главная
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="textual.html").breadcrumbs__link Информация для посетителей
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="corporate-programs.html").breadcrumbs__link Корпоративные программы
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="lease.html").breadcrumbs__link Аренда учебного класса
+                    // end breadcrumbs 
+
+        // end header
+
+        // begin page
+        main.page 
+
+            // begin page-wrapper 
+            .page-wrapper
+                .page-wrapper__row
+                    
+                    // begin sidebar 
+                    aside.sidebar
+
+                        .sidebar__background.sidebar__background--cover(style="background-image: url(img/pages/page-image.png);")
+
+                        // begin inner-menu 
+                        .inner-menu
+                            .inner-menu__wrapper
+                                .inner-menu__sandwich
+                                    span.inner-menu__line.inner-menu__line--top
+                                    span.inner-menu__line.inner-menu__line--middle
+                                    span.inner-menu__line.inner-menu__line--bottom
+                                a(href="textual.html").inner-menu__text.inner-heading Информация для посетителей
+                            ul.sidebar__list
+                                li.sidebar__item
+                                    a(href="textual.html").sidebar__link.link Режим работы
+                                li.sidebar__item
+                                    a(href="site-map.html").sidebar__link.link Цены
+                                li.sidebar__item
+                                    a(href="expositions.html").sidebar__link.link Льготы
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Акции и Скидки
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Семейный абонемент выходного дня
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Купить электронные билеты
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Правила посещения
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Программа «Забота о друге»
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Корпоративные программы
+                                    ul.sidebar__sublist
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link.active Аренда учебного класса
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link Развлекательные программы для взрослых
+                        // end inner-menu 
+                    // end sidebar 
+
+                    .page-wrapper__right
+
+                        // begin lease 
+                        section.lease
+
+                            .lease__info
+                                .lease__info-left
+                                    .lease__info-text Аренда класса пн-вс 10:00-20:00 
+                                    .lease__info-accent 3 000 ₽/час
+                                .lease__info-right
+                                    .lease__info-text По вопросам аренды обращайтесь: 
+                                    a(href="tel:+79219413588").lease__info-accent +7 921 941-35-88
+
+                            .lease__images
+                                 .inner-images.triple
+                                    a(href="img/pages/kids/1.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--big(style="background-image: url(img/pages/kids/1.jpg);")
+                                    a(href="img/pages/kids/2.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/kids/2.jpg);")
+                                    a(href="img/pages/kids/3.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/kids/3.jpg);")
+                                    a(href="img/pages/kids/4.jpg" data-fancybox="gallery").inner-images__img.inner-images__img--small(style="background-image: url(img/pages/kids/4.jpg);")
+
+                            .text.lease__text
+                                p
+                                    |  Помимо интересной экспозиции, в Океанариуме можно арендовать учебный класс. Детей и взрослых ждут увлекательные занятия, экскурсии и 
+                                    |  конкурсы, семинары и праздники. У нас также можно научиться дайвингу. 
+                                    br
+                                    |  День рождения или корпоративное мероприятие тоже можно провести в Океанариуме, украсив его эксклюзивной программой с участием водолаза. 
+                                    |  А программа Океанариума "Забота о друге" даёт возможность на некоторое время стать опекуном акулы, ската или тюленя, навещать их в любое 
+                                    |  время и даже кормить!
+   
+                        
+                        // end lease 
+
+            // end page-wrapper 
+
+        // end page
+
+    // end wrapper
+
+    include ../modules/footer
+
+    #scrollUp
+      img(src="img/general/angle-top.svg", alt="Angle Top").scrollUp__img
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

@@ -1,0 +1,54 @@
+.corporate-programs__divisions
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 50px
+
+    @media #{$_sm}
+        margin-bottom: 0
+
+.corporate-programs__divisions-item
+    width: calc(50% - 15px)
+
+    @media #{$_sm}
+        width: 100%
+        margin-bottom: 35px
+
+.corporate-programs__divisions-link
+    display: block
+    height: 0
+    padding-bottom: 100%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-image: linear-gradient(to top, rgba(0, 105, 161, 0.45) 21%, rgba(0, 105, 161, 0.36) 36%, rgba(29, 35, 48, 0) 100%)
+        transition: background-color .2s ease
+
+    &:hover
+        &::before
+            background-color: rgba($accent, .4)
+
+    @media #{$xsm} and #{$_sm}
+        padding-bottom: 50%
+        background-position: top center
+
+.corporate-programs__divisions-text
+    position: absolute
+    color: #ffffff
+    bottom: 25px
+    left: 15px
+    font-weight: 700
+    font-size: 20px
+    line-height: 1.2
+
+    @media #{$_sm}
+        font-size: 18px

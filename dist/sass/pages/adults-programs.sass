@@ -1,0 +1,103 @@
+.adults__wrapper 
+    display: grid
+    margin-bottom: 20px
+    display: -ms-grid
+    -ms-grid-columns: 1fr 30px 1fr
+    -ms-grid-rows: auto 30px auto 30px auto 30px auto
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 30px
+
+    @media #{$_md}
+        -ms-grid-columns: 1fr 30px 1fr
+        grid-template-columns: repeat(2, 1fr)
+
+    @media #{$_sm}
+        -ms-grid-columns: 1fr
+        grid-template-columns: 1fr
+        grid-gap: 20px
+        -ms-grid-rows: auto 20px auto 20px auto 20px auto 20px auto 20px auto 20px auto
+    
+.adults__item 
+    display: block
+    cursor: pointer
+    position: relative
+    background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 0%, rgba(0, 105, 161, 0.64) 0%, rgba(29, 35, 48, 0) 50%)
+
+    &:hover
+        background-image: linear-gradient(to top, rgba(0, 105, 161, 0.7) 0%, rgba(0, 105, 161, 0.64) 0%, rgba(29, 35, 48, 0) 150%)
+
+.adults__img
+    background-size: cover
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    min-height: 170px
+    height: 100%
+    position: relative
+    z-index: -1
+
+
+.adults__item.item-1
+    -ms-grid-row: 1
+    -ms-grid-column: 1
+    grid-row: span 1
+    -ms-grid-row-span: 1
+
+    @media #{$_md}
+        -ms-grid-row: 1
+        -ms-grid-column: 1
+        grid-row: span 1
+        -ms-grid-row-span: 1
+
+    @media #{$_sm}
+        -ms-grid-row: 1
+        -ms-grid-column: 1
+
+.adults__item.item-2
+    -ms-grid-row: 1
+    -ms-grid-column: 2
+
+    @media #{$_sm}
+        -ms-grid-row: 3
+        -ms-grid-column: 1
+
+.adults__item.item-3
+    -ms-grid-row: 3
+    -ms-grid-column: 1  
+
+    @media #{$_sm}
+        -ms-grid-row: 5
+        -ms-grid-column: 1
+
+.adults__item.item-4
+    -ms-grid-row: 3
+    -ms-grid-column: 1
+     
+
+    @media #{$_sm}
+        -ms-grid-row: 7
+        -ms-grid-column: 1
+        grid-column: span 1
+        -ms-grid-column-span: 1
+
+.adults__item.item-5
+    -ms-grid-row: 5
+    -ms-grid-column: 3
+    grid-column: span 2
+    -ms-grid-column-span: 4   
+
+
+.adults__bottom-title
+    position: absolute
+    bottom: 15px
+    left: 0
+    width: 100%
+    padding: 0 15px
+    color: #ffffff
+    font-size: 18px
+    z-index: 1
+    font-weight: 700
+    max-width: 480px
+    line-height: 1.2
+
+.adults__text
+    margin-bottom: 60px

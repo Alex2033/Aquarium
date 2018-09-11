@@ -130,7 +130,7 @@
                 <ul class="sidebar__list">
                   <li class="sidebar__item"><a class="sidebar__link link" href="#">Новости</a></li>
                   <li class="sidebar__item"><a class="sidebar__link link" href="site-map.html">План Океанариума</a></li>
-                  <li class="sidebar__item"><a class="sidebar__link link" href="expositions.html">Экспозиции</a>
+                  <li class="sidebar__item"><a class="sidebar__link link active" href="expositions.html">Экспозиции</a>
                     <ul class="sidebar__sublist">
                       <li class="sidebar__sublist-item"><a class="sidebar__sublist-link link active" href="#">Рыбы умеренных и тропических широт</a></li>
                       <li class="sidebar__sublist-item"><a class="sidebar__sublist-link link" href="#">Дорога к океану</a></li>
@@ -180,7 +180,7 @@
                   </p>
                 </div>
                 <!-- begin modal -->
-                <div class="modal" id="modal" style="display: none;">
+                <div class="modal" id="modal-1" style="display: none;">
                   <div id="mask"></div>
                   <button class="modal__exit" style="background-image: url(img/general/exit.png);"></button>
                   <div class="modal__wrapper">
@@ -218,27 +218,26 @@
                           мечение. Удалось исследовать позвоночник гигантской щуки, выставленной в соборе Мангейма, и оказалось, 
                           что он является фальсификацией, будучи составленным из позвонков нескольких щук.
                           
-                          
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- end modal -->
+                <!-- end modal-->
                 <!-- begin inhabitants -->
                 <div class="inhabitants">
                   <h2 class="inner-heading inhabitants__title">Обитатели</h2>
                   <ul class="inhabitants__list">
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/1.jpg);"></span><span class="inhabitants__text">Карась серебряный</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/2.jpg);"></span><span class="inhabitants__text">Красноперка</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/3.jpg);"></span><span class="inhabitants__text">Окунь</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/4.jpg);"></span><span class="inhabitants__text">Осётр русский</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/5.jpg);"></span><span class="inhabitants__text">Осётр сибирский</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/6.jpg);"></span><span class="inhabitants__text">Сазан</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/7.jpg);"></span><span class="inhabitants__text">Солнечный окунь</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/8.jpg);"></span><span class="inhabitants__text">Стерлядь</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/9.jpg);"></span><span class="inhabitants__text">Угорь</span></li>
-                    <li class="inhabitants__item" data-modal="click"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/pike-1.jpg);"></span><span class="inhabitants__text">Щука</span></li>
+                    <li class="inhabitants__item" data-modal="click-1"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/1.jpg);"></span><span class="inhabitants__text">Карась серебряный</span></li>
+                    <li class="inhabitants__item" data-modal="click-2"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/2.jpg);"></span><span class="inhabitants__text">Красноперка</span></li>
+                    <li class="inhabitants__item" data-modal="click-3"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/3.jpg);"></span><span class="inhabitants__text">Окунь</span></li>
+                    <li class="inhabitants__item" data-modal="click-4"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/4.jpg);"></span><span class="inhabitants__text">Осётр русский</span></li>
+                    <li class="inhabitants__item" data-modal="click-5"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/5.jpg);"></span><span class="inhabitants__text">Осётр сибирский</span></li>
+                    <li class="inhabitants__item" data-modal="click-6"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/6.jpg);"></span><span class="inhabitants__text">Сазан</span></li>
+                    <li class="inhabitants__item" data-modal="click-7"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/7.jpg);"></span><span class="inhabitants__text">Солнечный окунь</span></li>
+                    <li class="inhabitants__item" data-modal="click-8"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/8.jpg);"></span><span class="inhabitants__text">Стерлядь</span></li>
+                    <li class="inhabitants__item" data-modal="click-9"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/9.jpg);"></span><span class="inhabitants__text">Угорь</span></li>
+                    <li class="inhabitants__item" data-modal="click-10"><span class="inhabitants__img" style="background-image: url(img/pages/expositions-card/pike-1.jpg);"></span><span class="inhabitants__text">Щука</span></li>
                   </ul>
                 </div>
                 <!-- end inhabitants -->
@@ -247,9 +246,9 @@
             </div>
           </div>
         </div>
-        <div class="inner-background inner-background--small"></div>
         <!-- end page-wrapper -->
       </main>
+      <div class="inner-background inner-background--small"></div>
       <!-- end page-->
     </div>
     <!-- end wrapper-->

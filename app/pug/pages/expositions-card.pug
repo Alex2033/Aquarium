@@ -179,7 +179,7 @@ html(lang='ru')
                                     li.sidebar__item
                                         a(href="site-map.html").sidebar__link.link План Океанариума
                                     li.sidebar__item
-                                        a(href="expositions.html").sidebar__link.link Экспозиции
+                                        a(href="expositions.html").sidebar__link.link.active Экспозиции
                                         ul.sidebar__sublist
                                             li.sidebar__sublist-item
                                                 a(href="#").sidebar__sublist-link.link.active Рыбы умеренных и тропических широт
@@ -240,7 +240,7 @@ html(lang='ru')
                                         северо-запада России. 
 
                                 // begin modal 
-                                .modal#modal(style="display: none;")
+                                .modal#modal-1(style="display: none;")
 
                                     #mask
                                     
@@ -298,51 +298,50 @@ html(lang='ru')
                                                     историческую хронику тех времен и выяснил, что Фридрих II в это время жил в Италии и не мог произвести 
                                                     мечение. Удалось исследовать позвоночник гигантской щуки, выставленной в соборе Мангейма, и оказалось, 
                                                     что он является фальсификацией, будучи составленным из позвонков нескольких щук.
-                                        
 
-                                // end modal 
+                                // end modal
 
                                 // begin inhabitants 
                                 .inhabitants
                                     h2.inner-heading.inhabitants__title Обитатели
                                     ul.inhabitants__list
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-1")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/1.jpg);")
                                             span.inhabitants__text Карась серебряный
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-2")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/2.jpg);")
                                             span.inhabitants__text Красноперка
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-3")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/3.jpg);")
                                             span.inhabitants__text Окунь
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-4")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/4.jpg);")
                                             span.inhabitants__text Осётр русский
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-5")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/5.jpg);")
                                             span.inhabitants__text Осётр сибирский
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-6")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/6.jpg);")
                                             span.inhabitants__text Сазан
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-7")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/7.jpg);")
                                             span.inhabitants__text Солнечный окунь
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-8")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/8.jpg);")
                                             span.inhabitants__text Стерлядь
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-9")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/9.jpg);")
                                             span.inhabitants__text Угорь
-                                        li.inhabitants__item(data-modal="click")
+                                        li.inhabitants__item(data-modal="click-10")
                                             span.inhabitants__img(style="background-image: url(img/pages/expositions-card/pike-1.jpg);")
                                             span.inhabitants__text Щука
                                 // end inhabitants 
 
 
                             // end expositions-card 
-                .inner-background.inner-background--small
                 // end page-wrapper 
 
+            .inner-background.inner-background--small
 
             // end page
 

@@ -1,0 +1,35 @@
+.lease__info
+    display: flex
+    flex-wrap: wrap
+    width: 100%
+    justify-content: space-between
+    margin-bottom: 30px
+
+    @media #{$_sm}
+        margin-bottom: 0
+
+.lease__info-left,
+.lease__info-right
+    font-size: 18px
+
+    @media #{$_lg}
+        font-size: 16px
+
+    @media #{$_sm}
+        margin-bottom: 15px
+    
+.lease__info-text
+    margin-bottom: 5px
+
+    @media #{$_sm}
+        margin-bottom: 0
+
+.lease__info-accent
+    color: lighten($accent, 5%)
+    display: block
+    font-weight: 700
+
+.lease__text
+    @media #{$_sm}
+        br
+            display: none
