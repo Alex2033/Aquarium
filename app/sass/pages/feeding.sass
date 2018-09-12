@@ -1,0 +1,42 @@
+.feeding-s__text
+    margin-bottom: 40px
+
+.week-timetable__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-right: -28px
+
+.week-timetable__item
+    margin-right: 28px
+    width: calc(25% - 28px)
+    text-align: center
+    margin-bottom: 25px  
+
+    @media #{$_sm}
+        width: calc(50% - 28px) 
+
+.week-timetable__img
+    display: block
+    height: 0
+    padding-bottom: 70%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    margin-bottom: 5px
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        background-color: #ffffff
+        opacity: 0.1
+        transition: opacity .2s ease
+
+    &:hover
+        &::before
+            opacity: 0

@@ -222,16 +222,17 @@ html(lang='ru')
                                     |  время и даже кормить!
 
                             // begin modal 
-                            .modal#modal(style="display: none;")
+                            .modal#modal-5(style="display: none;")
 
-                                #mask
+                                .mask
                                 
                                 button.modal__exit(style="background-image: url(img/general/exit.png);")
 
                                 .modal__wrapper
 
-                                    header.modal__header(style="background-image: url(img/pages/adults-programs/1.jpg);")
-                                        .modal__header-text
+                                    header.modal__header
+                                        .modal__header-img(style="background-image: url(img/pages/adults-programs/5.jpg);")
+                                        .modal__header-text Подводная экскурсия по главному аквариуму с акулами(для имеющих сертификат OWD)
 
                                     .modal__body
 
@@ -247,24 +248,28 @@ html(lang='ru')
 
                                             p.
                                                 Подарите своим близким радость удивительного подводного путешествия!
+
+                                            .modal__price
+                                                |  Стоимость:  
+                                                b 3 000 ₽/час
                                         
 
                                 // end modal 
 
                             .adults__wrapper
-                                .adults__item.item-1(data-modal="click")
+                                .adults__item.item-1(data-modal="click-1")
                                     .adults__img(style="background-image: url(img/pages/adults-programs/1.jpg)")
                                     h5.adults__bottom-title Шоу с акулами по индивидуальному заказу
-                                .adults__item.item-2(data-modal="click")
+                                .adults__item.item-2(data-modal="click-2")
                                     .adults__img(style="background-image: url(img/pages/adults-programs/2.jpg)")
                                     h5.adults__bottom-title  «Подводное послание» от водолаза
-                                .adults__item.item-3(data-modal="click")
+                                .adults__item.item-3(data-modal="click-3")
                                     .adults__img(style="background-image: url(img/pages/adults-programs/3.jpg)")
                                     h5.adults__bottom-title «Пиратский праздник»
-                                .adults__item.item-4(data-modal="click")
+                                .adults__item.item-4(data-modal="click-4")
                                     .adults__img(style="background-image: url(img/pages/adults-programs/4.jpg)")
                                     h5.adults__bottom-title Новогодние игровые программы
-                                .adults__item.item-5(data-modal="click")
+                                .adults__item.item-5(data-modal="click-5")
                                     .adults__img(style="background-image: url(img/pages/adults-programs/5.jpg)")
                                     h5.adults__bottom-title Подводная экскурсия по главному аквариуму с акулами (для имеющих сертификат OWD)
 

@@ -130,46 +130,34 @@ function slick_slider() {
 };
 
 $(function() {
-
-	var listLength = $('.inhabitants__list').children().length;
-
-	for (var i = 1; i <= listLength; i++) {
-		
-		console.log($('[data-modal="click-' + i + '"]'));
-		
-		$('[data-modal="click-' + i + '"]').click(function() {
-
-			$('#modal-' + i).fadeIn(300);
-			$('html, body').animate({
-				scrollTop:  $(".modal").offset().top
-			});
-		
-		});	
-	}
-
+	var cards = $('.inhabitants__list').children();
+	$(cards).on('click', function() {
+		var str = $(this).data('modal');
+		var numberModal = str.replace('click-', '');
+		$('#modal-' + numberModal).fadeIn(300);
+		$('html, body').animate({
+			scrollTop:  $('#modal-' + numberModal).offset().top
+		});
+	});
 });
 
-/*
-$('[data-modal="click-1"]').click(function() {
-	$('#modal-1').fadeIn(300);
-	$('html, body').animate({
-		scrollTop:  $(".modal").offset().top
+$(function() {
+	var cards = $('.adults__wrapper').children();
+	$(cards).on('click', function() {
+		var str = $(this).data('modal');
+		var numberModal = str.replace('click-', '');
+		$('#modal-' + numberModal).fadeIn(100);
+		$('html, body').animate({
+			scrollTop:  $('#modal-' + numberModal).offset().top
+		});
 	});
-});*/
-
-
-/*
-for (var i = 1; i <= 10; i++) {
-	console.log('#modal-' + i);
-	console.log('[data-modal="click-' + i + '"]')
-}*/
-
+});
 
 $('.modal__exit').click(function() {
 	$('.modal').fadeOut(300);
 });
 
-$('#mask').click(function() {
+$('.mask').click(function() {
 	$('.modal').fadeOut(300);
 });
 
@@ -186,13 +174,5 @@ $(function(){
 			return '<button class="slick-button"></button>';
 },
 	});
-
-});
-
-$(function () {
-
-	if ($('.sidebar__sublist-link').hasClass('active')) {
-		$('.sidebar__link.link.active').removeClass('active');
-	}
 
 });

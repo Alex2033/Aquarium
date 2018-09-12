@@ -266,7 +266,7 @@ h1, h2, h3, h4, h5, h6
     @media #{$_xs}
         right: 17%
 
-#mask
+.mask
 	position: fixed
 	top: 0
 	left: 0
@@ -274,3 +274,125 @@ h1, h2, h3, h4, h5, h6
 	height: 100%
 	background-color: rgba(#444, .29)
 	z-index: 100
+
+.modal
+    position: absolute
+    right: -15px
+    bottom: -100px
+    width: 108%
+
+    @media #{$_md}
+        width: 102%
+        bottom: initial
+        top: -37%
+        right: -1%
+
+    @media #{$_sm}
+        top: -28%
+
+.modal__body-img
+    width: calc(100% + 60px)
+    
+.modal__exit
+    position: absolute
+    top: 0
+    right: -30px
+    width: 24px
+    height: 24px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    z-index: 200
+    background-color: transparent
+    border: 0
+    cursor: pointer
+
+    &:active
+        transform: translateY(2px)
+
+    &:focus
+        outline: 0
+
+    @media #{$_md}
+        z-index: 10000
+        right: 20px
+        top: 20px
+
+.modal__wrapper
+    position: relative
+    z-index: 200
+    background-color: #ffffff
+    padding-bottom: 25px
+
+.modal__body
+    padding: 0 20px
+
+.modal__images
+    justify-content: space-around
+
+    &.triple
+        .modal__img
+            width: calc(32% - 30px)
+
+        @media #{$_sm}
+            
+            .inner-images__img
+                height: 217px
+                width: 100%
+
+.modal__image--big
+    @media #{$_md}
+        padding-bottom: 47%
+
+.modal__characteristic
+    margin-bottom: 30px
+
+.modal__characteristic-item
+    margin-bottom: 15px
+
+.modal__text
+    margin-bottom: 28px
+
+.modal__header
+	position: relative
+	min-height: 180px
+	padding: 20px 30px
+	margin-bottom: 25px
+	background-color: $main-color
+
+.modal__header-img
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	opacity: 0.5
+
+.modal__header-text
+	position: relative
+	color: #ffffff
+	font-size: 20px
+	z-index: 1
+	font-weight: 700
+	max-width: 500px
+	line-height: 1.4
+
+	@media #{$_sm}
+		font-size: 16px
+
+.modal__price
+	display: flex
+	flex-wrap: wrap
+	font-size: 18px
+	margin-top: 50px
+	b
+		color: lighten($accent, 5%)
+		display: block
+		margin-left: 5px
+		
+	@media #{$_sm}
+		font-size: 16px
+		margin-top: 30px
