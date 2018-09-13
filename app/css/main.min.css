@@ -3575,6 +3575,19 @@ h1, h2, h3, h4, h5, h6 {
   .search-s__inner-menu {
     display: none; } }
 
+.is-search {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 450px 1fr; }
+  .is-search .header {
+    width: 100%; }
+  .is-search .page {
+    width: 100%; }
+  .is-search .search-s,
+  .is-search .search-s__wrapper,
+  .is-search .search-s__container {
+    height: 100%; }
+
 .expositions-s__wrap {
   -ms-grid-columns: 1fr 30px 1fr;
   -ms-grid-rows: auto 30px auto 30px auto 30px auto;
