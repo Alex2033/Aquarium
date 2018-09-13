@@ -1,0 +1,129 @@
+.regatta-start__text
+    margin-bottom: 60px
+
+    @media #{_sm}
+        margin-bottom: 30px
+
+.regatta-start__list 
+    display: grid
+    margin-bottom: 20px
+    margin-right: 0
+    display: -ms-grid
+    -ms-grid-columns: 1fr 30px 1fr
+    -ms-grid-rows: auto 30px auto 30px auto 30px auto
+    grid-template-columns: repeat(2, 1fr)
+    grid-gap: 30px
+    grid-template-rows: auto
+
+    @media #{$_sm}
+        -ms-grid-columns: 1fr
+        grid-template-columns: 1fr
+        grid-gap: 20px
+        -ms-grid-rows: auto 20px auto 20px auto 20px auto 20px auto
+
+
+.regatta-start__item
+    margin: 0
+    position: relative
+    width: 100%
+
+.regatta-start__item.item-1
+    -ms-grid-row: 1
+    -ms-grid-column: 1
+    grid-row: span 1
+    -ms-grid-row-span: 1
+
+.regatta-start__item.item-2
+    -ms-grid-row: 1
+    -ms-grid-column: 1
+
+    @media #{$_sm}
+        -ms-grid-row: 3
+
+.regatta-start__item.item-3
+    -ms-grid-row: 3
+    -ms-grid-column: 1
+
+    @media #{$_sm}
+        -ms-grid-row: 5 
+
+.regatta-start__item.item-4
+    -ms-grid-row: 3
+    -ms-grid-column: 1
+
+    @media #{$_sm}
+        -ms-grid-row: 7
+     
+
+.regatta-start__item.item-5
+    -ms-grid-row: 5
+    -ms-grid-column: 3
+    grid-column: span 2
+    -ms-grid-column-span: 4
+
+    @media #{$_sm}
+        -ms-grid-row: 9   
+        grid-column: span 1
+
+.children-cards__item--big
+    
+    .children-cards__link
+        padding-bottom: 28%
+
+        @media #{$_sm}
+            padding-bottom: 35%
+
+        @media #{$_xsm}
+            padding-bottom: 75.4%
+
+.regatta-start__item-body
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    justify-content: space-between
+    padding: 21px 25px
+    height: 100%
+
+    @media #{$_xs}
+        padding: 5px
+
+.regatta-start__item-heading
+    font-weight: 700
+    margin-bottom: 5px
+    color: #ffffff
+    text-align: center 
+
+    @media #{$_xs}
+        font-size: 14px 
+
+.regatta-start__periods
+    display: flex
+    flex-wrap: wrap
+    max-height: 100px
+    flex-direction: column
+
+    @media #{$_xsm}
+        max-height: initial
+        align-items: center
+
+.regatta-start__periods-item
+    width: 50%
+
+    @media #{$_xsm}
+        width: initial
+
+.regatta-start__link
+    color: #ffffff
+    font-weight: 700
+    line-height: 2
+    display: block
+
+    &:hover
+        text-decoration: underline
+
+    @media #{$_xs}
+        font-size: 14px

@@ -1,5 +1,8 @@
 .aquarium-children__text
     margin-bottom: 60px
+
+    @media #{$_sm}
+        margin-bottom: 30px
     
 .children-cards
     display: flex
@@ -7,10 +10,17 @@
     justify-content: space-between
     margin-right: -30px
 
+    @media #{$_sm}
+        margin-right: 0
+
 .children-cards__item
     width: calc(50% - 30px)
     margin-right: 30px
     margin-bottom: 30px
+
+    @media #{$_sm}
+        width: 100%
+        margin-right: 0
 
 .children-cards__link
     display: block
@@ -34,33 +44,76 @@
     &:hover
         .children-cards__text,
         .children-cards__hidden-link
-            margin-top: 0
+            opacity: 1
 
         .children-cards__hidden
-            top: initial
-            bottom: 12px
+            top: 10%
+
+    @media #{$md} and #{$_lg}
+        &:hover
+            .children-cards__hidden
+                top: 5px
+
+    @media #{$_sm}
+        &:hover
+            .children-cards__hidden
+                bottom: 12px
+                top: initial
 
 .children-cards__hidden
     position: absolute
-    top: calc(65% + 12px)
+    top: 65%
     width: 100%
     color: #ffffff
     padding: 12px 20px
+    transition: top .3s ease
+
+    @media #{$md} and #{$_lg}
+        padding: 5px 10px
+
+    @media #{$_sm}
+        top: initial
+        bottom: 12px
+        padding: 0 15px
 
 .children-cards__heading
     font-weight: 700
     margin-bottom: 12px
 
+    @media #{$md} and #{$_lg}
+        font-size: 14px
+        margin-bottom: 3px
+
+    @media #{$_sm}
+        margin-bottom: 0
+
 .children-cards__text
-    transition: margin-top .3s ease
-    margin-top: 100%
+    opacity: 0
+    transition: opacity .2s ease
     p
         font-size: 14px
         line-height: 1.2
 
+    @media #{$md} and #{$_lg}
+        p
+            font-size: 12px
+    @media #{$_sm}
+        display: none
+
 .children-cards__hidden-link
-    transition: margin-top .3s ease
-    margin-top: 100%
+    opacity: 0
+    transition: opacity .2s ease
     font-size: 14px
     text-decoration: underline
     float: right
+
+    @media #{$_sm}
+        display: none
+
+.children-cards__description
+    background-color: #fafafa
+    padding: 13px
+    display: block
+
+    @media #{$sm}
+        display: none

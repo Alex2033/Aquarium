@@ -1,0 +1,32 @@
+.schoolchildren__text
+    margin-bottom: 60px
+
+    @media #{$_sm}
+        margin-bottom: 30px
+
+.schoolchildren
+
+    @media #{$_md}
+
+        .children-cards__hidden
+            top: initial
+            bottom: 12px
+            padding: 0 15px
+
+        .children-cards__heading
+            margin-bottom: 0
+
+        .children-cards__hidden-link,
+        .children-cards__text
+            display: none
+
+    .children-cards__description
+        display: block
+        @media #{$md}
+            display: none
+
+        .children-cards__link   
+            &:hover
+                .children-cards__hidden
+                    bottom: 12px
+                    top: initial
