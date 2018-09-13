@@ -2006,6 +2006,56 @@ h1, h2, h3, h4, h5, h6 {
     .sidebar__sublist-link {
       font-size: 14px; } }
 
+.accordion {
+  margin-bottom: 17px; }
+
+.accordion__button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0098e9;
+  font-weight: 600;
+  cursor: pointer; }
+  .accordion__button::before {
+    content: '';
+    width: 7px;
+    height: 12px;
+    background: url(../img/pages/accordion-arrow.svg) no-repeat 50% 50%;
+    margin-right: 7px;
+    -webkit-background-size: contain;
+            background-size: contain;
+    -webkit-transform-origin: 50%;
+        -ms-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transition: -webkit-transform .2s ease;
+    transition: -webkit-transform .2s ease;
+    -o-transition: transform .2s ease;
+    transition: transform .2s ease;
+    transition: transform .2s ease, -webkit-transform .2s ease; }
+  .accordion__button.active::before {
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg); }
+
+.accordion__content {
+  padding: 20px;
+  display: none; }
+  @media (max-width: 375px) {
+    .accordion__content {
+      font-size: 14px; } }
+
+.accordion__text {
+  margin-bottom: 20px; }
+
+.accordion-list {
+  margin-bottom: 20px; }
+
 .header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(29, 35, 48, 0)), color-stop(79%, rgba(0, 105, 161, 0.64)), color-stop(86%, rgba(0, 105, 161, 0.7)));
   background-image: -webkit-linear-gradient(bottom, rgba(29, 35, 48, 0) 0%, rgba(0, 105, 161, 0.64) 79%, rgba(0, 105, 161, 0.7) 86%);
@@ -4616,3 +4666,9 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 375px) {
     .regatta-start__link {
       font-size: 14px; } }
+
+.vacansies {
+  min-height: 640px; }
+  @media (max-width: 991.99px) {
+    .vacansies {
+      min-height: initial; } }

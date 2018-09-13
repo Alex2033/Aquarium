@@ -1,0 +1,35 @@
+.accordion
+    margin-bottom: 17px
+    
+.accordion__button
+    display: flex
+    width: 100%
+    align-items: center
+    color: lighten($accent, 6%)
+    font-weight: 600
+    cursor: pointer
+    
+    &::before
+        content: ''
+        width: 7px
+        height: 12px
+        background: url(../img/pages/accordion-arrow.svg) no-repeat 50% 50%
+        margin-right: 7px
+        background-size: contain
+        transform-origin: 50%
+        transition: transform .2s ease
+
+    &.active
+        &::before
+            transform: rotate(90deg)
+
+.accordion__content
+    padding: 20px
+    display: none
+
+    @media #{$_xs}
+        font-size: 14px
+
+.accordion__text,
+.accordion-list
+    margin-bottom: 20px

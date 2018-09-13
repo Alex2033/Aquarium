@@ -198,3 +198,11 @@ function shortWords() {
     } 
 
 }
+
+$('.accordion__button').click(function () {
+
+    $(this).toggleClass('active');
+    $('.accordion__content + .accordion__button').not($(this).next()).slideUp(400);
+    $(this).next().slideToggle(400);
+
+});
