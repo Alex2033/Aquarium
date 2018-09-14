@@ -189,7 +189,7 @@ function shortWords() {
 
     if ($(window).width() >= 768) {
         var size = 137,
-        newsContent= $('.children-cards__text p'),
+        newsContent= $('.cards__text p'),
         newsText = newsContent.text();
         
         if(newsText.length > size){

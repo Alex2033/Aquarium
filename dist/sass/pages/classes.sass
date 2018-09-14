@@ -1,0 +1,41 @@
+.classes
+    @media #{$_xs}
+        font-size: 14px
+    
+.classes__top
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 30px
+
+.classes__img,
+.classes__contacts
+    width: calc(50% - 15px)
+
+    @media #{$_xsm}
+        width: 100%
+
+.classes__img
+    @media #{$_xsm}
+        margin-bottom: 25px
+        img
+            margin-left: auto
+            margin-right: auto
+
+.classes__contacts-title
+    margin-top: -6px
+
+    
+.classes__contacts-link
+    color: $main-color
+    line-height: 1.5
+    transition: color .15s ease
+
+    &:hover
+        color: $accent
+
+.classes__text
+    margin-bottom: 60px
+
+    @media #{$_sm}
+        margin-bottom: 30px
