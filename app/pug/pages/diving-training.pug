@@ -1,0 +1,265 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+  
+  body.is-internal
+
+    // begin wrapper
+    .wrapper.is-inner
+
+        img.background-img(src="img/general/body-bg.jpg", alt="Page body image")
+
+        // begin header 
+        header.header.header-inner
+
+            .header__container.container
+                .header__top
+
+                    // begin contacts 
+                    .contacts
+                        .contacts__left
+                            a(href="#").contacts__left-link
+                                span.contacts__hours Время работы 10-22
+                                span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                            a.contacts__link(href="site-plan.html") План океанариума      
+                        .contacts__right
+                            address.contacts__address
+                                a.contacts__address-link(href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0,+86,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191119/@59.9189478,30.3367602,17z/data=!3m1!4b1!4m5!3m4!1s0x46963052d4a092f1:0x1cc3e8c780acd480!8m2!3d59.9189451!4d30.3389542" target="_blank") Спб, ул. Марата, 86
+                            a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
+
+                            // begin socials 
+                            ul.socials
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/vk.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/fb.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/inst.svg", alt="Social image").socials__img
+                            // end socials 
+                    // end contacts 
+
+                    .header__logo
+
+                        // begin logo 
+                        a(href="index.html").logo
+                            img(src="img/general/logo.png", alt="Logotype").logo__img
+                        // end logo 
+
+                    .header__top-right
+
+                        .header__actions
+
+                            a(href="http://neptun-trk.volex.beget.tech").header-actions__link
+                                img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
+
+                            .header__actions-bottom
+
+                                // begin languages 
+                                ul.languages
+                                    li.languages__item
+                                        a(href="#").languages__link RU
+                                    li.languages__item
+                                        a(href="#").languages__link ENG
+                                // end languages 
+
+                                // begin search 
+                                form.search.header__search
+                                    input(type="submit" value="" style="background-image: url(img/general/search.svg);").search__button
+                                    input.search__input(type="text" required="required" placeholder="Поиск")
+                                // end search 
+
+                        .header__btns
+                            button.button.header__btn.header__btns-item.header__btn--visible
+                                img(src="img/header/btn-img.svg", alt="Button image").button__img
+                                span.header__btn-text.header__btn-text--visible  Электронный билет в Океанариум
+                                span.header__btn-text.header__btn-text--hidden  Эл. билет
+
+                            // begin toggle-menu 
+                            button.toggle-menu.header__btns-item
+                                span.sandwich
+                                    span.sandwich__line.sandwich__line-top
+                                    span.sandwich__line.sandwich__line-mid
+                                    span.sandwich__line.sandwich__line-bot
+                                span.toggle-menu__text Меню
+                            // end toggle-menu 
+
+                // begin navigation 
+                nav.navigation
+                    ul.navigation__list.menu.menu--hidden
+                        li.menu__item
+                            a.menu__link(href="index.html") Главная
+                        li.menu__item
+                            a.menu__link(href="#") О нас
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Информация
+                                br.header__br 
+                                |  для посетителей
+                        li.menu__item
+                            a.menu__link(href="#")
+                                |  Показательные кормления
+                                br.header__br
+                                |  и шоу-программы
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Океанариум
+                                br.header__br 
+                                |  детям
+                        li.menu__item
+                            a.menu__link(href="#") Дайвинг-центр
+                            // begin menu-dropdown 
+                            ul.menu-dropdown
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Обучение дайвингу
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Экскурсии в главный танк
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Подарочный сертификат  
+                            // end menu-dropdown 
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Магазин
+                                br.header__br 
+                                |  сувениров
+                        li.menu__item
+                            a.menu__link(href="#") Контакты
+                // end navigation  
+
+                .container
+                    .page-heading
+                        h1.title.page-heading__title Обучение дайвингу
+
+                    // begin breadcrumbs 
+                    .breadcrumbs
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                a(href="index.html").breadcrumbs__link Дайвинг-центр
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="diving-center.html").breadcrumbs__link Обучение дайвингу
+                    // end breadcrumbs 
+
+        // end header
+
+        // begin page
+        main.page 
+
+            // begin page-wrapper 
+            .page-wrapper
+                .page-wrapper__row
+                    
+                    // begin sidebar 
+                    aside.sidebar
+
+                        .sidebar__background(style="background-image: url(img/pages/page-image.png);")
+
+                        // begin inner-menu 
+                        .inner-menu
+                            .inner-menu__wrapper
+                                .inner-menu__sandwich
+                                    span.inner-menu__line.inner-menu__line--top
+                                    span.inner-menu__line.inner-menu__line--middle
+                                    span.inner-menu__line.inner-menu__line--bottom
+                                a(href="diving-center.html").inner-menu__text.inner-heading Дайвинг-центр
+                            ul.sidebar__list
+                                li.sidebar__item
+                                    a(href="diving-training.html").sidebar__link.link.active Обучение дайвингу
+                                    ul.sidebar__sublist
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link Стоимость обучения
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link Инструкторы
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link Записаться
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Экскурсии в главный аквариум
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Подарочный сертификат
+                        // end inner-menu 
+                    // end sidebar 
+
+                    .page-wrapper__right
+                        
+                        // begin diving-training 
+                        section.diving-training
+
+                            // begin slider 
+                            ul.slider.diving-training__slider
+                                li.slider__item(style="background-image: url(img/pages/diving-training/1.jpg);")
+                                li.slider__item(style="background-image: url(img/pages/diving-training/1.jpg);")
+                                li.slider__item(style="background-image: url(img/pages/diving-training/1.jpg);")
+                            // end slider 
+
+                            ul.diving-training__list
+                                li.diving-training__list-item
+                                    h5.diving-training__list-title Стоимость обучения
+                                    .diving-training__list-text
+                                        p.
+                                            Начальный курс Open water Diver PADI (5 теоретических занятий + 5 практических) Базовый - 14 500 ₽ 
+                                    a.diving-training__list-link(href="#") Подробнее
+                                li.diving-training__list-item
+                                    h5.diving-training__list-title Инструкторы
+                                    .diving-training__list-text
+                                        p.
+                                            Занятия в дайвинг-центре проводят сертифицированные инструкторы, имеющие огромный опыт погружений. 
+                                    a.diving-training__list-link(href="#") Подробнее
+                                li.diving-training__list-item
+                                    h5.diving-training__list-title Записаться
+                                    .diving-training__list-text
+                                        p
+                                            |  Записаться на обучение:
+                                        ul.diving-training__sublist
+                                            li.diving-training__sublist-item позвонить по телефону
+                                            li.diving-training__sublist-item отправить заявку на e-mail
+                                            li.diving-training__sublist-item сообщение на факс
+                                    a.diving-training__list-link(href="#") Подробнее
+
+                            h4.inner-h4 Дайвинг курсы в Петербурге
+
+                            .text.diving-training__text
+                                p.
+                                    Обучение дайвингу в Петербурге предлагает дайвинг-центр «Планета Нептун». Здесь созданы все необходимые условия для продуктивного получения навыков 
+                                    дайвинга: учебный центр, созданный на базе океанариума, бассейн в МДЦ «Нептун» и организация поездок для погружения в открытых водоемах. По окончании 
+                                    дайвинг курсов, вы получите сертификат международного стандарта РАDI - Профессиональной Ассоциации Инструкторов Подводного Плавания.
+
+                                p.
+                                    Open Water Diver - начальный курс обучения дайвингу. Он предполагает освоение базовых навыков подводного плавания, необходимых и 
+                                    достаточных для того, чтобы совершать погружения в паре с партнером на «открытой воде». Этот курс является основой всего дальнейшего 
+                                    обучения. Ведь сертификат PADI Open Water Diver дает возможность продолжить обучение дайвингу и пройти курс PADI Advanced Open Water 
+                                    Diver. Освоив начальный уровень, вы сможете пройти специальные дайвинг курсы, обучающие ночным погружениям, подводной съемке, погружению 
+                                    в сухом костюме и использованию газовых смесей Nitrox. 
+
+                                p.
+                                    Девиз наших инструкторов – это безопасность. Все возможные чрезвычайные ситуации моделируются во время дайвинг курсов. 
+                                    Поэтому, на «открытой воде», вас нельзя будет застать врасплох. Такое качественное дайвинг обучение является обязательным. 
+                                    Это говорит и о соответствии нашего дайвинг-центра международным стандартам и о гаранте дайвинга, как безопасного вида спорта.
+
+                                p.
+                                    Минимальный возраст для приема на дайвинг курсы Open Water Diver – 15 лет. 	Для обучающихся дайвингу моложе 15-ти лет 
+                                    возможна аттестация по программе PADI Junior Open Water Diver.
+
+
+                        // end diving-training 
+
+            // end page-wrapper 
+
+            .inner-background.inner-background--small
+
+        // end page
+
+    // end wrapper
+
+    include ../modules/footer
+
+    #scrollUp
+      img(src="img/general/angle-top.svg", alt="Angle Top").scrollUp__img
+
+
+    // scripts 
+    script(src='js/scripts.min.js')

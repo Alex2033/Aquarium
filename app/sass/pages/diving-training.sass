@@ -1,0 +1,49 @@
+.diving-training__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 40px
+
+    @media #{$_sm}
+        margin-bottom: 0
+
+.diving-training__list-item
+    width: calc(33.3333% - 15px)
+    margin-bottom: 30px
+
+    @media #{$_sm}
+        width: 100%
+        max-width: 360px
+
+.diving-training__list-title
+    font-weight: 700
+    font-size: 18px
+    margin-bottom: 20px
+
+.diving-training__list-link
+    display: inline-block
+    color: lighten($accent, 5%)
+    text-decoration: underline
+    font-weight: 700
+
+.diving-training__list-text
+    margin-bottom: 20px
+    font-size: 15px
+
+.diving-training__sublist-item
+    list-style: disc
+    margin-left: 15px
+
+.diving-training__slider
+
+    .slick-slider
+        margin-bottom: 45px
+    
+
+    @media #{$_sm}
+        .slick-arrow
+            width: 25px
+            height: 25px
+
+        .slider__item
+            min-height: 172px

@@ -58,3 +58,12 @@
 
     @media #{$_sm}
         font-size: 20px
+
+.classes__onecol-list
+    .onecol-list__item
+        cursor: pointer
+
+        &:hover
+            .onecol-list__title
+                color: lighten($accent, 5%)
+                text-decoration: underline

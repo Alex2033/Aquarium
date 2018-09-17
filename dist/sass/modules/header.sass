@@ -151,7 +151,9 @@
     margin-right: 12px
 
 .header__btn
-    width: 100%
+
+    @media #{$xs}
+        width: 100%
 
     @media #{$md} and #{$_lg}
         font-size: 13px

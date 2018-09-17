@@ -4,16 +4,10 @@
 .onecol-list__item
     display: flex
     margin-bottom: 30px
-    cursor: pointer
-    align-items: flex-start
+    align-items: stretch
 
     @media #{$_sm}
         margin-bottom: 15px
-
-    &:hover
-        .onecol-list__title
-            color: lighten($accent, 5%)
-            text-decoration: underline
 
 .onecol-list__item-left
     flex-shrink: 0
@@ -26,6 +20,7 @@
         margin-right: 10px
 
 .onecol-list__item-right
+
     @media #{$_sm}
         font-size: 14px
 
@@ -33,11 +28,16 @@
         font-size: 12px
 
 .onecol-list__title
-    display: inline-block
     color: $main-color
     font-weight: 700
+    cursor: pointer
     margin-bottom: 12px
     transition: color .15s ease
+    display: inline-block
+
+    &:hover
+        color: lighten($accent, 5%)
+        text-decoration: underline
 
     @media #{$_sm}
         font-weight: 400
@@ -45,3 +45,10 @@
 
 .onecol-list__text
     max-width: 375px
+
+.onecol-list__cite
+    font-size: 14px
+    color: #777777   
+
+    @media #{$_sm}
+        font-size: 11px
