@@ -4,10 +4,16 @@
 .onecol-list__item
     display: flex
     margin-bottom: 30px
+    cursor: pointer
     align-items: flex-start
 
     @media #{$_sm}
         margin-bottom: 15px
+
+    &:hover
+        .onecol-list__title
+            color: lighten($accent, 5%)
+            text-decoration: underline
 
 .onecol-list__item-left
     flex-shrink: 0
@@ -26,16 +32,12 @@
     @media #{$_xs}
         font-size: 12px
 
-.onecol-list__link
+.onecol-list__title
     display: inline-block
     color: $main-color
     font-weight: 700
     margin-bottom: 12px
     transition: color .15s ease
-
-    &:hover
-        color: lighten($accent, 5%)
-        text-decoration: underline
 
     @media #{$_sm}
         font-weight: 400
