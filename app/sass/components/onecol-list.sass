@@ -47,8 +47,47 @@
     max-width: 375px
 
 .onecol-list__cite
+    display: block
     font-size: 14px
     color: #777777   
 
     @media #{$_sm}
         font-size: 11px
+
+.onecol-list__link
+    display: block
+    color: $main-color
+    max-width: 385px
+
+    &:hover
+        color: lighten($accent, 5%)
+        text-decoration: underline
+
+.onecol-list__bottom
+    display: flex
+    width: 100%
+    justify-content: space-between
+    align-items: flex-end
+    flex-wrap: wrap
+
+.onecol-list__pdf-open
+    display: flex
+    align-items: center
+    font-size: 14px
+    color: lighten($accent, 5%)
+
+    img
+        margin-left: 10px
+
+    @media #{$_sm}
+        margin-left: auto
+        font-size: 12px
+
+        img
+            width: 13px
+
+.onecol-list__pdf-text
+    text-decoration: underline
+
+    &:hover
+        text-decoration: none

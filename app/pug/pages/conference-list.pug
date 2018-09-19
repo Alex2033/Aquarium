@@ -133,7 +133,7 @@ html(lang='ru')
 
                 .container
                     .page-heading
-                        h1.title.page-heading__title Для школьников
+                        h1.title.page-heading__title Конференции
 
                     // begin breadcrumbs 
                     .breadcrumbs
@@ -142,13 +142,13 @@ html(lang='ru')
                                 a(href="index.html").breadcrumbs__link Главная
                                 img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="aquarium-children.html").breadcrumbs__link Океанариум детям
+                                a(href="textual.html").breadcrumbs__link О нас
                                 img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="schoolchildren.html").breadcrumbs__link Для школьников
+                                a(href="conference-main.html").breadcrumbs__link Конференции и публикации
                                 img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="classes.html").breadcrumbs__link Занятия для 1-3 классов
+                                a(href="conference-list.html").breadcrumbs__link Конференции
                     // end breadcrumbs 
 
         // end header
@@ -163,7 +163,7 @@ html(lang='ru')
                     // begin sidebar 
                     aside.sidebar
 
-                        .sidebar__background(style="background-image: url(img/pages/page-image.png);")
+                        .sidebar__background.sidebar__background--cover(style="background-image: url(img/pages/page-image.png);")
 
                         // begin inner-menu 
                         .inner-menu
@@ -172,142 +172,83 @@ html(lang='ru')
                                     span.inner-menu__line.inner-menu__line--top
                                     span.inner-menu__line.inner-menu__line--middle
                                     span.inner-menu__line.inner-menu__line--bottom
-                                a(href="aquarium-children.html").inner-menu__text.inner-heading Океанариум детям
+                                a(href="textual.html").inner-menu__text.inner-heading О нас
                             ul.sidebar__list
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Для дошкольников
+                                    a(href="#").sidebar__link.link Новости
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Для школьников
+                                    a(href="site-map.html").sidebar__link.link План Океанариума
+                                li.sidebar__item
+                                    a(href="expositions.html").sidebar__link.link Экспозиции             
+                                li.sidebar__item
+                                    a(href="conference-main.html").sidebar__link.link Конференция и публикации
                                     ul.sidebar__sublist
                                         li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Экскурсии для школьников
+                                            a(href="conference-page.html").sidebar__sublist-link.link.active Конференции
                                         li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link.active Занятия для 1-3 классов
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Занятия для 4-7 классов
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Занятия для 8-11 классов
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Занятия по темам
-                                        li.sidebar__sublist-item
-                                            a(href="#").sidebar__sublist-link.link Стоимость экскурсий и занятий
+                                            a(href="#").sidebar__sublist-link.link Публикации наших сотрудников
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Конкурс «Большая регата»
+                                    a(href="#").sidebar__link.link СМИ о нас
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Развлекательные программы для детей
+                                    a(href="#").sidebar__link.link Отзывы
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Буклет-путеводитель для детей
+                                    a(href="#").sidebar__link.link Часто задаваемые вопросы
                                 li.sidebar__item
-                                    a(href="#").sidebar__link.link Контакты учебного центра
-                                
+                                    a(href="#").sidebar__link.link Вакансии
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Обратная связь
                         // end inner-menu 
                     // end sidebar 
 
                     .page-wrapper__right
                         
-                        // begin classes 
-                        section.classes
+                        // begin conference-list 
+                        section.conference-list
 
-                            h2.inner-heading Занятия для 1-3 классов
-
-                            .classes__top
-                                .classes__img
-                                    img(src="img/pages/kids/1.jpg", alt="Classes children image")
-
-                            .text.classes__text
+                            .text.conference-list__text
                                 p.
-                                    С 2007 года в Океанариуме разработано и апробировано более 30 тематических занятий 	и экскурсий для школьников любого возраста. 
-                                    Для проведения занятий Океанариум располагает учебным классом, в котором можно разместить на занятие класс до 30 человек. Для того, 
-                                    чтобы наши занятия отличались от школьных уроков мы включаем в них игровые задания, работу непосредственно на экспозиции, а также используем 
-                                    уникальные экспонаты, которые за эти годы были собраны Учебным центром. Где ещё можно потрогать зубы пираний, кожу акулы или действующее водолазное снаряжение?
-
-                            // begin modal 
-                            .modal#modal-1(style="display: none;")
-
-                                .mask
-                                
-                                button.modal__exit(style="background-image: url(img/general/exit.png);")
-
-                                .modal__wrapper
-                                    .classes-modal-header(style="background-image: url(img/pages/kids/1.jpg);")
-                                        h4.classes-modal-header__title Кто такие рыбки?
-
-                                    .modal__body
-
-                                        .text.modal__text
-                                            p.
-                                                Кто такие рыбки? 1-4 класс - особенности морфологии и биологии рыб, которые отличают их	от других животных
-
-                                            p.
-                                                Рыбы идеально приспособлены к жизни в водной реде. На занятиях этого раздела мы расскажем об основных отличиях рыб от других животных, а также о самых неворятных приспособлениях в их строении и поведении к обитанию в разнообразных условиях. 
-
-                                // end modal
+                                    В данном разделе представлены интервью cпециалистов Санкт-Петербургского океанариума опубликованные различными изданиями.
 
                             // begin onecol-list 
-                            ul.onecol-list.classes__onecol-list
-                                li.onecol-list__item(data-modal="click-1")
+                            ul.onecol-list.conference-list__roster
+                                li.onecol-list__item
                                     .onecol-list__item-left
                                         .onecol-list__img
-                                            img(src="img/pages/classes/1.jpg", alt="Classes list image")
+                                            img(src="img/pages/conference-list/1.jpg", alt="Conference list image")
                                     .onecol-list__item-right
-                                        .onecol-list__title Кто такие рыбки?
-                                        .onecol-list__text 1-4 класс - рассказ о строении рыб для младших школьников
-                                li.onecol-list__item(data-modal="click-2")
+                                        a(href="conference-page.html").onecol-list__link.
+                                            2 международная конференция «Публичный аквариум в современном мире»
+                                            22-24 июня 2016 года в Санкт-Петербурге на базе Океанариума и МДЦ «Нептун».
+                                li.onecol-list__item
                                     .onecol-list__item-left
                                         .onecol-list__img
-                                            img(src="img/pages/classes/2.jpg", alt="Classes list image")
+                                            img(src="img/pages/conference-list/1.jpg", alt="Conference list image")
                                     .onecol-list__item-right
-                                        .onecol-list__title Почему рыбы разные? 
-                                        .onecol-list__text 1-3 класс - влияние окружающей среды на строение рыб
-                                li.onecol-list__item(data-modal="click-3")
+                                        a(href="conference-page.html").onecol-list__link.
+                                            2 международная конференция «Публичный аквариум в современном мире»
+                                            22-24 июня 2016 года в Санкт-Петербурге на базе Океанариума и МДЦ «Нептун».
+                                li.onecol-list__item
                                     .onecol-list__item-left
                                         .onecol-list__img
-                                            img(src="img/pages/classes/3.jpg", alt="Classes list image")
+                                            img(src="img/pages/conference-list/1.jpg", alt="Conference list image")
                                     .onecol-list__item-right
-                                        .onecol-list__title Маленькие детки
-                                        .onecol-list__text 1-3 класс - забота о потомстве у рыб
-                                li.onecol-list__item(data-modal="click-4")
+                                        a(href="conference-page.html").onecol-list__link.
+                                            2 международная конференция «Публичный аквариум в современном мире»
+                                            22-24 июня 2016 года в Санкт-Петербурге на базе Океанариума и МДЦ «Нептун».
+                                li.onecol-list__item
                                     .onecol-list__item-left
                                         .onecol-list__img
-                                            img(src="img/pages/classes/4.jpg", alt="Classes list image")
+                                            img(src="img/pages/conference-list/1.jpg", alt="Conference list image")
                                     .onecol-list__item-right
-                                        .onecol-list__title Акула. Будем знакомы! 
-                                        .onecol-list__text 1-2 класс - рассказ об особеностях строения и жизни акул для младших школьников 
-                                li.onecol-list__item(data-modal="click-5")
-                                    .onecol-list__item-left
-                                        .onecol-list__img
-                                            img(src="img/pages/classes/1.jpg", alt="Classes list image")
-                                    .onecol-list__item-right
-                                        .onecol-list__title Кто живёт у нас в пруду?
-                                        .onecol-list__text 1-2 класс - игра с наклейками,которая знакомит ребят с обитателями наших прудов
-                                li.onecol-list__item(data-modal="click-6")
-                                    .onecol-list__item-left
-                                        .onecol-list__img
-                                            img(src="img/pages/classes/2.jpg", alt="Classes list image")
-                                    .onecol-list__item-right
-                                        .onecol-list__title Вода - что это? 
-                                        .onecol-list__text 1-2 класс - наглядное занятие с различными экспериментами, дедонстрирующими свойства
-                                li.onecol-list__item(data-modal="click-7")
-                                    .onecol-list__item-left
-                                        .onecol-list__img
-                                            img(src="img/pages/classes/3.jpg", alt="Classes list image")
-                                    .onecol-list__item-right
-                                        .onecol-list__title Немо ищет дом. 
-                                        .onecol-list__text 1-2 класс - новая глава в приключениях известного героя мультиков. 
-                                li.onecol-list__item(data-modal="click-8")
-                                    .onecol-list__item-left
-                                        .onecol-list__img
-                                            img(src="img/pages/classes/4.jpg", alt="Classes list image")
-                                    .onecol-list__item-right
-                                        .onecol-list__title Акула. Будем знакомы! 
-                                        .onecol-list__text 1-2 класс - рассказ об особеностях строения и жизни акул для младших школьников 
+                                        a(href="conference-page.html").onecol-list__link.
+                                            2 международная конференция «Публичный аквариум в современном мире»
+                                            22-24 июня 2016 года в Санкт-Петербурге на базе Океанариума и МДЦ «Нептун».
+                                
                             // end onecol-list
-                            
-                        // end classes 
+
+                        // end conference-list   
 
             // end page-wrapper 
-
-            .inner-background.inner-background--small
 
         // end page
 
