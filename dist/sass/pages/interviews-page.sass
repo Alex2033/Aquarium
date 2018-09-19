@@ -1,0 +1,22 @@
+.interviews-page
+
+    .onecol-list
+        margin-bottom: 50px
+
+    .onecol-list__title
+        &:hover
+            color: $main-color
+            text-decoration: none
+            cursor: default
+
+.interviews-page__video
+    iframe
+        border: 0
+        width: 100%
+        height: 422px
+
+        @media #{$_sm}
+            height: 320px
+
+        @media #{$_xsm}
+            height: 197px
