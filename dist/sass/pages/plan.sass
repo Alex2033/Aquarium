@@ -1,0 +1,124 @@
+.plan
+    position: relative
+    .sidebar__background
+        right: initial
+        bottom: initial
+        width: 43%
+        height: 90%
+        z-index: 0
+
+    @media #{$_md}
+        .inner-background
+            display: none
+
+    @media #{$_md}
+        background-color: #ffffff
+    
+.plan__container
+    padding-bottom: 85px
+    padding-top: 30px
+    background-color: #ffffff
+
+.plan__wrapper
+    position: relative
+    
+.plan__title
+    text-align: center
+    margin-bottom: 50px
+
+    @media #{$_md}
+        margin-bottom: 30px
+        text-align: left
+        font-size: 20px
+
+.high-level
+    margin-bottom: 55px
+
+    .plan__popup
+        left: 40%
+        top: 52%
+
+.high-level, .low-level
+    position: relative
+    img
+        margin-left: auto
+        margin-right: auto
+
+        @media #{$_md}
+            margin-left: initial
+            margin-right: initial
+
+.low-level
+    .plan__popup
+        left: 71%
+        top: 7%
+
+        @media #{$_lg}
+            left: 76%
+
+        @media #{$_sm}
+            left: 57%
+
+        @media #{$_xsm}
+            left: 50%
+
+.plan__popup
+    color: #ffffff
+    display: flex
+    flex-direction: column
+    max-width: 300px
+    padding: 20px 13px 13px 20px
+    box-shadow: 0 0 6px rgba(108, 204, 255, 0.48)
+    background-image: linear-gradient(to top, #0085cc 0%, #00a1f6 100%)
+    position: absolute
+
+    @media #{$lg}
+        min-width: 250px
+
+    @media #{$_md}
+        max-width: 200px
+        padding: 14px 9px 9px 14px
+
+    @media #{$_sm}
+        padding: 8px
+
+.plan__popup-title
+    font-weight: 700
+    font-size: 16px
+    line-height: 1.1
+    margin-bottom: 15px
+
+    @media #{$_md}
+        font-size: 12px
+
+    @media #{$_xs}
+        font-size: 9px
+
+    @media #{$_sm}
+        margin-bottom: 7px
+
+.plan__popup-text
+    font-size: 14px
+    margin-bottom: 20px
+
+    @media #{$_md}
+        font-size: 12px
+
+    @media #{$_xs}
+        font-size: 9px
+
+    @media #{$_sm}
+        margin-bottom: 7px
+
+.plan__popup-link
+    display: inline-block
+    margin-left: auto
+    color: #ffffff
+    font-size: 14px
+    text-decoration: underline
+
+    @media #{$_md}
+        font-size: 12px
+
+    @media #{$_xs}
+        font-size: 9px

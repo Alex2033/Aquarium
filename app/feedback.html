@@ -146,12 +146,21 @@
               <section class="feedback">
                 <h2 class="inner-heading">Здесь вы можете отправить свое сообщение</h2>
                 <form class="feedback-form">
-                  <label class="feedback-form__label" for=""><img src="img/pages/feedback/arrow.png" alt="Feedback arrow"> ФИО</label>
-                  <input type="text" required="required">
-                  <label class="feedback-form__label" for=""><img src="img/pages/feedback/arrow.png" alt="Feedback arrow"> E-mail</label>
-                  <input type="email" required="required">
-                  <label class="feedback-form__label" for=""><img src="img/pages/feedback/arrow.png" alt="Feedback arrow"> Сообщение</label>
-                  <textarea name="message"></textarea>
+                  <label class="feedback-form__label" for="name"><img src="img/pages/accordion-arrow.svg" alt="Feedback arrow"> ФИО</label>
+                  <input class="feedback-form__item" type="text" name="name" required="required" id="name">
+                  <label class="feedback-form__label" for="email"><img src="img/pages/accordion-arrow.svg" alt="Feedback arrow"> E-mail</label>
+                  <input class="feedback-form__item" type="text" name="email" required="required" id="email">
+                  <label class="feedback-form__label" for="message"><img src="img/pages/accordion-arrow.svg" alt="Feedback arrow"> Сообщение</label>
+                  <textarea class="feedback-form__item feedback-form__textarea" name="message" required="required" id="message"></textarea>
+                  <!-- begin footnote -->
+                  <div class="footnote">
+                    <div class="checkbox-container">
+                      <input class="feedback-form__checkbox" type="checkbox" required="required"><span class="checkmark"></span>
+                    </div>
+                    <div class="footnote__text">Я согласен с условиями политики конфиденциальности <a class="footnote__link" href="#">Подробнее</a></div>
+                  </div>
+                  <!-- end footnote -->
+                  <button class="feedback-form__button">Отправить сообщение</button>
                 </form>
               </section>
               <!-- end feedback -->

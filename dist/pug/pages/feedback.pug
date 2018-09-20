@@ -200,18 +200,30 @@ html(lang='ru')
                             h2.inner-heading Здесь вы можете отправить свое сообщение
 
                             form.feedback-form
-                                label(for="").feedback-form__label
-                                    img(src="img/pages/feedback/arrow.png", alt="Feedback arrow")
+                                label(for="name").feedback-form__label
+                                    img(src="img/pages/accordion-arrow.svg", alt="Feedback arrow")
                                     |  ФИО
-                                input(type="text" required="required")
-                                label(for="").feedback-form__label
-                                    img(src="img/pages/feedback/arrow.png", alt="Feedback arrow")
+                                input(type="text" name="name" required="required").feedback-form__item#name
+                                label(for="email").feedback-form__label
+                                    img(src="img/pages/accordion-arrow.svg", alt="Feedback arrow")
                                     |  E-mail
-                                input(type="email" required="required")
-                                label(for="").feedback-form__label
-                                    img(src="img/pages/feedback/arrow.png", alt="Feedback arrow")
+                                input(type="text" name="email" required="required").feedback-form__item#email
+                                label(for="message").feedback-form__label
+                                    img(src="img/pages/accordion-arrow.svg", alt="Feedback arrow")
                                     |  Сообщение
-                                textarea(name="message")
+                                textarea(name="message" required="required").feedback-form__item#message.feedback-form__textarea
+
+                                // begin footnote 
+                                .footnote
+                                    .checkbox-container
+                                        input(type="checkbox" required="required").feedback-form__checkbox
+                                        span.checkmark
+                                    .footnote__text Я согласен с условиями политики конфиденциальности 
+                                        a(href="#").footnote__link Подробнее
+                                // end footnote 
+
+                                button.feedback-form__button Отправить сообщение
+
                         // end feedback 
 
             // end page-wrapper 
