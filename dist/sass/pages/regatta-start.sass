@@ -27,6 +27,28 @@
     position: relative
     width: 100%
 
+    &.cards__item--big
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: 50% 50%
+        min-height: 215px
+
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+            background-image: linear-gradient( 0deg, rgba(0,105,161,0.70196) 14%, rgba(0,105,161,0.65) 21%, rgba(15,70,105,0.35) 57%, rgba(29,35,48,0) 100%)
+            transition: background-color .15s ease
+
+        @media #{$_xsm}
+            min-height: 250px
+
+        @media #{$_xs}
+            min-height: 215px
+
 .regatta-start__item.item-1
     -ms-grid-row: 1
     -ms-grid-column: 1
@@ -96,6 +118,9 @@
     margin-bottom: 5px
     color: #ffffff
     text-align: center 
+
+    &:hover
+        text-decoration: underline
 
     @media #{$_xs}
         font-size: 14px 

@@ -143,7 +143,19 @@ html(lang='ru')
         // begin error-page 
         section.error-page
 
-            .error-page__title 404       
+            .sidebar__background.sidebar__background--cover(style="background-image: url(img/pages/page-image.png);")
+
+            .container.error-page__container
+
+                .error-page__title 404 
+
+                .error-page__bottom
+                    .error-page__text
+                        p
+                            |  Неправильно набран адрес
+                            br
+                            |  или такой страницы не существует
+                    img(src="img/pages/404/crab.svg", alt="Crab").error-page__img
 
         // end error-page 
 

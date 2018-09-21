@@ -1,3 +1,295 @@
+.is-inner
+	position: relative
+	background-image: linear-gradient(to top, rgba(29, 35, 48, 0) 0%, rgba(0, 105, 161, 0.64) 79%, rgba(0, 105, 161, 0.7) 86%)
+
+	@media #{$_md}
+		background-image: none
+
+.is-internal .background-img
+	position: absolute
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	z-index: -10
+	width: 100%
+	height: 100%
+	object-fit: cover
+
+	@media #{$_md}
+		height: initial
+
+	@media #{$_sm}
+		min-height: 600px
+		
+	@media #{$_xs}
+		min-height: 900px
+
+.page-heading
+	margin-top: 50px
+
+.page-heading__title
+	margin-bottom: 30px
+	font-size: 42px
+
+	@media #{$_md}
+		font-size: 36px
+
+	@media #{$_sm}
+		font-size: 24px
+
+.inner-background
+	background-color: $accent
+	position: absolute
+	bottom: -5px // убирать нежлательные зазоры на переходных разрешениях
+	left: 0
+	width: 100%
+	height: 30%
+	z-index: -1
+
+.page-wrapper
+	background-color: #ffffff
+	+container()
+	position: relative
+
+	@media #{$_md}
+		width: 100%
+
+.page-wrapper__row
+	+row()
+	position: relative
+
+.page-wrapper__right
+	+col(8)
+	padding-bottom: 100px
+	padding-top: 18px
+	position: relative
+	z-index: 1
+
+	@media #{$_md}
+		+col(12)
+
+.inner-heading
+	font-size: 24px
+	font-weight: 700
+	text-transform: uppercase
+	color: lighten($accent, 5%)
+	margin-bottom: 25px
+	line-height: 1.2
+
+	@media #{$_sm}
+		font-size: 16px
+
+.inner-h3
+	font-size: 18px
+	font-weight: 700
+	margin-bottom: 20px
+
+.inner-h4
+	font-weight: 700
+	margin-bottom: 20px
+
+.text
+	padding-right: 17px
+	p
+		&:not(:last-child)
+			margin-bottom: 20px
+
+	@media #{$_md}
+		padding-right: 0
+
+.inner-images
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	width: 100%
+	margin-bottom: 10px
+	
+	&.double
+		.inner-images__img--small
+			width: calc(50% - 18px)
+			padding-bottom: 22%
+
+
+	&.triple
+		.inner-images__img--small
+			width: calc(33.3333% - 18px)
+			padding-bottom: 17%    
+			
+	@media #{$_sm}
+		display: block
+
+		&.double, &.triple
+
+			.inner-images__img
+				padding-bottom: 0
+				height: 175px
+				width: 100%
+				margin-bottom: 10px
+
+.inner-images__img
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	height: 0
+	margin-bottom: 30px
+	display: block
+	transition: filter .15s ease
+
+	&:hover
+		filter: brightness(80%)
+
+	&:focus
+		outline: 0
+ 
+.inner-images__img--big
+	padding-bottom: 42%
+	width: 100%
+
+.slider
+	
+	.slick-arrow
+		width: 40px
+		height: 40px
+		background-color: rgba($accent, .3)
+		border-radius: 50%
+		z-index: 5
+		transition: background-color .15s ease
+
+		&::before
+			content: ''
+			position: absolute
+			width: 11px
+			height: 16px
+			top: 50%
+			left: 50%
+			margin-top: -8px
+			transform: translate(-50%)
+			opacity: 1
+
+		&:hover
+			background-color: rgba($accent, .8)
+	
+	.slick-next
+		right: 10px
+		&::before
+			background-image: url(../img/pages/slider-arrow-right.svg)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+
+	.slick-prev
+		left: 10px
+		&::before
+			background-image: url(../img/pages/slider-arrow-left.svg)
+			background-repeat: no-repeat
+			background-position: 50% 50%
+
+.slider__item
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	min-height: 300px
+
+.numbered-list
+	padding: 0
+	margin: 0 0 40px
+
+.numbered-list__item
+	list-style: decimal
+	
+.bulled-list__item
+	list-style: disc
+
+.list-item
+	margin: 5px 0 5px 18px
+
+.bulled-list
+	margin-bottom: 40px
+
+.hypertext
+	margin-bottom: 12px
+
+.hyperlink
+	text-decoration: underline
+
+	&:hover
+		text-decoration: underline
+		color: #651a75
+
+	&.hover
+		color: #651a75
+
+.table
+	width: 100%
+	margin-bottom: 60px
+
+.table__heading-row
+	background-color: #f3f3f3
+
+.table__title
+	color: #898988
+	width: 100%
+	display: block
+	text-align: center
+	font-size: 14px
+	padding: 6px 0
+	font-weight: 400
+	
+.table__row
+	display: flex
+	width: 100%
+
+.table__col
+	width: 50%
+	border: 1px solid #ececec
+	display: block
+	padding: 14px 8px 14px 30px
+	line-height: 1
+
+	&:first-child
+		width: 100%
+		max-width: 174px
+		padding-left: 15px
+		
+		@media #{$_sm}
+			width: 33.3333%
+			max-width: 100%
+			padding-left: 2px
+	@media #{$_sm}
+		width: 33.3333%
+		padding: 5px
+		font-size: 14px
+
+.table__heading
+	font-weight: 400
+	color: $accent
+	text-align: left
+
+.table.double
+	.table__col
+		padding-left: 15px
+		&:first-child
+			width: 50%
+			max-width: 100%
+
+		@media #{$_sm}
+			width: 50%
+			padding: 5px
+			font-size: 14px
+
+.table__price
+	margin-bottom: 15px
+
+.table__list-item
+	line-height: 1.5
+
+.text
+	a
+		color: $main-color
+
+		&:hover
+			text-decoration: underline
+    
 .textual-s__text
     margin-bottom: 60px
 
@@ -7,3 +299,160 @@
 .textual-s__slider
     &.slick-slider
         margin-bottom: 60px
+
+.modal
+    position: absolute
+    right: -15px
+    bottom: -100px
+    width: 108%
+
+    @media #{$_md}
+        width: 102%
+        bottom: initial
+        top: -37%
+        right: -1%
+
+    @media #{$_sm}
+        top: -28%
+
+.modal__body-img
+    width: calc(100% + 60px)
+    
+.modal__exit
+    position: absolute
+    top: 0
+    right: -30px
+    width: 24px
+    height: 24px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    z-index: 500
+    background-color: transparent
+    border: 0
+    cursor: pointer
+
+    &:active
+        transform: translateY(2px)
+
+    &:focus
+        outline: 0
+
+    @media (min-width: 1200px) and (max-width: 1260px)
+        right: 20px
+        top: 20px
+
+    @media (min-width: 993px) and (max-width: 1050px)
+        right: 20px
+        top: 20px
+
+    @media #{$_md}
+        z-index: 10000
+        right: 20px
+        top: 20px
+
+    span
+        top: 50%
+        left: 0
+        position: absolute
+        width: 100%
+        height: 3px
+        transform-origin: 50%
+        background-color: #ffffff
+
+        @media #{$_md}
+            background-color: lighten($accent, 5%)
+
+.modal__exit-left
+    transform: rotate(45deg)
+
+.modal__exit-right
+    transform: rotate(-45deg)
+
+.modal__wrapper
+    position: relative
+    z-index: 200
+    background-color: #ffffff
+    padding-bottom: 25px
+
+.modal__body
+    padding: 0 20px
+
+.modal__images
+    justify-content: space-around
+
+    &.triple
+        .modal__img
+            width: calc(32% - 30px)
+
+        @media #{$_sm}
+            
+            .inner-images__img
+                height: 217px
+                width: 100%
+
+.modal__image--big
+    @media #{$_md}
+        padding-bottom: 47%
+
+.modal__characteristic
+    margin-bottom: 30px
+
+.modal__characteristic-item
+    margin-bottom: 15px
+
+.modal__text
+    margin-bottom: 28px
+
+.modal__header
+	position: relative
+	min-height: 180px
+	padding: 20px 30px
+	margin-bottom: 25px
+	background-color: $main-color
+
+.modal__header-img
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: 50% 50%
+	opacity: 0.5
+
+.modal__header-text
+	position: relative
+	color: #ffffff
+	font-size: 20px
+	z-index: 1
+	font-weight: 700
+	max-width: 500px
+	line-height: 1.4
+
+	@media #{$_sm}
+		font-size: 16px
+
+.modal__price
+	display: flex
+	flex-wrap: wrap
+	font-size: 18px
+	margin-top: 50px
+	b
+		color: lighten($accent, 5%)
+		display: block
+		margin-left: 5px
+		
+	@media #{$_sm}
+		font-size: 16px
+		margin-top: 30px
+
+.mask
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(#444, .29)
+	z-index: 100

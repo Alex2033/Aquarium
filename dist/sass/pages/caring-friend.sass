@@ -1,0 +1,82 @@
+.caring
+    .modal__wrapper
+        padding: 40px
+
+        @media #{$_sm}
+            padding: 35px 10px
+
+        @media #{$_xs}
+            font-size: 15px
+
+    
+.caring__text
+    margin-bottom: 50px
+
+    @media #{$_sm}
+        margin-bottom: 30px
+
+.animals__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+.animals__item
+    width: calc(33.3333% - 10px)
+    margin-bottom: 25px
+    text-align: center
+    cursor: pointer
+
+    &:hover
+        .animals__img
+            opacity: 0.9
+
+    @media #{$_sm}
+        width: calc(50% - 15px)
+
+    @media #{$_xsm}
+        width: 100%
+        max-width: 240px
+
+.animals__img
+    height: 0
+    padding-bottom: 53%
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top
+    transition: opacity .15s ease
+    margin-bottom: 12px
+
+.animals__heading
+    font-size: 16px
+    font-weight: 700
+
+.modal__top
+    display: flex
+    justify-content: space-between
+    margin-bottom: 25px
+
+.modal__top-img
+    max-width: 262px
+    margin-right: 15px
+
+    @media #{$_sm}
+        margin-bottom: 15px
+
+.modal__top-left
+    display: flex
+
+    @media #{$_sm}
+        flex-wrap: wrap
+
+.modal__top-right
+    @media #{$_sm}
+        display: none
+
+.modal__top-text
+    max-width: 300px
+
+.modal__top-item
+    line-height: 1.6
+
+.modal__top-title
+    margin-top: -5px

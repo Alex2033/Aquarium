@@ -1,0 +1,69 @@
+.error-page
+    .sidebar__background
+        right: initial
+        bottom: initial
+        width: 43%
+        height: 100%
+        z-index: 0
+
+    @media #{$_md}
+        background-color: #ffffff
+
+        .inner-background
+            display: none
+    
+.error-page__container
+    background-color: #ffffff
+    text-align: center
+    padding-top: 8%
+    padding-bottom: 15%
+
+    @media #{$_sm}
+        padding-top: 16%
+        padding-bottom: 20%
+
+.error-page__title
+    font-size: 130px
+    color: lighten($accent, 5%)
+    font-weight: 700
+    margin-bottom: 10px
+
+    @media #{$_sm}
+        font-size: 100px
+        margin-bottom: 0  
+        line-height: 1  
+
+.error-page__bottom
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+
+    @media #{$_sm}
+        align-items: flex-start
+
+.error-page__text
+    margin-right: 20px
+    max-width: 315px
+    font-size: 18px
+    margin-left: 100px
+
+    @media #{$_sm}
+        font-size: 14px
+        line-height: 2
+        margin-right: 0
+        margin-left: 15%
+
+    @media #{$_xs}
+        margin-left: 0
+
+.error-page__img
+    width: 80px
+
+    @media #{$_sm}
+        position: relative
+        top: -20px
+        width: 70px
+
+    @media #{$_xs}
+        top: 0

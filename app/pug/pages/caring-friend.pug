@@ -1,0 +1,292 @@
+doctype html
+html(lang='ru')
+
+  include ../modules/head
+  
+  body.is-internal
+
+    // begin wrapper
+    .wrapper.is-inner
+
+        img.background-img(src="img/general/body-bg.jpg", alt="Page body image")
+
+        // begin header 
+        header.header.header-inner
+
+            .header__container.container
+                .header__top
+
+                    // begin contacts 
+                    .contacts
+                        .contacts__left
+                            a(href="#").contacts__left-link
+                                span.contacts__hours Время работы 10-22
+                                span.contacts__schedule каждый 3-ий понедельник месяца - санитарный день
+                            a.contacts__link(href="site-plan.html") План океанариума      
+                        .contacts__right
+                            address.contacts__address
+                                a.contacts__address-link(href="https://www.google.ru/maps/place/%D1%83%D0%BB.+%D0%9C%D0%B0%D1%80%D0%B0%D1%82%D0%B0,+86,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191119/@59.9189478,30.3367602,17z/data=!3m1!4b1!4m5!3m4!1s0x46963052d4a092f1:0x1cc3e8c780acd480!8m2!3d59.9189451!4d30.3389542" target="_blank") Спб, ул. Марата, 86
+                            a.contacts__phone(href="tel:+79219413588") +7 921 941-35-88
+
+                            // begin socials 
+                            ul.socials
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/vk.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/fb.svg", alt="Social image").socials__img
+                                li.socials__item
+                                    a.socials__link(href="#" target="_blank")
+                                        img(src="img/general/inst.svg", alt="Social image").socials__img
+                            // end socials 
+                    // end contacts 
+
+                    .header__logo
+
+                        // begin logo 
+                        a(href="index.html").logo
+                            img(src="img/general/logo.png", alt="Logotype").logo__img
+                        // end logo 
+
+                    .header__top-right
+
+                        .header__actions
+
+                            a(href="http://neptun-trk.volex.beget.tech").header-actions__link
+                                img(src="img/general/second-logo.svg", alt="Alter logotype").header__actions-img
+
+                            .header__actions-bottom
+
+                                // begin languages 
+                                ul.languages
+                                    li.languages__item
+                                        a(href="#").languages__link RU
+                                    li.languages__item
+                                        a(href="#").languages__link ENG
+                                // end languages 
+
+                                // begin search 
+                                form.search.header__search
+                                    input(type="submit" value="" style="background-image: url(img/general/search.svg);").search__button
+                                    input.search__input(type="text" required="required" placeholder="Поиск")
+                                // end search 
+
+                        .header__btns
+                            button.button.header__btn.header__btns-item.header__btn--visible
+                                img(src="img/header/btn-img.svg", alt="Button image").button__img
+                                span.header__btn-text.header__btn-text--visible  Электронный билет в Океанариум
+                                span.header__btn-text.header__btn-text--hidden  Эл. билет
+
+                            // begin toggle-menu 
+                            button.toggle-menu.header__btns-item
+                                span.sandwich
+                                    span.sandwich__line.sandwich__line-top
+                                    span.sandwich__line.sandwich__line-mid
+                                    span.sandwich__line.sandwich__line-bot
+                                span.toggle-menu__text Меню
+                            // end toggle-menu 
+
+                // begin navigation 
+                nav.navigation
+                    ul.navigation__list.menu.menu--hidden
+                        li.menu__item
+                            a.menu__link(href="index.html") Главная
+                        li.menu__item
+                            a.menu__link(href="#") О нас
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Информация
+                                br.header__br 
+                                |  для посетителей
+                        li.menu__item
+                            a.menu__link(href="#")
+                                |  Показательные кормления
+                                br.header__br
+                                |  и шоу-программы
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Океанариум
+                                br.header__br 
+                                |  детям
+                        li.menu__item
+                            a.menu__link(href="#") Дайвинг-центр
+                            // begin menu-dropdown 
+                            ul.menu-dropdown
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Дайвинг-центр “Планета Нептун”
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Обучение дайвингу
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Экскурсии в главный танк
+                                li.menu-dropdown__item
+                                    a.menu-dropdown__link(href="#") Подарочный сертификат    
+                            // end menu-dropdown 
+                        li.menu__item
+                            a.menu__link(href="#") 
+                                |  Магазин
+                                br.header__br 
+                                |  сувениров
+                        li.menu__item
+                            a.menu__link(href="#") Контакты
+                // end navigation  
+
+                .container
+                    .page-heading
+                        h1.title.page-heading__title Информация для посетителей
+
+                    // begin breadcrumbs 
+                    .breadcrumbs
+                        ul.breadcrumbs__list
+                            li.breadcrumbs__item
+                                a(href="index.html").breadcrumbs__link Главная
+                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
+                            li.breadcrumbs__item
+                                a(href="information.html").breadcrumbs__link Информация для посетителей
+                    // end breadcrumbs 
+
+        // end header
+
+        // begin page
+        main.page 
+
+            // begin page-wrapper 
+            .page-wrapper
+                .page-wrapper__row
+                    
+                    // begin sidebar 
+                    aside.sidebar
+
+                        .sidebar__background.sidebar__background--cover(style="background-image: url(img/pages/page-image.png);")
+
+                        // begin inner-menu 
+                        .inner-menu
+                            .inner-menu__wrapper
+                                .inner-menu__sandwich
+                                    span.inner-menu__line.inner-menu__line--top
+                                    span.inner-menu__line.inner-menu__line--middle
+                                    span.inner-menu__line.inner-menu__line--bottom
+                                a(href="textual.html").inner-menu__text.inner-heading Информация для посетителей
+                            ul.sidebar__list
+                                li.sidebar__item
+                                    a(href="textual.html").sidebar__link.link Режим работы
+                                li.sidebar__item
+                                    a(href="site-map.html").sidebar__link.link Цены
+                                li.sidebar__item
+                                    a(href="expositions.html").sidebar__link.link Льготы
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Акции и Скидки
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Семейный абонемент выходного дня
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Купить электронные билеты
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Правила посещения
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link.active Программа «Забота о друге»
+                                li.sidebar__item
+                                    a(href="#").sidebar__link.link Корпоративные программы
+                                    ul.sidebar__sublist
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link Аренда учебного класса
+                                        li.sidebar__sublist-item
+                                            a(href="#").sidebar__sublist-link.link Развлекательные программы для взрослых
+                        // end inner-menu 
+                    // end sidebar 
+
+                    .page-wrapper__right
+                        
+                        // begin caring 
+                        section.caring
+                            
+                            .text.caring__text
+                                p.
+                                    Опека животных - одна из форм работы с посетителями и организациями во многих зоопарках и океанариумах. 
+                                    Мы предлагаем всем поучаствовать в жизни наших обитателей, стать ближе к братьям нашим меньшим, 
+                                    приняв участие в программе "Забота о друге". Любой человек или организация может выбрать животное из 
+                                    представленных и стать его опекуном! Для этого нужно связаться с менеджером для оформления документов, 
+                                    а затем оплатить взнос, который пойдет на приобретение корма и содержания животного.
+                                p.
+                                    Любой человек (физлицо) или организация (юрлицо) могут взять опеку над животным сроком от 3 месяцев. 
+                                    Оплата производится  единовременно, путем 100% предоплаты.
+
+                            // begin modal 
+                            .modal#modal-3(style="display: none;")
+
+                                .mask
+                                
+                                button.modal__exit
+                                    span.modal__exit-left
+                                    span.modal__exit-right
+
+                                .modal__wrapper
+                                    .modal__top
+                                        .modal__top-left
+                                            img(src="img/pages/caring-friend/3.jpg", alt="Caring image").modal__top-img
+                                            .modal__top-text
+                                                h4.inner-h4.modal__top-title Выдра Фифочка
+                                                ul.modal__top-list
+                                                    li.modal__top-item Стоимость опеки  для физлиц: 5 000 ₽
+                                                    li.modal__top-item Стоимость опеки  для физлиц: 7 000 ₽
+                                                    li.modal__top-item Опекун: Детская футбольная школа «Санкт-Петербург»
+                                        .modal__top-right
+                                            img(src="img/pages/caring-friend/LOGO.jpg", alt="Modal logo").modal__top-logo
+                                    .text.modal__text
+                                        p.
+                                            По вопросам опеки обращайтесь: +7 812 572-44-34
+                                        p.
+                                            Хитрая и лукавая мордочка выдры, ловкие движения в воде и забавная походка на суше – попасть под её 
+                                            обаяние несложно, особенно учитывая, что она к тому же ещё и очень темпераментна и довольно общительна: 
+                                            верещит, свистит, стрекочет, шипит. Поэтому вряд ли кому приходит в голову, что этот милый, пусть даже и 
+                                            хищный зверёк, способен справиться с молодым аллигатором, который по праву считается одним из наиболее опасных 
+                                            и сильных хищников планеты.
+                            // end modal
+
+                            // begin animals 
+                            .animals
+                                h3.inner-h3 Животные для опеки
+                                ul.animals__list
+                                    li.animals__item(data-modal="click-1")
+                                        .animals__img(style="background-image: url(img/pages/caring-friend/1.jpg);")
+                                        h6.animals__heading Оливковая черепаха Эльза
+                                        .animals__text Опекун: Иванов Иван
+                                    li.animals__item(data-modal="click-2")
+                                        .animals__img(style="background-image: url(img/pages/caring-friend/2.jpg);")
+                                        h6.animals__heading Выдра Тихон
+                                        .animals__text Опекун: Иванов Иван
+                                    li.animals__item(data-modal="click-3")
+                                        .animals__img(style="background-image: url(img/pages/caring-friend/3.jpg);")
+                                        h6.animals__heading Выдра Фифочка
+                                        .animals__text Опекун: Иванов Иван
+                                    li.animals__item(data-modal="click-4")
+                                        .animals__img(style="background-image: url(img/pages/caring-friend/4.jpg);")
+                                        h6.animals__heading Пятнистые древолазы
+                                        .animals__text Опекун: Иванов Иван
+                                    li.animals__item(data-modal="click-5")
+                                        .animals__img(style="background-image: url(img/pages/caring-friend/5.jpg);")
+                                        h6.animals__heading Смарагдовые вараны
+                                        .animals__text Опекун: Иванов Иван
+                                    li.animals__item(data-modal="click-6")
+                                        .animals__img(style="background-image: url(img/pages/caring-friend/6.jpg);")
+                                        h6.animals__heading Акула-нянька Настя
+                                        .animals__text Опекун: Иванов Иван
+                            // end animals 
+
+                        // end caring  
+
+            // end page-wrapper 
+
+            .inner-background.inner-background--small
+
+        // end page
+
+    // end wrapper
+
+    include ../modules/footer
+
+    #scrollUp
+      img(src="img/general/angle-top.svg", alt="Angle Top").scrollUp__img
+
+
+    // scripts 
+    script(src='js/scripts.min.js')
