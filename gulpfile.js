@@ -38,10 +38,12 @@ gulp.task('pug', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('app/sass/main.sass')
+	return gulp.src([
+		'app/sass/textual.sass',
+		'app/sass/main.sass'
+	])
 	.pipe(wait(1000))
 	.pipe(sass({ 'include css': true }).on("error", notify.onError()))
-	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browsersync.reload( {stream: true} ))

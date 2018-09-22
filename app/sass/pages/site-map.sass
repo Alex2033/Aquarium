@@ -1,0 +1,77 @@
+.site-map
+
+    .sidebar__background
+        right: initial
+        bottom: initial
+        width: 22%
+        height: 100%
+        z-index: 0
+
+    @media #{$_md}
+        background-color: #ffffff
+        .inner-background
+            display: none
+    
+.site-map__container
+    background-color: #ffffff
+    padding: 25px 75px 165px 140px
+    position: relative
+
+    @media #{$_md}
+        padding: 80px 0
+
+    @media #{$_sm}
+        padding: 50px 25px
+
+.site-map__wrapper
+    display: flex
+    flex-wrap: wrap
+
+    @media #{$_md}
+        justify-content: center
+
+    @media #{$_sm}
+        justify-content: flex-start
+
+.site-map__title
+    @media #{$_md}
+        text-align: center
+        margin-left: -140px
+
+    @media #{$_sm}
+        margin-left: 0
+        text-align: left
+
+.site-map__wrapper-item
+    width: 50%
+    margin-bottom: 35px  
+
+    @media #{$_md}
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center  
+
+    @media #{$_sm}
+        align-items: flex-start
+
+.site-map__link
+    color: $main-color
+    font-weight: 700
+    line-height: 2
+
+    &:hover
+        text-decoration: underline
+
+.site-map__sublist-link
+    color: $main-color
+    line-height: 2
+
+    &:hover
+        text-decoration: underline
+
+.site-map__sublist
+    padding-left: 35px
+
+.site-map__sublist .site-map__sublist .site-map__sublist-item
+    list-style: disc
