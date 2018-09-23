@@ -1,0 +1,123 @@
+.ticket
+    position: relative
+    min-height: 100vh
+
+    .sidebar__background
+        right: initial
+        bottom: initial
+        width: 43%
+        height: 100%
+        z-index: 0
+
+    @media #{$_md}
+        .inner-background
+            display: none
+
+.ticket__header
+    padding: 30px 0 45px 0
+
+.ticket__wrapper-content
+    position: relative
+
+.ticket__header-row
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+.ticket__contacts
+    color: #ffffff
+
+.ticket__contacts-phone
+    font-size: 24px
+    font-weight: 700
+    color: #ffffff
+    transition: opacity .15s ease
+
+    &:hover
+        opacity: 0.9
+
+.ticket__wrapper
+    padding-bottom: 140px
+
+    @media #{$_md}
+        background-color: #ffffff
+    
+.ticket__wrapper-container
+    background-color: #ffffff
+    position: relative
+    padding: 40px 80px 130px 80px
+
+    @media #{$_md}
+        padding: 45px 0
+
+.ticket__title
+    text-transform: uppercase
+    font-size: 42px
+    color: $accent
+    font-weight: 700
+    margin-bottom: 20px
+    text-align: center
+
+.tickets__item
+    display: flex
+    padding-top: 35px
+
+    &:not(:last-child)
+        border-bottom: 1px solid #CDCDCD
+
+.tickets__item-right,
+.tickets__item-left
+    width: 100%
+
+.tickets__item-left
+    max-width: 200px
+
+    @media #{$_md}
+        max-width: 165px
+
+.tickets__content
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 35px
+
+.tickets__content-left
+    width: 100%
+    max-width: 550px
+    
+    @media #{$_md}
+        max-width: 355px
+
+.tickets__content-right
+    display: flex
+    align-items: center
+    flex-grow: 1
+    justify-content: space-between
+    flex-shrink: 0
+
+.tickets__button
+    .button
+        padding: 9px 28px
+
+.tickets__link
+    color: $main-color
+    text-decoration: underline
+    line-height: 1.6
+
+.tickets__time
+    text-transform: uppercase
+    color: lighten($accent, 5%)
+    line-height: 1.45
+
+.tickets__time-month 
+    font-size: 24px
+    font-weight: 700
+    display: block
+
+.tickets__time-day
+    font-size: 21px
+
+.tickets__in-stock
+    margin-right: 10px
+    color: #888888
