@@ -1481,6 +1481,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  .inner-menu__wrapper .inner-menu__text {
+    margin-bottom: 0; }
 
 .inner-menu__sandwich {
   width: 19px;
@@ -1515,8 +1517,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: #0095e4;
-  padding-left: 20px;
-  margin-bottom: 0; }
+  padding-left: 20px; }
   @media (max-width: 991.99px) {
     .inner-menu__text {
       padding-left: 0;
@@ -4676,10 +4677,10 @@ h1, h2, h3, h4, h5, h6 {
 .diving-training__list-text {
   margin-bottom: 20px;
   font-size: 15px; }
-
-.diving-training__sublist-item {
-  list-style: disc;
-  margin-left: 15px; }
+  .diving-training__list-text .bulled-list {
+    margin-bottom: 0; }
+  .diving-training__list-text .bulled-list__item {
+    margin: 0 0 0 18px; }
 
 .diving-training__slider .slick-slider {
   margin-bottom: 45px; }
@@ -5633,6 +5634,10 @@ h1, h2, h3, h4, h5, h6 {
     width: 43%;
     height: 100%;
     z-index: 0; }
+  .ticket #scrollUp {
+    background-color: rgba(0, 142, 217, 0.6); }
+    .ticket #scrollUp:hover {
+      background-color: rgba(0, 142, 217, 0.8); }
   @media (max-width: 991.99px) {
     .ticket .inner-background {
       display: none; } }
@@ -5642,6 +5647,19 @@ h1, h2, h3, h4, h5, h6 {
 
 .ticket__wrapper-content {
   position: relative; }
+  @media (max-width: 767px) {
+    .ticket__wrapper-content .inner-heading {
+      text-align: center;
+      font-size: 24px; } }
+  @media (max-width: 576px) {
+    .ticket__wrapper-content {
+      font-size: 19px; } }
+
+.ticket__logo {
+  margin-right: 20px; }
+  @media (max-width: 576px) {
+    .ticket__logo {
+      margin-bottom: 20px; } }
 
 .ticket__header-row {
   display: -webkit-box;
@@ -5659,6 +5677,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 576px) {
+    .ticket__header-row {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .ticket__contacts {
   color: #ffffff; }
@@ -5694,6 +5718,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   margin-bottom: 20px;
   text-align: center; }
+  @media (max-width: 576px) {
+    .ticket__title {
+      font-size: 30px; } }
 
 .tickets__item {
   display: -webkit-box;
@@ -5703,16 +5730,31 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 35px; }
   .tickets__item:not(:last-child) {
     border-bottom: 1px solid #CDCDCD; }
+  @media (max-width: 767px) {
+    .tickets__item {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
 
 .tickets__item-right,
 .tickets__item-left {
   width: 100%; }
 
 .tickets__item-left {
-  max-width: 200px; }
+  max-width: 190px;
+  margin-right: 10px; }
   @media (max-width: 991.99px) {
     .tickets__item-left {
-      max-width: 165px; } }
+      max-width: 155px; } }
+  @media (max-width: 767px) {
+    .tickets__item-left {
+      margin-right: 0;
+      text-align: center;
+      margin-bottom: 10px; } }
 
 .tickets__content {
   display: -webkit-box;
@@ -5727,14 +5769,27 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 35px; }
+  margin-bottom: 35px;
+  font-size: 14px; }
+  @media (max-width: 767px) {
+    .tickets__content {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
 
 .tickets__content-left {
   width: 100%;
-  max-width: 550px; }
+  max-width: 550px;
+  margin-right: 10px; }
   @media (max-width: 991.99px) {
     .tickets__content-left {
       max-width: 355px; } }
+  @media (max-width: 767px) {
+    .tickets__content-left {
+      max-width: 100%;
+      text-align: center;
+      margin-right: 0;
+      margin-bottom: 10px; } }
 
 .tickets__content-right {
   display: -webkit-box;
@@ -5756,9 +5811,17 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0; }
+  @media (max-width: 767px) {
+    .tickets__content-right {
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
 
 .tickets__button .button {
   padding: 9px 28px; }
+  @media (max-width: 767px) {
+    .tickets__button .button {
+      padding: 6px 20px; } }
 
 .tickets__link {
   color: #3c3c3b;
@@ -5774,10 +5837,74 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   font-weight: 700;
   display: block; }
+  @media (max-width: 576px) {
+    .tickets__time-month {
+      font-size: 20px; } }
 
 .tickets__time-day {
   font-size: 21px; }
+  @media (max-width: 576px) {
+    .tickets__time-day {
+      font-size: 18px; } }
 
 .tickets__in-stock {
   margin-right: 10px;
   color: #888888; }
+
+@media (max-width: 991.99px) {
+  .is-contacts .inner-menu {
+    display: none; } }
+
+.contacts-p__map {
+  width: 100%;
+  height: 435px;
+  margin-bottom: 35px; }
+  @media (max-width: 576px) {
+    .contacts-p__map {
+      height: 240px; } }
+
+.contacts-p__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.contacts-p__info-left,
+.contacts-p__info-right {
+  width: 50%; }
+  @media (max-width: 576px) {
+    .contacts-p__info-left,
+    .contacts-p__info-right {
+      width: 100%; } }
+
+.contacts-p__info-left .contacts-p__info-item:not(:last-child) {
+  margin-bottom: 40px; }
+
+.contacts-p__address {
+  font-style: normal; }
+
+.contacts-p__info-item {
+  margin-bottom: 15px; }
+
+.contacts-p__heading {
+  font-size: 14px;
+  color: #0095e4;
+  font-weight: 700;
+  margin-bottom: 3px; }
+
+.contacts-p__link {
+  display: block;
+  color: #3c3c3b; }
+  .contacts-p__link:hover {
+    color: #0095e4; }
+  .contacts-p__link b {
+    color: #0095e4;
+    font-size: 14px; }
+
+.contacts-p__icon {
+  width: 15px;
+  display: inline-block;
+  margin-right: 5px; }

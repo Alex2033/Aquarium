@@ -88,7 +88,8 @@
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  position: relative; }
+  position: relative;
+  min-height: 550px; }
 
 .page-wrapper__right {
   margin-right: 15px;
@@ -111,7 +112,8 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #0095e4;
-  line-height: 1.2; }
+  line-height: 1.2;
+  margin-bottom: 20px; }
   @media (max-width: 767px) {
     .inner-heading {
       font-size: 16px; } }

@@ -9,6 +9,12 @@
         height: 100%
         z-index: 0
 
+    #scrollUp
+        background-color: rgba(lighten($accent, 3%), .6)
+
+        &:hover
+            background-color: rgba(lighten($accent, 3%), .8)
+
     @media #{$_md}
         .inner-background
             display: none
@@ -19,11 +25,28 @@
 .ticket__wrapper-content
     position: relative
 
+    @media #{$_sm}
+        .inner-heading
+            text-align: center
+            font-size: 24px
+
+    @media #{$_xsm}
+        font-size: 19px
+
+.ticket__logo
+    margin-right: 20px
+
+    @media #{$_xsm}
+        margin-bottom: 20px
+    
 .ticket__header-row
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     align-items: center
+
+    @media #{$_xsm}
+        justify-content: center
 
 .ticket__contacts
     color: #ffffff
@@ -59,6 +82,9 @@
     margin-bottom: 20px
     text-align: center
 
+    @media #{$_xsm}
+        font-size: 30px
+
 .tickets__item
     display: flex
     padding-top: 35px
@@ -66,15 +92,25 @@
     &:not(:last-child)
         border-bottom: 1px solid #CDCDCD
 
+    @media #{$_sm}
+        flex-wrap: wrap
+        justify-content: center
+
 .tickets__item-right,
 .tickets__item-left
     width: 100%
 
 .tickets__item-left
-    max-width: 200px
+    max-width: 190px
+    margin-right: 10px
 
     @media #{$_md}
-        max-width: 165px
+        max-width: 155px
+
+    @media #{$_sm}
+        margin-right: 0
+        text-align: center
+        margin-bottom: 10px
 
 .tickets__content
     display: flex
@@ -82,12 +118,24 @@
     justify-content: space-between
     margin-bottom: 35px
 
+    @media #{$_sm}
+        flex-wrap: wrap
+
+    font-size: 14px
+
 .tickets__content-left
     width: 100%
     max-width: 550px
+    margin-right: 10px
     
     @media #{$_md}
         max-width: 355px
+
+    @media #{$_sm}
+        max-width: 100%
+        text-align: center
+        margin-right: 0
+        margin-bottom: 10px
 
 .tickets__content-right
     display: flex
@@ -96,9 +144,15 @@
     justify-content: space-between
     flex-shrink: 0
 
+    @media #{$_sm}
+        justify-content: space-around
+
 .tickets__button
     .button
         padding: 9px 28px
+
+        @media #{$_sm}
+            padding: 6px 20px
 
 .tickets__link
     color: $main-color
@@ -115,8 +169,14 @@
     font-weight: 700
     display: block
 
+    @media #{$_xsm}
+        font-size: 20px
+
 .tickets__time-day
     font-size: 21px
+
+    @media #{$_xsm}
+        font-size: 18px
 
 .tickets__in-stock
     margin-right: 10px

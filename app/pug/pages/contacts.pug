@@ -6,7 +6,7 @@ html(lang='ru')
   body.is-internal
 
     // begin wrapper
-    .wrapper.is-inner
+    .wrapper.is-inner.is-contacts
 
         img.background-img(src="img/general/body-bg.jpg", alt="Page body image")
 
@@ -133,7 +133,7 @@ html(lang='ru')
 
                 .container
                     .page-heading
-                        h1.title.page-heading__title Новости
+                        h1.title.page-heading__title Контакты
 
                     // begin breadcrumbs 
                     .breadcrumbs
@@ -142,10 +142,7 @@ html(lang='ru')
                                 a(href="index.html").breadcrumbs__link Главная
                                 img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
                             li.breadcrumbs__item
-                                a(href="textual.html").breadcrumbs__link О нас
-                                img(src="img/general/breadcrumbs-item.png", alt="Breadcrumbs image").breadcrumbs__img
-                            li.breadcrumbs__item
-                                a(href="news.html").breadcrumbs__link Новости
+                                a(href="contacts.html").breadcrumbs__link Контакты
                     // end breadcrumbs 
 
         // end header
@@ -160,7 +157,7 @@ html(lang='ru')
                     // begin sidebar 
                     aside.sidebar
 
-                        .sidebar__background(style="background-image: url(img/pages/page-image.png);")
+                        .sidebar__background.sidebar__background--cover(style="background-image: url(img/pages/page-image.png);")
 
                         // begin inner-menu 
                         .inner-menu
@@ -169,60 +166,56 @@ html(lang='ru')
                                     span.inner-menu__line.inner-menu__line--top
                                     span.inner-menu__line.inner-menu__line--middle
                                     span.inner-menu__line.inner-menu__line--bottom
-                                a(href="textual.html").inner-menu__text.inner-heading О нас
-                            ul.sidebar__list
-                                li.sidebar__item
-                                    a(href="news.html").sidebar__link.link.active Новости
-                                li.sidebar__item
-                                    a(href="site-map.html").sidebar__link.link План Океанариума
-                                li.sidebar__item
-                                    a(href="expositions.html").sidebar__link.link Экспозиции
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Конференция и публикации
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link СМИ о нас
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Отзывы
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Часто задаваемые вопросы
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Вакансии
-                                li.sidebar__item
-                                    a(href="#").sidebar__link.link Обратная связь
+                                a(href="textual.html").inner-menu__text.inner-heading Контакты
                         // end inner-menu 
                     // end sidebar 
 
                     .page-wrapper__right
                         
-                        // begin news-single 
-                        section.news-single
+                        // begin contacts-p 
+                        section.contacts-p
 
-                            h3.inner-h3 Выставка рисунков к Всемирному Дню Океанов
-
-                            .news-sing__time
-                                time(datetime="2017-03-17").news__date
-                                    img(src="img/pages/news/icon.png", alt="News")
-                                    |  21.03.2017
-
-                            .news-single__img
-                                img(src="img/pages/news-single/img.jpg", alt="News image")
-
-                            .text.news-single__text
-                                p.
-                                    С 8 по 10 июня у Театра Юного Зрителя при поддержке администрации Адмиралтейского района проходила выставка рисунков победителей конкурса к Всемирному Дню Океанов!
-                                    Благодарим всех участников! Мы еще раз поздравляем победителей конкурса рисунков.
-
-                                h4.inner-h4.inner-h4--no-margin Победители:
-                                ul.bulled-list
-                                    li.bulled-list__item.list-item Лаврентьева Яна
-                                    li.bulled-list__item.list-item Семагина Кристина
-                                    li.bulled-list__item.list-item Созыкин Александр
-                                    li.bulled-list__item.list-item Назмеева София
-                                    li.bulled-list__item.list-item Занозина Анна
-                                    li.bulled-list__item.list-item Татаринцева Мария
-                                    li.bulled-list__item.list-item Федотова Мария
-
-                        // end news-single 
+                            .contacts-p__map#map
+                                
+                            .contacts-p__info
+                                .contacts-p__info-left
+                                    address.contacts-p__info-item.contacts-p__address
+                                        h5.contacts-p__heading Адрес
+                                        a(href="#" target="_blank").contacts-p__link
+                                            |  191119, г. Санкт-Петербург
+                                            br
+                                            |  ул. Марата, 86 лит. А
+                                    .contacts-p__info-item
+                                        .contacts-p__text 
+                                            p Адмиралтейский район
+                                            p
+                                                img(src="img/pages/contacts/red.png", alt="Red metro icon").contacts-p__icon
+                                                |  Пушкинская
+                                            p
+                                                img(src="img/pages/contacts/violet.png", alt="Violet metro icon").contacts-p__icon
+                                                |  Звенигородская
+                                .contacts-p__info-right
+                                    .contacts-p__info-item
+                                        h5.contacts-p__heading Собственник
+                                        .contacts-p__text 
+                                            p ЗАО «Рубин»
+                                    .contacts-p__info-item
+                                        h5.contacts-p__heading Приемная Генерального директора
+                                        a(href="tel:88123202640").contacts-p__link
+                                            b Тел: 
+                                            |  (812) 320-26-40
+                                        a(href="tel:88123202641").contacts-p__link
+                                            b Факс: 
+                                            |  (812) 320-26-41
+                                        a(href="mailto:rubin@rubingroup.ru").contacts-p__link
+                                            b Email: 
+                                            |  rubin@rubingroup.ru
+                                    .contacts-p__info-item
+                                        h5.contacts-p__heading Администратор океанариума
+                                        a(href="tel:+79219322184").contacts-p__link
+                                            b Тел: 
+                                            |  +7-921-932-21-84
+                        // end contacts-p 
 
             // end page-wrapper 
 
@@ -237,4 +230,5 @@ html(lang='ru')
 
 
     // scripts 
+    script(src='https://api-maps.yandex.ru/2.1/?lang=ru_RU', type='text/javascript')
     script(src='js/scripts.min.js')
