@@ -2,6 +2,43 @@
     @media #{$md}
         min-height: 500px
     
+.conference-page__top
+    display: flex
+    margin-bottom: 50px
+    align-items: stretch
+
+    @media #{$_sm}
+        margin-bottom: 15px
+
+.conference-page__top-title
+    color: $main-color
+    font-weight: 700
+    margin-bottom: 12px
+    display: inline-block
+    max-width: 400px
+
+    @media #{$_sm}
+        font-weight: 400
+        margin-bottom: 5px
+
+.conference-page__top-left
+    flex-shrink: 0
+    max-width: 165px
+    flex-grow: 1
+    margin-right: 30px
+
+    @media #{$_sm}
+        max-width: 112px
+        margin-right: 10px
+
+.conference-page__top-right
+
+    @media #{$_sm}
+        font-size: 14px
+
+    @media #{$_xs}
+        font-size: 12px
+
 .conference-page__list
     margin-bottom: 45px
 
