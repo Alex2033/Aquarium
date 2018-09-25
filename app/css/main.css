@@ -5031,6 +5031,14 @@ h1, h2, h3, h4, h5, h6 {
   .articles__list .onecol-list__open {
     margin-left: 0; } }
 
+.articles__list .onecol-list__title {
+  font-weight: 400;
+  max-width: 375px;
+  cursor: auto; }
+  .articles__list .onecol-list__title:hover {
+    color: #3c3c3b;
+    text-decoration: none; }
+
 @media (min-width: 991.99px) {
   .mass-media {
     min-height: 550px; } }
