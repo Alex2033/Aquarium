@@ -1940,6 +1940,9 @@ h1, h2, h3, h4, h5, h6 {
           background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
+  @media (min-width: 767px) {
+    .is-home .background-img {
+      display: none; } }
 
 .header__top {
   padding-top: 30px;
@@ -3302,7 +3305,6 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 200px;
   margin-bottom: 20px;
   display: block;
-  cursor: pointer;
   position: relative; }
   .shop__img::before {
     content: '';
