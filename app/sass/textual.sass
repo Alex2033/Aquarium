@@ -61,7 +61,9 @@
 .page-wrapper__row
 	+row()
 	position: relative
-	min-height: 550px
+	
+	@media #{$md}
+		min-height: 550px
 
 .page-wrapper__right
 	+col(8)

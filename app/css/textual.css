@@ -88,8 +88,10 @@
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-  position: relative;
-  min-height: 550px; }
+  position: relative; }
+  @media (min-width: 991.99px) {
+    .page-wrapper__row {
+      min-height: 550px; } }
 
 .page-wrapper__right {
   margin-right: 15px;
