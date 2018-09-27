@@ -5327,9 +5327,10 @@ h1, h2, h3, h4, h5, h6 {
   .feedback-form__button:hover {
     opacity: 0.75; }
 
-.main-user-consent-request-popup-button-acc {
-  background-color: #0095e4; }
-  .main-user-consent-request-popup-button-acc:hover {
+.main-user-consent-request-popup-buttons .main-user-consent-request-popup-button-acc {
+  background-color: #0095e4;
+  color: #ffffff; }
+  .main-user-consent-request-popup-buttons .main-user-consent-request-popup-button-acc:hover {
     background-color: #00a5fd; }
 
 .plan {
