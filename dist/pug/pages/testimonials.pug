@@ -200,9 +200,88 @@ html(lang='ru')
                             h2.inner-heading.testi__title  Оставьте ваш отзыв
 
                             form.testi__form
-                                input.testi__item(type="text" required="required" placeholder="Имя")
-                                input.testi__item(type="text" required="required" placeholder="E-mail")
-                                textarea.testi__textarea(required="required")
+                                input.testi__item(type="text" name="name" required="required" placeholder="Имя")
+                                input.testi__item(type="email" name="email" required="required" placeholder="E-mail")
+                                textarea.testi__item.testi__textarea(required="required" placeholder="Сообщение" name="message")
+                                .testi__form-bottom
+                                    .reviewStars-input
+                                        input#star-4(name='reviewStars', type='radio')
+                                        label(title='gorgeous', for='star-4')
+                                        input#star-3(name='reviewStars', type='radio')
+                                        label(title='good', for='star-3')
+                                        input#star-2(name='reviewStars', type='radio')
+                                        label(title='regular', for='star-2')
+                                        input#star-1(name='reviewStars', type='radio')
+                                        label(title='poor', for='star-1')
+                                        input#star-0(name='reviewStars', type='radio')
+                                        label(title='bad', for='star-0')
+                                    .testi__button
+                                        button(type="submit").button Отправить отзыв  
+
+                            // begin testis 
+                            ul.testis.text
+                                li.testis__item
+                                    .testis__top
+                                        .testis__user
+                                            .testis__user-name Иван Петров
+                                            ul.testis__rating
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star.svg", alt="Star")
+                                        .testis__date
+                                            time(datetime="2018-03-03") 03 марта 2018
+                                    .testis__text
+                                        p.
+                                            Потрясающее место чтобы провести досуг с детьми! Интересно даже большим тридцатилетним. Особо нравится тунель, где стоя на месте, можно разглядеть и очутиться под множеством морских дивных рыбёшек. Мы в восторге!
+                                li.testis__item
+                                    .testis__top
+                                        .testis__user
+                                            .testis__user-name Иван Петров
+                                            ul.testis__rating
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star.svg", alt="Star")
+                                        .testis__date
+                                            time(datetime="2018-03-23") 23 марта 2018
+                                    .testis__text
+                                        p.
+                                            Отличное место для семейного похода. Особенно для юных натуралистов. Очень много видов морских обитателей, начиная от маленьких экзотических рыбок и заканчивая акулами и тюленями. А аквариум с медузами это просто сказка.
+                                li.testis__item
+                                    .testis__top
+                                        .testis__user
+                                            .testis__user-name Иван Петров
+                                            ul.testis__rating
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star-filled.svg", alt="Star")
+                                                li.testis__rating-item
+                                                    img(src="img/pages/testimonials/star.svg", alt="Star")
+                                        .testis__date
+                                            time(datetime="2018-03-23") 23 марта 2018
+                                    .testis__text
+                                        p.
+                                            Отличное место для семейного похода. Особенно для юных натуралистов. Очень много видов морских обитателей, начиная от маленьких экзотических рыбок и заканчивая акулами и тюленями. А аквариум с медузами это просто сказка.
+                            // end testis                
+
                         // end testi  
 
             // end page-wrapper 

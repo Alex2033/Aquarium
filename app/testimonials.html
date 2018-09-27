@@ -147,10 +147,91 @@
               <section class="testi">
                 <h2 class="inner-heading testi__title"> Оставьте ваш отзыв</h2>
                 <form class="testi__form">
-                  <input class="testi__item" type="text" required="required" placeholder="Имя">
-                  <input class="testi__item" type="text" required="required" placeholder="E-mail">
-                  <textarea class="testi__textarea" required="required"></textarea>
+                  <input class="testi__item" type="text" name="name" required="required" placeholder="Имя">
+                  <input class="testi__item" type="email" name="email" required="required" placeholder="E-mail">
+                  <textarea class="testi__item testi__textarea" required="required" placeholder="Сообщение" name="message"></textarea>
+                  <div class="testi__form-bottom">
+                    <div class="reviewStars-input">
+                      <input id="star-4" name="reviewStars" type="radio">
+                      <label title="gorgeous" for="star-4"></label>
+                      <input id="star-3" name="reviewStars" type="radio">
+                      <label title="good" for="star-3"></label>
+                      <input id="star-2" name="reviewStars" type="radio">
+                      <label title="regular" for="star-2"></label>
+                      <input id="star-1" name="reviewStars" type="radio">
+                      <label title="poor" for="star-1"></label>
+                      <input id="star-0" name="reviewStars" type="radio">
+                      <label title="bad" for="star-0"></label>
+                    </div>
+                    <div class="testi__button">
+                      <button class="button" type="submit">Отправить отзыв  </button>
+                    </div>
+                  </div>
                 </form>
+                <!-- begin testis -->
+                <ul class="testis text">
+                  <li class="testis__item">
+                    <div class="testis__top">
+                      <div class="testis__user">
+                        <div class="testis__user-name">Иван Петров</div>
+                        <ul class="testis__rating">
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star.svg" alt="Star"></li>
+                        </ul>
+                      </div>
+                      <div class="testis__date">
+                        <time datetime="2018-03-03">03 марта 2018</time>
+                      </div>
+                    </div>
+                    <div class="testis__text">
+                      <p>Потрясающее место чтобы провести досуг с детьми! Интересно даже большим тридцатилетним. Особо нравится тунель, где стоя на месте, можно разглядеть и очутиться под множеством морских дивных рыбёшек. Мы в восторге!</p>
+                    </div>
+                  </li>
+                  <li class="testis__item">
+                    <div class="testis__top">
+                      <div class="testis__user">
+                        <div class="testis__user-name">Иван Петров</div>
+                        <ul class="testis__rating">
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star.svg" alt="Star"></li>
+                        </ul>
+                      </div>
+                      <div class="testis__date">
+                        <time datetime="2018-03-23">23 марта 2018</time>
+                      </div>
+                    </div>
+                    <div class="testis__text">
+                      <p>Отличное место для семейного похода. Особенно для юных натуралистов. Очень много видов морских обитателей, начиная от маленьких экзотических рыбок и заканчивая акулами и тюленями. А аквариум с медузами это просто сказка.</p>
+                    </div>
+                  </li>
+                  <li class="testis__item">
+                    <div class="testis__top">
+                      <div class="testis__user">
+                        <div class="testis__user-name">Иван Петров</div>
+                        <ul class="testis__rating">
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star-filled.svg" alt="Star"></li>
+                          <li class="testis__rating-item"><img src="img/pages/testimonials/star.svg" alt="Star"></li>
+                        </ul>
+                      </div>
+                      <div class="testis__date">
+                        <time datetime="2018-03-23">23 марта 2018</time>
+                      </div>
+                    </div>
+                    <div class="testis__text">
+                      <p>Отличное место для семейного похода. Особенно для юных натуралистов. Очень много видов морских обитателей, начиная от маленьких экзотических рыбок и заканчивая акулами и тюленями. А аквариум с медузами это просто сказка.</p>
+                    </div>
+                  </li>
+                </ul>
+                <!-- end testis                -->
               </section>
               <!-- end testi  -->
             </div>

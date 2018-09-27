@@ -1,4 +1,143 @@
 .testi
+
     .testi__title
         text-transform: none
         font-weight: 400
+
+    .text
+        padding-right: 0
+
+    @media #{$md}
+        max-width: 685px
+
+.testi__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin-bottom: 40px
+
+.testi__item
+    color: $main-color
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.06)
+    border: 1px solid #bfbfbf
+    width: calc(50% - 8px)
+    border-radius: 1px
+    padding: 15px
+    margin-bottom: 15px
+
+    @media #{$_sm}
+        width: 100%
+
+.testi__textarea
+    width: 100%
+    max-width: 100%
+    resize: none
+    min-height: 170px
+
+.testi__form-bottom
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: space-between
+
+    @media #{$sm}
+        padding-left: 14px
+
+.testi__button
+    flex-grow: 1
+    max-width: 330px
+
+    .button
+        width: 100%
+
+    @media #{$_sm}
+        width: 100%
+        max-width: 100%
+    
+.rating
+    &::after
+        content: ''
+        display: table
+        clear: both
+
+    @media #{$_sm}
+        margin-bottom: 15px
+
+/*sprite with stars*/
+.reviewStars-input input:checked ~ label, .reviewStars-input label, .reviewStars-input label:hover, .reviewStars-input label:hover ~ label
+    background: url('../img/pages/testimonials/svg-sprite.svg') no-repeat
+
+.reviewStars-input
+
+    /*fix floating problems*/
+    overflow: hidden
+    *zoom: 1
+    /*end of fix floating problems*/
+
+    position: relative
+    float: left
+
+    @media #{$_sm}
+        margin-bottom: 15px
+
+.reviewStars-input input
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
+    opacity: 0
+
+    width: 18px
+    height: 18px
+
+    position: absolute
+    top: 0
+    z-index: 0
+
+.reviewStars-input input:checked ~ label
+    background-position: 0 0
+    height: 18px
+    width: 18px
+
+.reviewStars-input label
+    background-position: -25px 0
+    height: 18px
+    width: 18px
+    float: right
+    cursor: pointer
+    margin-right: 5px
+
+    position: relative
+    z-index: 1
+
+.reviewStars-input label:hover, .reviewStars-input label:hover ~ label
+    background-position: 0 0
+    height: 18px
+    width: 18px
+
+.testis__rating
+    display: flex
+
+.testis__top
+    font-size: 14px
+    display: flex
+    margin-bottom: 20px
+    flex-wrap: wrap
+    justify-content: space-between
+    color: #666666
+
+.testis__user-name
+    margin-bottom: 5px
+
+.testis__rating-item
+    margin-right: 5px
+    font-size: 19px
+
+.testis__item
+    padding: 20px 14px 30px 14px
+    border-top: 1px solid #e7e7e7
+
+    &:last-child
+        border-bottom: 1px solid #e7e7e7
+
+    @media #{$_sm}
+        padding-left: 0
+        padding-right: 0
