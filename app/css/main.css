@@ -5240,6 +5240,16 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   margin-bottom: 25px; }
 
+.main-user-consent-request {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
 .checkbox-container {
   position: relative;
   width: 25px;
@@ -5316,6 +5326,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: opacity .1s ease; }
   .feedback-form__button:hover {
     opacity: 0.75; }
+
+.main-user-consent-request-popup-button-acc {
+  background-color: #0095e4; }
+  .main-user-consent-request-popup-button-acc:hover {
+    background-color: #00a5fd; }
 
 .plan {
   position: relative; }
