@@ -203,6 +203,14 @@ html(lang='ru')
                                 input.testi__item(type="text" name="name" required="required" placeholder="Имя")
                                 input.testi__item(type="email" name="email" required="required" placeholder="E-mail")
                                 textarea.testi__item.testi__textarea(required="required" placeholder="Сообщение" name="message")
+                                // begin footnote 
+                                .footnote
+                                    .checkbox-container
+                                        input(type="checkbox" required="required").feedback-form__checkbox
+                                        span.checkmark
+                                    .footnote__text Я согласен с условиями политики конфиденциальности 
+                                        a(href="#").footnote__link Подробнее
+                                // end footnote 
                                 .testi__form-bottom
                                     .reviewStars-input
                                         input#star-4(name='reviewStars', type='radio')
