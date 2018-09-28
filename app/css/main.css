@@ -715,6 +715,8 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
   color: #ffffff; }
+  .h2 a {
+    color: #ffffff; }
   @media (max-width: 767px) {
     .h2 {
       font-size: 36px; } }
@@ -724,6 +726,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .h2--dark {
   color: #3c3c3b; }
+  .h2--dark a {
+    color: #3c3c3b; }
 
 .main-content {
   display: -webkit-box;
@@ -1410,10 +1414,11 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar {
   margin-right: 15px;
   margin-left: 15px;
-  width: -webkit-calc( (100% / 12) * 4.15 - 30px);
-  width: calc( (100% / 12) * 4.15 - 30px);
+  width: -webkit-calc( (100% / 12) * 3.75 - 30px);
+  width: calc( (100% / 12) * 3.75 - 30px);
   position: relative;
   margin-left: 0;
+  margin-right: 0;
   padding-bottom: 20px; }
   @media (min-width: 991.99px) {
     .sidebar {
@@ -3273,6 +3278,8 @@ h1, h2, h3, h4, h5, h6 {
           flex-grow: 1;
   font-size: 30px;
   text-align: center; }
+  .shop__heading a {
+    color: #3c3c3b; }
 
 .shop__heading--padding {
   padding-left: 60px; }
@@ -6071,9 +6078,11 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 40px; }
-  @media (min-width: 767px) {
-    .testi__form .footnote {
-      padding-left: 14px; } }
+  .testi__form .footnote {
+    margin-top: 15px; }
+    @media (min-width: 767px) {
+      .testi__form .footnote {
+        padding-left: 14px; } }
 
 .testi__item {
   color: #3c3c3b;
