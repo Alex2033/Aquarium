@@ -308,19 +308,19 @@
         margin-bottom: 60px
 
 .modal
-    position: absolute
-    right: -15px
-    bottom: -100px
+	position: absolute
+	right: -15px
+	top: 0
     width: 108%
 
-    @media #{$_md}
-        width: 102%
-        bottom: initial
-        top: -37%
-        right: -1%
+	@media #{$_md}
+		width: 102%
+		bottom: initial
+		top: -37%
+		right: -1%
 
-    @media #{$_sm}
-        top: -28%
+	@media #{$_sm}
+		top: -28%
 
 .modal__body-img
     width: calc(100% + 60px)
@@ -445,7 +445,6 @@
 	display: flex
 	flex-wrap: wrap
 	font-size: 18px
-	margin-top: 50px
 	b
 		color: lighten($accent, 5%)
 		display: block
@@ -461,5 +460,5 @@
 	left: 0
 	width: 100%
 	height: 100%
-	background-color: rgba(#444, .29)
+	background-color: rgba(#444, .8)
 	z-index: 100

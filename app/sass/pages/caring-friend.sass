@@ -73,7 +73,10 @@
         display: none
 
 .modal__top-text
-    max-width: 300px
+    max-width: 340px
+
+    @media #{$md} and #{$_lg}
+        max-width: 240px
 
 .modal__top-item
     line-height: 1.6
