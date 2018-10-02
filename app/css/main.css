@@ -1414,8 +1414,8 @@ h1, h2, h3, h4, h5, h6 {
 .sidebar {
   margin-right: 15px;
   margin-left: 15px;
-  width: -webkit-calc( (100% / 12) * 3.75 - 30px);
-  width: calc( (100% / 12) * 3.75 - 30px);
+  width: -webkit-calc( (100% / 12) * 3.25 - 30px);
+  width: calc( (100% / 12) * 3.25 - 30px);
   position: relative;
   margin-left: 0;
   margin-right: 0;
@@ -1447,7 +1447,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .sidebar__background--cover {
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  left: -140px; }
 
 .sidebar__list {
   margin-top: 10px; }
@@ -1799,6 +1800,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .cards__heading {
   font-weight: 700;
+  font-size: 18px;
   margin-bottom: 12px; }
   @media (min-width: 991.99px) and (max-width: 1200px) {
     .cards__heading {
@@ -3584,6 +3586,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: 15px;
     left: 0;
+    font-size: 18px;
     width: 100%;
     padding: 0 15px;
     color: #ffffff;
@@ -3726,6 +3729,7 @@ h1, h2, h3, h4, h5, h6 {
 .feeding-show__img-text {
   position: absolute;
   bottom: 17px;
+  font-size: 18px;
   left: 25px;
   display: block;
   font-weight: 700;
@@ -3768,6 +3772,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px; } }
 
 .week-list__text {
+  font-size: 18px;
   display: none; }
   @media (min-width: 767px) {
     .week-list__text {
@@ -5561,6 +5566,18 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 375px) {
     .error-page__img {
       top: 0; } }
+
+.error-page__link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #0095e4;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: underline;
+  letter-spacing: 0.5px; }
+  @media (max-width: 767px) {
+    .error-page__link {
+      font-size: 14px; } }
 
 .caring .modal__wrapper {
   padding: 40px; }

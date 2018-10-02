@@ -96,8 +96,8 @@
 .page-wrapper__right {
   margin-right: 15px;
   margin-left: 15px;
-  width: -webkit-calc( (100% / 12) * 8.6 - 30px);
-  width: calc( (100% / 12) * 8.6 - 30px);
+  width: -webkit-calc( (100% / 12) * 9.1 - 30px);
+  width: calc( (100% / 12) * 9.1 - 30px);
   margin-left: 0;
   padding-bottom: 100px;
   padding-top: 18px;
