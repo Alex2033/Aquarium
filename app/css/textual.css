@@ -349,12 +349,12 @@
   position: absolute;
   right: -15px;
   top: 0;
-    top-width: 108%; }
+  width: 108%; }
   @media (max-width: 991.99px) {
     .modal {
       width: 102%;
       bottom: initial;
-      top: -37%;
+      top: -30%;
       right: -1%; } }
   @media (max-width: 767px) {
     .modal {

@@ -23,9 +23,11 @@
     @media #{$_sm}
         padding: 50px 25px
 
-.site-map__wrapper
+.site-map__list--flex
     display: flex
     flex-wrap: wrap
+    position: relative
+    z-index: 1
 
     @media #{$_md}
         justify-content: center
@@ -42,7 +44,11 @@
         margin-left: 0
         text-align: left
 
-.site-map__wrapper-item
+.site-map__list
+    position: relative
+    z-index: 1
+
+.site-map__list-item
     width: 50%
     margin-bottom: 35px  
 
@@ -75,3 +81,9 @@
 
 .site-map__sublist .site-map__sublist .site-map__sublist-item
     list-style: disc
+
+.site-map__item--full-width
+    width: 100%
+
+    @media #{$sm} and #{$_md}
+        text-align: center
