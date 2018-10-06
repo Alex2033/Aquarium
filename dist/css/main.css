@@ -908,6 +908,12 @@ h1, h2, h3, h4, h5, h6 {
     .grey-arrow--right {
       right: 17%; } }
 
+.display-block {
+  display: block !important; }
+
+.display-none {
+  display: none !important; }
+
 .navigation {
   position: relative;
   z-index: 5; }
@@ -957,6 +963,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0; } }
 
 .menu__item {
+  max-width: 210px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
@@ -5807,6 +5814,28 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 767px) and (max-width: 991.99px) {
     .site-map__item--full-width {
       text-align: center; } }
+
+.site-map__list li a {
+  color: #3c3c3b;
+  font-weight: 700;
+  line-height: 2; }
+
+.site-map__list li a:hover {
+  text-decoration: underline; }
+
+.map-level-1, .map-level-2 {
+  padding-left: 35px; }
+
+.map-level-2 li {
+  list-style: disc; }
+
+.map-level-1 li a {
+  color: #3c3c3b;
+  font-weight: 500;
+  line-height: 2; }
+
+.site-map__sublist-link:hover {
+  text-decoration: underline; }
 
 .ticket {
   position: relative;

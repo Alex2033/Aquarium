@@ -95,20 +95,11 @@ html(lang='ru')
                     li.menu__item
                         a.menu__link(href="#") О нас
                     li.menu__item
-                        a.menu__link(href="#") 
-                            |  Информация
-                            br.header__br 
-                            |  для посетителей
+                        a.menu__link(href="#") Информация для посетителей
                     li.menu__item
-                        a.menu__link(href="#")
-                            |  Показательные кормления
-                            br.header__br
-                            |  и шоу-программы
+                        a.menu__link(href="#") Показательные кормления и шоу-программы
                     li.menu__item
-                        a.menu__link(href="#") 
-                            |  Океанариум
-                            br.header__br 
-                            |  детям
+                        a.menu__link(href="#") Океанариум детям
                     li.menu__item
                         a.menu__link(href="#") Дайвинг-центр
                         // begin menu-dropdown 
@@ -123,13 +114,10 @@ html(lang='ru')
                                 a.menu-dropdown__link(href="#") Подарочный сертификат    
                         // end menu-dropdown 
                     li.menu__item
-                        a.menu__link(href="#") 
-                            |  Магазин
-                            br.header__br 
-                            |  сувениров
+                        a.menu__link(href="#") Магазин сувениров
                     li.menu__item
                         a.menu__link(href="#") Контакты
-              // end navigation  
+              // end navigation    
 
               .container
                 .page-heading
@@ -149,143 +137,157 @@ html(lang='ru')
                 .sidebar__background(style="background-image: url(img/pages/page-image.png);")
 
                 ul.site-map__list.site-map__list--flex
-                    li.site-map__item.site-map__item--full-width
-                        a(href="#").site-map__link Главная страница
+                    li.site-map__item--full-width
+                        a(href='/') Главная
                     li.site-map__list-item
-                        a(href="#").site-map__link О нас
-                        ul.site-map__sublist
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Новости
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link План океанариума
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Экспозиция
-                                ul.site-map__sublist
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Рыбы Северо-Запада России
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Тропический дождевой лес
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Дорога к океану
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Мир медуз
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Скалистое побережье
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Главный аквариум
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Коралловый риф
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Морские млекопитающие
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Публикации наших сотрудников
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link СМИ о нас
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Отзывы
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Часто задаваемые вопросы
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Вакансии
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Обратная связь
+                        a(href='/about/') О нас
+                        ul.map-level-1
+                            li
+                                a(href='/about/news/') Новости
+                            li
+                                a(href='/about/map-directions/') План Океанариума
+                            li
+                                a(href='/about/expositions/') Экспозиции
+                                ul.map-level-2
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=98') Рыбы умеренных и тропических широт
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=100') Дорога к океану
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=101') Мир медуз
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=102') Скалистое побережье
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=103') Главный аквариум
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=104') Коралловый риф
+                                    li
+                                        a(href='/about/expositions/detail.php?SECTION_ID=105') Рыбы и млекопитающие С-3 России
+                            li
+                                a(href='/about/conference-and-publications/') Конференции и публикации
+                            li
+                                a(href='/about/smi/') СМИ о нас
+                            li
+                                a(href='/about/reviews/') Отзывы
+                            li
+                                a(href='/about/faq/') Часто задаваемые вопросы
+                            li
+                                a(href='/about/vakancies/') Вакансии
+                            li
+                                a(href='/about/feedback/') Обратная связь
                     li.site-map__list-item
-                        a(href="#").site-map__link Океанариум детям
-                        ul.site-map__sublist
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Для дошкольников
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Для школьников
-                                ul.site-map__sublist
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Экскурсии для школ Санкт-Петербурга и ЛО
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Для 1-3 классов
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Для 4-7 классов
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Для 8-11 классов
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Занятия по темам
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Стоимость экскурсии и занятий
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Конкурс «Большая Регата»
-                                ul.site-map__sublist
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Положение о конкурсе
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Правила конкурса
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Регистрация на конкурс
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Контакты
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link История конкурса «Большая Регата»
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Развлекательные программы для детей
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Буклет-путеводитель для детей
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Контакты Учебного центра
+                        a(href='/public-info/') Информация для посетителей
+                        ul.map-level-1
+                            li
+                                a(href='/public-info/work-time/') Режим работы
+                            li
+                                a(href='/public-info/price/') Цены
+                            li
+                                a(href='/public-info/lgoty/') Льготы
+                            li
+                                a(href='/public-info/promo/') Акции и скидки
+                            li
+                                a(href='/public-info/weekend-abonement/') Семейный абонемент выходного дня
+                            li
+                                a(href='/public-info/el-tickets/') Купить электронные билеты
+                            li
+                                a(href='/public-info/rules/') Правила посещения
+                            li
+                                a(href='/public-info/programma-zabota-o-druge/') Программа "Забота о друге"
+                            li
+                                a(href='/public-info/korporativnye-programmy/') Корпоративные программы
+                                ul.map-level-2
+                                    li
+                                        a(href='/public-info/korporativnye-programmy/lease/') Аренда учебного класса
+                                    li
+                                        a(href='/public-info/korporativnye-programmy/for-adults/') Развлекательные программы для взрослых
                     li.site-map__list-item
-                        a(href="#").site-map__link Информация для посетителей
-                        ul.site-map__sublist
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Режим работы
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Цены
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Льготы
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Акции и скидки
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Семейный абонемент выходного дня
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Купить электронные билеты
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Правила посещения
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Программа «Забота о друге»
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Корпоративные программы
-                                ul.site-map__sublist
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Развлекательные программы для взрослых
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Аренда учебного класса
+                        a(href='/shows/') Показательные кормления и шоу-программы
+                        ul.map-level-1
+                            li
+                                a(href='/shows/detail.php?SECTION_ID=109') Шоу с акулами
+                            li
+                                a(href='/shows/detail.php?SECTION_ID=110') Шоу с тюленями
+                            li
+                                a(href='/shows/feeding/') Кормление обитателей
+                                ul.map-level-2
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=132') Понедельник
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=133') Вторник
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=134') Среда
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=135') Четверг
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=136') Пятница
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=137') Суббота
+                                    li
+                                        a(href='/shows/feeding/day.php?SECTION_ID=138') Воскресенье
                     li.site-map__list-item
-                        a(href="#").site-map__link Дайвинг-центр
-                        ul.site-map__sublist
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Обучение дайвингу
-                                ul.site-map__sublist
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Стоимость обучения
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Инструкторы
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link Записаться
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Обучение дайвингу
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Подарочный сертификат
+                        a(href='/for-children/') Океанариум детям
+                        ul.map-level-1
+                            li
+                                a(href='/for-children/pre-school/') Для дошкольников
+                            li
+                                a(href='/for-children/school/') Для школьников
+                                ul.map-level-2
+                                    li
+                                        a(href='/for-children/school/exskurcii/') Экскурсии для школьников
+                                    li
+                                        a(href='/for-children/school/classes-1-3/') Занятия для 1-3 классов
+                                    li
+                                        a(href='/for-children/school/classes-4-7/') Занятия для 4-7 классов
+                                    li
+                                        a(href='/for-children/school/classes-8-11/') Занятия для 8-11 классов
+                                    li
+                                        a(href='/for-children/school/thematique-lessons/') Занятия по темам
+                                    li
+                                        a(href='/for-children/school/price/') Стоимость экскурсий и занятий
+                            li
+                                a(href='/for-children/big-regata/') Конкурс "Большая Регата"
+                                ul.map-level-2
+                                    li
+                                        a(href='/for-children/big-regata/current-event/') БР 2018-2019
+                                    li
+                                        a(href='/for-children/big-regata/terms/') Положение о конкурсе
+                                    li
+                                        a(href='/for-children/big-regata/registration/') Регистрация на конкурс
+                                    li
+                                        a(href='/for-children/big-regata/contacts/') Контакты
+                                    li
+                                        a(href='/for-children/big-regata/history/') История конкурса БР
+                            li
+                                a(href='/for-children/special-events/')
+                                    | Развлекательные программы
+                                    br
+                                    |  для детей
+                            li
+                                a(href='/for-children/bucklet/')  Буклет-путеводитель для детей
+                            li
+                                a(href='/for-children/learning-center/') Контакты Учебного центра
                     li.site-map__list-item
-                        a(href="#").site-map__link Магазин сувениров
+                        a(href='/diving-center/') Дайвинг-центр
+                        ul.map-level-1
+                            li
+                                a(href='/diving-center/courses/') Обучение дайвингу
+                                ul.map-level-2
+                                    li
+                                        a(href='/diving-center/courses/price/') Стоимость обучения
+                                    li
+                                        a(href='/diving-center/courses/teachers/') Инструкторы
+                                    li
+                                        a(href='/diving-center/courses/join-us/') Записаться
+                            li
+                                a(href='/diving-center/main-aquarium/') Экскурсии в главный аквариум
+                            li
+                                a(href='/diving-center/gift-certificate/') Подарочный сертификат
                     li.site-map__list-item
-                        a(href="#").site-map__link Контакты             
+                        a(href='/shop/') Магазин сувениров
                     li.site-map__list-item
-                        a(href="#").site-map__link Показательные кормления и шоу-программы
-                        ul.site-map__sublist
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Шоу с акулами
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Шоу с тюленями
-                            li.site-map__sublist-item
-                                a(href="#").site-map__sublist-link Кормления обитателей
-                                ul.site-map__sublist
-                                    li.site-map__sublist-item
-                                        a(href="#").site-map__sublist-link По дням
+                        a(href='/contacts/') Контакты
+
 
         // end site-map 
 
