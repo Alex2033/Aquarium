@@ -779,6 +779,9 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 1200px) {
     .link {
       padding: 13px 18px; } }
+  @media (min-width: 991.99px) and (max-width: 1200px) {
+    .link {
+      padding: 13px 12px; } }
 
 #scrollUp {
   bottom: 20px;
@@ -1530,6 +1533,9 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: #0095e4;
   padding-left: 20px; }
+  @media (min-width: 991.99px) and (max-width: 1200px) {
+    .inner-menu__text {
+      padding-left: 10px; } }
   @media (max-width: 991.99px) {
     .inner-menu__text {
       padding-left: 0;
@@ -4447,10 +4453,6 @@ h1, h2, h3, h4, h5, h6 {
   @media (max-width: 375px) {
     .regatta-registration__wrapper iframe {
       min-height: 2850px; } }
-
-@media (max-width: 375px) {
-  .classes {
-    font-size: 14px; } }
 
 .classes__top {
   margin-bottom: 30px; }
