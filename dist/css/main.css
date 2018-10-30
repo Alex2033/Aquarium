@@ -1029,7 +1029,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 100%;
   padding: 23px 39px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.85);
   left: 50%;
   width: 305px;
   -webkit-transform: translateX(-50%);
@@ -1766,14 +1766,14 @@ h1, h2, h3, h4, h5, h6 {
   .cards__link::before {
     content: '';
     position: absolute;
-    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(14%, rgba(0, 105, 161, 0.70196)), color-stop(21%, rgba(0, 105, 161, 0.65)), color-stop(57%, rgba(15, 70, 105, 0.35)), to(rgba(29, 35, 48, 0)));
-    background-image: -webkit-linear-gradient(bottom, rgba(0, 105, 161, 0.70196) 14%, rgba(0, 105, 161, 0.65) 21%, rgba(15, 70, 105, 0.35) 57%, rgba(29, 35, 48, 0) 100%);
-    background-image: -o-linear-gradient(bottom, rgba(0, 105, 161, 0.70196) 14%, rgba(0, 105, 161, 0.65) 21%, rgba(15, 70, 105, 0.35) 57%, rgba(29, 35, 48, 0) 100%);
-    background-image: linear-gradient(0deg, rgba(0, 105, 161, 0.70196) 14%, rgba(0, 105, 161, 0.65) 21%, rgba(15, 70, 105, 0.35) 57%, rgba(29, 35, 48, 0) 100%);
+    height: 50%;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(14%, rgba(0, 105, 161, 0.90196)), color-stop(21%, rgba(0, 105, 161, 0.95)), color-stop(57%, rgba(15, 70, 105, 0.65)), to(rgba(29, 35, 48, 0)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 105, 161, 0.90196) 14%, rgba(0, 105, 161, 0.95) 21%, rgba(15, 70, 105, 0.65) 57%, rgba(29, 35, 48, 0) 100%);
+    background-image: -o-linear-gradient(bottom, rgba(0, 105, 161, 0.90196) 14%, rgba(0, 105, 161, 0.95) 21%, rgba(15, 70, 105, 0.65) 57%, rgba(29, 35, 48, 0) 100%);
+    background-image: linear-gradient(0deg, rgba(0, 105, 161, 0.90196) 14%, rgba(0, 105, 161, 0.95) 21%, rgba(15, 70, 105, 0.65) 57%, rgba(29, 35, 48, 0) 100%);
     -webkit-transition: background-color .15s ease;
     -o-transition: background-color .15s ease;
     transition: background-color .15s ease; }
@@ -2114,8 +2114,9 @@ h1, h2, h3, h4, h5, h6 {
   .languages__item:not(:last-child)::after {
     content: '|';
     position: absolute;
-    top: 60%;
+    top: 50%;
     right: -3px;
+    line-height: 1;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -2124,7 +2125,7 @@ h1, h2, h3, h4, h5, h6 {
     @media (max-width: 991.99px) {
       .languages__item:not(:last-child)::after {
         font-size: 14px;
-        top: 47%; } }
+        top: 45%; } }
 
 .languages__link {
   font-size: 11px;
@@ -2460,6 +2461,9 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-background-size: contain;
               background-size: contain;
       background-position: center 50%; } }
+  @media (max-width: 576px) {
+    .shares__item {
+      min-height: 250px; } }
 
 .shares__item--visible {
   display: none; }
@@ -2482,6 +2486,12 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-order: 2;
       -ms-flex-order: 2;
           order: 2; }
+  @media (max-width: 576px) {
+    .expositions {
+      padding: 30px 0 0; }
+      .expositions .container {
+        padding-left: 0;
+        padding-right: 0; } }
 
 .expositions__title {
   margin-bottom: 35px; }
@@ -2898,6 +2908,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .children__container {
   position: relative; }
+  @media (max-width: 576px) {
+    .children__container {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .children__row {
   display: -webkit-box;
@@ -2977,7 +2991,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center; }
 
 .children__nav-link {
-  color: #3c3c3b; }
+  color: #3c3c3b;
+  padding: 11px 15px; }
+  .children__nav-link:hover {
+    font-weight: 700; }
 
 .children__right-img {
   margin: 0 auto 30px; }
@@ -3288,6 +3305,11 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
+  @media (max-width: 576px) {
+    .shop__header {
+      -webkit-justify-content: space-around;
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
 
 .shop__heading {
   text-transform: uppercase;
@@ -3303,6 +3325,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .shop__heading--padding {
   padding-left: 60px; }
+  @media (max-width: 576px) {
+    .shop__heading--padding {
+      padding-left: 0; } }
 
 .shop__images {
   display: -webkit-box;
@@ -3318,6 +3343,21 @@ h1, h2, h3, h4, h5, h6 {
           flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
+  @media (max-width: 576px) {
+    .shop__images {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      margin-right: -7.5px;
+      margin-left: -7.5px; } }
 
 .shop__title {
   font-size: 18px;
@@ -3347,6 +3387,11 @@ h1, h2, h3, h4, h5, h6 {
     transition: opacity .1s ease; }
   .shop__img:hover::before {
     opacity: 0.2; }
+  @media (max-width: 576px) {
+    .shop__img {
+      width: -webkit-calc(100% + 30px);
+      width: calc(100% + 30px);
+      margin-left: -15px; } }
 
 .shop__left-img {
   margin-right: 15px;
@@ -3355,7 +3400,11 @@ h1, h2, h3, h4, h5, h6 {
   width: calc( (100% / 12) * 6 - 30px); }
   @media (max-width: 576px) {
     .shop__left-img {
-      min-height: 130px; } }
+      min-height: 120px;
+      margin-right: 7.5px;
+      margin-left: 7.5px;
+      width: -webkit-calc( (100% / 12) * 6 - 15px);
+      width: calc( (100% / 12) * 6 - 15px); } }
 
 .shop__news {
   display: -webkit-box;
@@ -3934,10 +3983,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 35px;
   -webkit-transition: opacity .15s ease;
   -o-transition: opacity .15s ease;
-  transition: opacity .15s ease; }
+  transition: opacity .15s ease;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
   .promotions__img:hover {
     opacity: 0.9; }
   .promotions__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     border: 1px solid #F5F5F5; }
   @media (max-width: 767px) {
     .promotions__img {
@@ -3961,10 +4017,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 767px) {
   .promotions__text {
     font-size: 14px; } }
-
-@media (max-width: 375px) {
-  .promotions__text {
-    text-align: center; } }
 
 .corporate-programs__divisions {
   display: -webkit-box;

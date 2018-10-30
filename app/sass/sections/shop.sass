@@ -31,6 +31,9 @@
     margin-bottom: 40px
     align-items: center
 
+    @media #{$_xsm}
+        justify-content: space-around
+
 .shop__heading
     text-transform: uppercase
     font-weight: 300
@@ -44,8 +47,14 @@
 .shop__heading--padding
     padding-left: 60px
 
+    @media #{$_xsm}
+        padding-left: 0
+
 .shop__images
     +row()
+
+    @media #{$_xsm}
+        +row($for-gutter: 15px)
 
 .shop__title
     font-size: 18px
@@ -76,11 +85,16 @@
         &::before
             opacity: 0.2
 
+    @media #{$_xsm}
+        width: calc(100% + 30px)
+        margin-left: -15px
+
 .shop__left-img
     +col(6)
 
     @media #{$_xsm}
-        min-height: 130px
+        min-height: 120px
+        +col(6, 15px)
 
 .shop__news
     +row()

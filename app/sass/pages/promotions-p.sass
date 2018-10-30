@@ -16,11 +16,14 @@
     justify-content: center
     margin-right: 35px
     transition: opacity .15s ease
+    flex-grow: 1
 
     &:hover
         opacity: 0.9
     
     img
+        width: 100%
+        object-fit: cover
         border: 1px solid #F5F5F5
 
     @media #{$_sm}
@@ -45,6 +48,3 @@
 
     @media #{$_sm}
         font-size: 14px
-
-    @media #{$_xs}
-        text-align: center

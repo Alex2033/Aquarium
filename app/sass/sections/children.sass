@@ -17,6 +17,10 @@
 .children__container
     position: relative
 
+    @media #{$_xsm}
+        padding-left: 0
+        padding-right: 0
+
 .children__row
     +row()
     align-items: flex-start
@@ -64,7 +68,10 @@
 
 .children__nav-link
     color: $main-color
-    
+    padding: 11px 15px
+
+    &:hover
+        font-weight: 700
 
 .children__right-img
     margin: 0 auto 30px
