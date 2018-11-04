@@ -386,17 +386,22 @@
     padding: 0 20px
 
 .modal__images
-    justify-content: space-around
+	justify-content: space-around
 
-    &.triple
-        .modal__img
-            width: calc(32% - 30px)
+	h4
+		text-align: center
+		text-transform: uppercase
+		color: #ffffff
 
-        @media #{$_sm}
-            
-            .inner-images__img
-                height: 217px
-                width: 100%
+	&.triple
+		.modal__img
+			width: calc(32% - 30px)
+
+		@media #{$_sm}
+			
+			.inner-images__img
+				height: 217px
+				width: 100%
 
 .modal__image--big
     @media #{$_md}

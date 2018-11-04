@@ -137,9 +137,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(300);
-		$('html, body').animate({
-			scrollTop:  $('#modal-' + numberModal).offset().top
-		});
+		$('.modal').css({'top': $(window).scrollTop()/1.4})
 	});
 });
 
@@ -149,9 +147,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('html, body').animate({
-			scrollTop:  $('#modal-' + numberModal).offset().top
-		});
+		$('.modal').css({'top': $(window).scrollTop()/1.4})
 	});
 });
 
@@ -161,9 +157,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('html, body').animate({
-			scrollTop:  $('#modal-' + numberModal).offset().top
-		});
+		$('.modal').css({'top': $(window).scrollTop()/1.4})
 	});
 });
 
@@ -173,9 +167,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('html, body').animate({
-			scrollTop:  $('#modal-' + numberModal).offset().top
-		});
+		$('.modal').css({'top': $(window).scrollTop()/1.4})
 	});
 });
 

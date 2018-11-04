@@ -434,6 +434,10 @@
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+  .modal__images h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff; }
   .modal__images.triple .modal__img {
     width: -webkit-calc(32% - 30px);
     width: calc(32% - 30px); }
