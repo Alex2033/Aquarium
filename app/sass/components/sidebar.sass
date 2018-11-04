@@ -77,11 +77,11 @@
 	
 .inner-menu__line
 	width: 19px
-	left: 50%
-	transform: translateX(-50%)
+	left: 0
 	background-color: lighten($accent, 5%)
 	position: absolute
 	height: 2px
+	transition: transform 0.5s, top 0.2s
 
 .inner-menu__line--top
 	top: 2px
@@ -91,6 +91,18 @@
 
 .inner-menu__line--bottom
 	top: 18px
+
+.inner-menu__sandwich.active
+	.inner-menu__line--top
+		top: 9px
+		transform: rotate(45deg)
+	.inner-menu__line--middle
+		top: 9px
+		transform: rotate(-45deg)
+	.inner-menu__line--bottom
+		opacity: 0
+		top: 0
+        transform: rotate(180deg)
 
 .inner-menu__text
 	font-weight: 700

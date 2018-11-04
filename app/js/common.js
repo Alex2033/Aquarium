@@ -9,6 +9,7 @@ $(function() {
 
 $('.toggle-menu').click(function() {
 	$('.menu--hidden').slideToggle();
+	$('.sandwich').toggleClass('active');
 });
 
 $(function(){
@@ -88,6 +89,7 @@ $(function() {
 
 $('.inner-menu__sandwich').click(function() {
 	$('.sidebar__list').slideToggle();
+	$(this).toggleClass('active');
 });
 
 
@@ -109,7 +111,7 @@ function slick_slider() {
 		slidesToScroll: 1,
 		dots: true,
 		infinite: false,
-		arrows: true,
+		arrows: false,
 		dotsClass: "slick-buttons",
 		customPaging : function(slider, i) {
 			var thumb = $(slider.$slides[i]).data('thumb');

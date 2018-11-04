@@ -40,6 +40,7 @@
     width: 100%
     height: 2px
     background-color: #ffffff
+    transition: transform 0.5s, top 0.2s
 
 .sandwich__line-top
     top: 1px
@@ -49,3 +50,16 @@
 
 .sandwich__line-bot
     top: 17px
+
+.sandwich.active
+	.sandwich__line-top
+		top: 9px
+		transform: rotate(45deg)
+	.sandwich__line-mid
+		top: 9px
+		transform: rotate(-45deg)
+	.sandwich__line-bot
+		opacity: 0
+		top: 0
+        transform: rotate(180deg)
+    

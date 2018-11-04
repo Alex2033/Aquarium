@@ -92,15 +92,22 @@
     p
         font-size: 14px
         line-height: 1.2
+        margin-bottom: 20px
 
     @media #{$md} and #{$_lg}
         p
             font-size: 12px
+
+    @media #{$_md}
+        p
+            margin-bottom: 0
+
     @media #{$_sm}
         display: none
 
         p
             font-size: 13px
+            
 
 .cards__hidden-link
     opacity: 0
