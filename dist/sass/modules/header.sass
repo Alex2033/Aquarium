@@ -58,6 +58,7 @@
 
 .header__logo
     +col(4)
+    max-width: 370px
 
     @media #{$md} and #{$_lg} 
         +col(3) 
@@ -69,12 +70,15 @@
         order: -1
         +col(12)
         margin-bottom: 10px
+        margin-left: auto
+        margin-right: auto
 
 .logo
     display: block
 
 .logo__img
-    max-height: 73px
+    width: 100%
+    object-fit: cover
     margin-left: auto 
     margin-right: auto
     
@@ -155,6 +159,7 @@
     margin-right: 12px
 
 .header__btn
+    align-items: center
 
     @media #{$xs}
         width: 100%
@@ -171,7 +176,7 @@
         max-width: 170px
         margin-right: 0
         margin-bottom: 5px
-
+        
     @media #{$_xs}
         margin-bottom: 0
 

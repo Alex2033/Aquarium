@@ -159,7 +159,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('.modal').css({'top': $(window).scrollTop()/1.4})
+		$('.modal').css({'top': $(window).scrollTop()/2})
 	});
 });
 
@@ -169,7 +169,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('.modal').css({'top': $(window).scrollTop()/1.4})
+		$('.modal').css({'top': $(window).scrollTop()/3})
 	});
 });
 
