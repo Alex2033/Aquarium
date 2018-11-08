@@ -25,6 +25,7 @@
     background-repeat: no-repeat
     background-position: 50% 50%
     position: relative
+    transition: background-color .15s ease
 
     &::before
         content: ''
@@ -32,39 +33,35 @@
         left: 0
         bottom: 0
         right: 0
-        height: 50%
-        background-image: linear-gradient( 0deg, rgba(0,105,161,0.90196) 14%, rgba(0,105,161,0.95) 21%, rgba(15,70,105,0.65) 57%, rgba(29,35,48,0) 100%)
-        transition: background-color .15s ease
+        height: 100%
+        background-image: linear-gradient( 0deg, rgba(0,105,161,0.90196) 14%, rgba(0,105,161,0.95) 21%, rgba(15,70,105,0.65) 37%, rgba(29,35,48,0) 100%)
 
     &:hover
 
         &::before
             height: 100%
 
+        .cards__heading
+            margin-bottom: 12px
+
+            @media #{$_sm}
+                margin-bottom: 0
+
         .cards__text,
         .cards__hidden-link
-            opacity: 1
-
-        .cards__hidden
-            top: 10%
+            display: block
 
         &::before
-            background-color: rgba(darken($accent, 10%), .7)
+            background-image: linear-gradient( 0deg, rgba(0,105,161,0.90196) 50%, rgba(0,105,161,0.95) 50%, rgba(15,70,105,0.65) 100%, rgba(29,35,48,0) 100%)
 
-    @media #{$md} and #{$_lg}
-        &:hover
-            .cards__hidden
-                top: 5px
-
-    @media #{$_sm}
-        &:hover
-            .cards__hidden
-                bottom: 12px
-                top: initial
 
 .cards__hidden
     position: absolute
-    top: 65%
+    display: flex
+    flex-direction: column
+    top: 0
+    left: 0
+    height: 100%
     width: 100%
     color: #ffffff
     padding: 12px 20px
@@ -74,14 +71,13 @@
         padding: 5px 10px
 
     @media #{$_sm}
-        top: initial
-        bottom: 12px
-        padding: 0 15px
+        padding: 5px 15px 10px
 
 .cards__heading
+    margin-top: auto
     font-weight: 700
     font-size: 18px
-    margin-bottom: 12px
+    margin-bottom: 0
 
     @media #{$md} and #{$_lg}
         font-size: 14px
@@ -89,10 +85,11 @@
 
     @media #{$_sm}
         margin-bottom: 0
+        font-size: 16px
+        line-height: 1
 
 .cards__text
-    opacity: 0
-    transition: opacity .2s ease
+    display: none
     p
         font-size: 14px
         line-height: 1.2
@@ -107,70 +104,41 @@
             margin-bottom: 0
 
     @media #{$_sm}
-        display: none
-
         p
             font-size: 13px
             
 
 .cards__hidden-link
-    opacity: 0
-    transition: opacity .2s ease
+    display: none
     font-size: 14px
     text-decoration: underline
-    float: right
+    margin-left: auto
 
     @media #{$_sm}
         display: none
 
 .cards--mobile-text
 
-    .cards__link
-        &::before
-            display: none
-
     .cards__item
         background-size: cover
         background-repeat: no-repeat
         background-position: 50% 50%
 
-        &::before
-            content: ''
-            position: absolute
-            top: 0
-            left: 0
-            bottom: 0
-            right: 0
-            background-image: linear-gradient( 0deg, rgba(0,105,161,0.70196) 14%, rgba(0,105,161,0.65) 21%, rgba(15,70,105,0.35) 57%, rgba(29,35,48,0) 100%)
-            transition: background-color .15s ease
-
-        &:hover
-            .cards__text,
-            .cards__hidden-link
-                opacity: 1
-
-            .cards__hidden
-                top: 10%
-
-            &::before
-                background-color: rgba(darken($accent, 10%), .7)
-
-            .cards__hidden
-                @media #{$_sm}
-                    top: initial
-                    bottom: 12px
-                    padding: 0 15px 
-
         @media #{$_sm}
             margin-bottom: 121px      
 
+    .cards__link
+        @media #{$_sm}
+            &:hover
+                .cards__hidden-link
+                    display: none
+
     .cards__text
-        position: absolute
         color: #ffffff
-        padding: 0 20px
-        top: 42%
+
 
         @media #{$_sm}
+            position: absolute
             display: block
             top: initial
             bottom: 0
@@ -180,6 +148,7 @@
             background-color: #fafafa
             color: $main-color
             z-index: 10
+            left: 0
 
     .cards__hidden-link
         color: #ffffff   

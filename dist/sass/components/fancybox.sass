@@ -1,0 +1,31 @@
+.fancybox-navigation .fancybox-button
+    height: 40%
+    top: 50%
+    transform: translateY(-50%)
+    background-color: transparent
+    width: 50%
+
+    &:disabled
+        display: none
+
+.fancybox-button svg path
+    fill: #fff
+
+.fancybox-button svg
+    width: 20%
+    height: 20%
+
+    @media #{$_lg}
+        width: 30%
+        height: 30%
+
+.fancybox-navigation .fancybox-button div
+    background-color: transparent
+    display: flex
+    align-items: center
+    
+.fancybox-navigation .fancybox-button--arrow_left div
+    justify-content: flex-start
+
+.fancybox-navigation .fancybox-button--arrow_right div
+    justify-content: flex-end
