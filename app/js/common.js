@@ -139,7 +139,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(300);
-		$('.modal').css({'top': $(window).scrollTop()/1.4})
+		$('.modal').css({'top': $(window).scrollTop() + 20})
 	});
 });
 
@@ -149,7 +149,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('.modal').css({'top': $(window).scrollTop()/1.4})
+		$('.modal').css({'top': $(window).scrollTop() + 20})
 	});
 });
 
@@ -159,7 +159,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('.modal').css({'top': $(window).scrollTop()/2})
+		$('.modal').css({'top': $(window).scrollTop() + 20})
 	});
 });
 
@@ -169,7 +169,7 @@ $(function() {
 		var str = $(this).data('modal');
 		var numberModal = str.replace('click-', '');
 		$('#modal-' + numberModal).fadeIn(100);
-		$('.modal').css({'top': $(window).scrollTop()/3})
+		$('.modal').css({'top': $(window).scrollTop() + 20})
 	});
 });
 

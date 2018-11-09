@@ -14,6 +14,16 @@
         .menu__link
             padding: 5px 15px
 
+    @media #{$_xs}
+        .menu__item
+            width: 33.3333%
+
+        .menu__link
+            font-size: 12px
+
+            br
+                display: none
+
 .footer__bottom
     +row()
 
@@ -25,10 +35,19 @@
 
     @media #{$_md}
         +col(5)
+        
 
     @media #{$_sm}
+        +col(8)
+        margin: 0 auto 40px
+
+    @media #{$_xsm}
         +col(12)
-        margin-bottom: 40px
+        margin-left: auto
+        margin-right: auto
+
+    @media #{$_xs}
+        margin-bottom: 20px
     
 .footer__contacts
     +col(4.5)
@@ -50,22 +69,21 @@
         max-width: 430px
         margin-left: auto
         margin-right: auto
+        justify-content: space-between
 
         .contacts__left,
         .contacts__right
             justify-content: center
+            width: 48%
+            margin-left: 0
+            margin-right: 0
 
         .contacts__phone
             font-size: 19px
 
     @media #{$_xs}
-        flex-direction: column
-        align-items: center
-
-        .contacts__left,
-        .contacts__right
-            width: 100%
-
+        .contacts__phone
+            font-size: 14px
         
 
 .copyright

@@ -313,18 +313,18 @@
 
 .modal
 	position: absolute
-	right: -15px
+	right: 7%
+	max-width: 950px
 	top: 0
+	z-index: 10000
 	width: 108%
 
 	@media #{$_md}
-		width: 102%
-		bottom: initial
-		top: -30%
-		right: -1%
+		width: calc(100% - 30px)
+		right: 2%
 
-	@media #{$_sm}
-		top: -28%
+	@media #{$_xsm}
+		right: 4%
 
 .modal__body-img
     width: calc(100% + 60px)
@@ -381,10 +381,11 @@
     transform: rotate(-45deg)
 
 .modal__wrapper
-    position: relative
-    z-index: 200
-    background-color: #ffffff
-    padding-bottom: 25px
+	position: relative
+	z-index: 200
+	background-color: #ffffff
+	padding-bottom: 25px
+		
 
 .modal__body
     padding: 0 20px

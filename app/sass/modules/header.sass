@@ -56,6 +56,11 @@
     @media #{$_sm}
         padding-top: 12px
 
+    @media #{$_xs}
+        .contacts
+            width: calc(50% - 25px)
+            margin-right: 0
+
 .header__logo
     +col(4)
     max-width: 370px
@@ -70,8 +75,12 @@
         order: -1
         +col(12)
         margin-bottom: 10px
-        margin-left: auto
-        margin-right: auto
+        max-width: 100%
+
+        .logo
+            max-width: 370px
+            margin-left: auto
+            margin-right: auto
 
 .logo
     display: block
@@ -92,7 +101,9 @@
         +col(6)
 
     @media #{$_xs}
-        +col(12)
+        width: calc(50% - 25px)
+        margin-left: 0
+    
 
 .header__actions
     display: flex
@@ -155,8 +166,16 @@
     @media #{$_md}
         font-size: 16px
 
+    @media #{$_xs}
+        font-size: 13px
+
 .header__search
     margin-right: 12px
+
+    @media #{$_xs}
+        .search__button
+            width: 19px
+            height: 19px
 
 .header__btn
     align-items: center
@@ -178,7 +197,9 @@
         margin-bottom: 5px
         
     @media #{$_xs}
-        margin-bottom: 0
+        font-size: 12px
+        width: 100%
+        justify-content: flex-start
 
 
 .header__btn-text--visible
@@ -229,15 +250,7 @@
         padding: 0
 
     @media #{$_xs}
-        flex-direction: row
-        align-items: stretch
-        top: 100%
-
-        button
-            width: 50%
-            min-width: initial
-            padding-left: 5px
-            padding-right: 5px
+        align-items: flex-start
 
 .search__button
     width: 23px

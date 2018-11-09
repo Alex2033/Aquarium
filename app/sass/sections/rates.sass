@@ -35,6 +35,9 @@
 .rates__link
     color: #ffffff
 
+    &:hover
+        text-shadow: -1px 0 0px $main-color
+
 .rates__btns
     +col(4)
     display: flex
@@ -43,3 +46,7 @@
     @media #{$_lg}
         +col(12)
         justify-content: center
+
+    @media #{$_sm}
+        .button__text
+            font-size: 13px

@@ -351,18 +351,19 @@
 
 .modal {
   position: absolute;
-  right: -15px;
+  right: 7%;
+  max-width: 950px;
   top: 0;
+  z-index: 10000;
   width: 108%; }
   @media (max-width: 991.99px) {
     .modal {
-      width: 102%;
-      bottom: initial;
-      top: -30%;
-      right: -1%; } }
-  @media (max-width: 767px) {
+      width: -webkit-calc(100% - 30px);
+      width: calc(100% - 30px);
+      right: 2%; } }
+  @media (max-width: 576px) {
     .modal {
-      top: -28%; } }
+      right: 4%; } }
 
 .modal__body-img {
   width: -webkit-calc(100% + 60px);
