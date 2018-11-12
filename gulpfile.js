@@ -55,7 +55,7 @@ gulp.task('js', function() {
 		'app/libs/font-awesome/fontawesome-all.min.js',
 		'app/libs/superfish/superfish.min.js',
 		'app/libs/slick/slick.min.js',
-		'app/libs/fancybox/jquery.fancybox.min.js',
+		'app/libs/magnific-popup/jquery.magnific-popup.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

@@ -226,3 +226,31 @@ $('.accordion__button').click(function () {
     $(this).next().slideToggle(400);
 
 });
+
+$(document).ready(function() {
+    $('.magnific-gallery1').magnificPopup({
+        type:'image',
+        delegate: 'a',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true
+        },
+        fixedContentPos: false,
+        fixedBgPos: false,
+    });
+});
+
+$(document).ready(function() {
+    $('.magnific-gallery2').magnificPopup({
+        type:'image',
+        delegate: 'a',
+        removalDelay: 300,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true
+        },
+        fixedContentPos: false,
+        fixedBgPos: false,
+    });
+});

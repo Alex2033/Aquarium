@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
 /* Slider */
-@import url(../libs/fancybox/jquery.fancybox.min.css);
+@import url("../libs/magnific-popup/magnific-popup.css");
 .slick-slider {
   position: relative;
   display: block;
@@ -1968,6 +1968,39 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0; }
+
+button.mfp-close {
+  font-size: 45px; }
+
 .header {
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(29, 35, 48, 0)), color-stop(79%, rgba(0, 105, 161, 0.64)), color-stop(86%, rgba(0, 105, 161, 0.7)));
   background-image: -webkit-linear-gradient(bottom, rgba(29, 35, 48, 0) 0%, rgba(0, 105, 161, 0.64) 79%, rgba(0, 105, 161, 0.7) 86%);
@@ -2729,6 +2762,15 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-order: 3;
       -ms-flex-order: 3;
           order: 3; }
+  .performances::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    -webkit-box-shadow: 0 0 40px 40px #0084ca;
+            box-shadow: 0 0 40px 40px #0084ca; }
   .performances .wave--top {
     bottom: -webkit-calc(100% - 1px);
     bottom: calc(100% - 1px); }
@@ -3086,7 +3128,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #3c3c3b;
   padding: 11px 15px; }
   .children__nav-link:hover {
-    font-weight: 700; }
+    text-shadow: -1px 0 0px #3c3c3b; }
 
 .children__right-img {
   margin: 0 auto 30px; }
