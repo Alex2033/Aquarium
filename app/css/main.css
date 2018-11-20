@@ -2009,6 +2009,15 @@ button.mfp-close {
   height: 100vh;
   min-height: 800px;
   margin-bottom: 30px; }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    -webkit-box-shadow: 0 0 40px 40px rgba(0, 132, 202, 0.5);
+            box-shadow: 0 0 40px 40px rgba(0, 132, 202, 0.5); }
   @media (max-width: 991.1px) {
     .header {
       min-height: 700px;
